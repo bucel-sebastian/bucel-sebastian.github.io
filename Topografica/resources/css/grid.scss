@@ -1,0 +1,10 @@
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
