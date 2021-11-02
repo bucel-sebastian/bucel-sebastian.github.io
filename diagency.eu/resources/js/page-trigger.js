@@ -122,59 +122,80 @@ function touchGesture() {
 
 
 
+var page2full = document.getElementById("page-2-full");
 
-var page2right = document.getElementById("page-2-right");
-var page2left = document.getElementById("page-2-left");
-var page2right1 = document.getElementById("page-2-right-1");
-var page2right2 = document.getElementById("page-2-right-2");
 
-var page3top = document.getElementById("page-3-top");
-var page3bottom = document.getElementById("page-3-bottom");
+// var page2right = document.getElementById("page-2-right");
+// var page2left = document.getElementById("page-2-left");
+// var page2right1 = document.getElementById("page-2-right-1");
+// var page2right2 = document.getElementById("page-2-right-2");
+
+// var page3top = document.getElementById("page-3-top");
+// var page3bottom = document.getElementById("page-3-bottom");
 
 
 function page1() {
 
-    page3top.style.transform = "translateX(100%)";
-    page3bottom.style.transform = "translateX(-100%)";
+    page2full.style.transform = "translateY(100%)";
+    document.getElementById("page-2-anim-1").style.transform = "translateY(-20%)";
+    document.getElementById("page-2-anim-1").style.opacity = "0";
+    document.getElementById("page-2-anim-2").style.transform = "translateY(-20%)";
+    document.getElementById("page-2-anim-2").style.opacity = "0";
+    // page3top.style.transform = "translateX(100%)";
+    // page3bottom.style.transform = "translateX(-100%)";
 
 
-    page2left.style.transform = "translateX(-100%)";
+    // page2left.style.transform = "translateX(-100%)";
 
-    page2right1.style.transform = "translateY(-100%)";
-    page2right2.style.transform = "translateY(100%)";
+    // page2right1.style.transform = "translateY(-100%)";
+    // page2right2.style.transform = "translateY(100%)";
 
-    setTimeout(() => {
-        page2right.style.transform = "translateX(100%)";
-    }, 500);
+    // setTimeout(() => {
+    //     page2right.style.transform = "translateX(100%)";
+    // }, 500);
 
 }
 
 function page2() {
+    page2full.style.transform = "translateY(0)";
 
-    page3top.style.transform = "translateX(100%)";
-    page3bottom.style.transform = "translateX(-100%)";
+    setTimeout(() => {
+        document.getElementById("page-2-anim-1").style.transform = "translateY(0)";
+        document.getElementById("page-2-anim-1").style.opacity = "1";
+        setTimeout(() => {
+            document.getElementById("page-2-anim-2").style.transform = "translateY(0)";
+            document.getElementById("page-2-anim-2").style.opacity = "1";
+        }, 150);
+    }, 400)
 
-    page2right.style.transform = "translateX(0)";
-    page2left.style.transform = "translateX(0)";
-
-    page2right1.style.transform = "translateY(0)";
-    page2right2.style.transform = "translateY(0)";
 
 }
+// function page2() {
 
-function page3() {
+//     page3top.style.transform = "translateX(100%)";
+//     page3bottom.style.transform = "translateX(-100%)";
 
-    page2right.style.transform = "translateX(0)";
-    page2left.style.transform = "translateX(0)";
+//     page2right.style.transform = "translateX(0)";
+//     page2left.style.transform = "translateX(0)";
 
-    page2right1.style.transform = "translateY(0)";
-    page2right2.style.transform = "translateY(0)";
+//     page2right1.style.transform = "translateY(0)";
+//     page2right2.style.transform = "translateY(0)";
+
+// }
+
+// function page3() {
+
+//     page2right.style.transform = "translateX(0)";
+//     page2left.style.transform = "translateX(0)";
+
+//     page2right1.style.transform = "translateY(0)";
+//     page2right2.style.transform = "translateY(0)";
 
 
-    page3top.style.transform = "translateX(0)";
-    page3bottom.style.transform = "translateX(0)";
+//     page3top.style.transform = "translateX(0)";
+//     page3bottom.style.transform = "translateX(0)";
 
-}
+// }
 
 function page4() {
     console.log("page4");

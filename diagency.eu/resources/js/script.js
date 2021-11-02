@@ -4,6 +4,7 @@ function langSwitcher() {
     if (langswitch === 0) {
         langswitch = 1;
         console.log(langswitch);
+        document.getElementById("language-switcher-border").classList.toggle("activeBorder");
         document.getElementById("language-dropdown").classList.toggle("language-dropdown-active");
         document.getElementById("language-dropdown").style.display = "block";
         setTimeout(() => {
@@ -19,14 +20,19 @@ function langSwitcher() {
     else {
         langswitch = 0;
         console.log(langswitch);
-        document.getElementById("language-dropdown").classList.toggle("language-dropdown-active");
-        document.getElementById("language-dropdown").style.display = "none";
+        document.getElementById("language-switcher-border").classList.toggle("activeBorder");
+
+        document.getElementById("language-dropdown-li-3").classList.toggle("language-dropdown-li-active");
+
         setTimeout(() => {
-            document.getElementById("language-dropdown-li-1").classList.toggle("language-dropdown-li-active");
+            document.getElementById("language-dropdown-li-2").classList.toggle("language-dropdown-li-active");
             setTimeout(() => {
-                document.getElementById("language-dropdown-li-2").classList.toggle("language-dropdown-li-active");
+                document.getElementById("language-dropdown-li-1").classList.toggle("language-dropdown-li-active");
                 setTimeout(() => {
-                    document.getElementById("language-dropdown-li-3").classList.toggle("language-dropdown-li-active");
+                    document.getElementById("language-dropdown").classList.toggle("language-dropdown-active");
+                    setTimeout(() => {
+                        document.getElementById("language-dropdown").style.display = "none";
+                    }, 100);
                 }, 100);
             }, 100);
         }, 50);
@@ -36,7 +42,7 @@ function langSwitcher() {
 
 function changeLanguage(x) {
     if (x === 1) {
-        window.location.href = "";
+        window.location.href = "../";
     }
     if (x === 2) {
         window.location.href = "ro/";
@@ -72,7 +78,9 @@ function toggleMenu() {
                         document.getElementById("main-menu-li-a-5").classList.toggle("activeLink");
                         setTimeout(() => {
                             document.getElementById("main-menu-li-a-6").classList.toggle("activeLink");
-
+                            setTimeout(() => {
+                                document.getElementById("language-switcher").classList.toggle("language-switcher-active");
+                            }, 100);
                         }, 100);
                     }, 100);
                 }, 100);
