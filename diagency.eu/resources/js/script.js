@@ -16,13 +16,18 @@ function toggleMenu() {
                 document.getElementById("main-menu-border-4").classList.toggle("activeBorder");
                 document.getElementById("main-menu-li-a-3").classList.toggle("activeLink");
                 setTimeout(() => {
+                    document.getElementById("main-menu-border-5").classList.toggle("activeBorder");
                     document.getElementById("main-menu-li-a-4").classList.toggle("activeLink");
                     setTimeout(() => {
                         document.getElementById("main-menu-li-a-5").classList.toggle("activeLink");
+                        setTimeout(() => {
+                            document.getElementById("main-menu-li-a-6").classList.toggle("activeLink");
 
+                        }, 100);
                     }, 100);
                 }, 100);
             }, 100);
         }, 100);
     }, 100);
 }
+

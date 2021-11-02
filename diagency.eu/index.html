@@ -21,11 +21,17 @@
 
     <!-- CSS StylSheets -->
     <link rel="stylesheet" type="text/css" href="resources/css/style.scss">
+    <link rel="stylesheet" type="text/css" href="resources/css/grid.scss">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.scss">
     <link rel="stylesheet" type="text/css" href="resources/css/animations.scss">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
-<body>
+<body onmousewheel="checkScroll(event);" on>
     <header>
         <div id="header-container">
             <div id="header-logo">
@@ -43,26 +49,110 @@
     <div id="main-menu">
         <nav id="main-menu-nav" onclick="toggleMenu()">
             <ul id="main-menu-ul">
-                <li class="main-menu-li" id="main-menu-li-a-1"><a class="main-menu-li-a" href="#">Home</a></li>
+                <li class="main-menu-li" id="main-menu-li-a-1">
+                    <div class="main-menu-link-box">
+                        <span class="main-menu-link" onclick="btnAps(1)">Home</span>
+                    </div>
+                </li>
                 <div id="main-menu-border-1" class="main-menu-border"></div>
-                <li class="main-menu-li" id="main-menu-li-a-2"><a class="main-menu-li-a" href="#">About us</a></li>
+                <li class="main-menu-li" id="main-menu-li-a-2">
+                    <div class="main-menu-link-box">
+                        <span class="main-menu-link" onclick="btnAps(2)">About us</span>
+                    </div>
+                </li>
                 <div id="main-menu-border-2" class="main-menu-border"></div>
-                <li class="main-menu-li" id="main-menu-li-a-3"><a class="main-menu-li-a" href="#">What we do</a></li>
+                <li class="main-menu-li" id="main-menu-li-a-3">
+                    <div class="main-menu-link-box">
+                        <span class="main-menu-link" onclick="btnAps(3)">Portofolio</span>
+                    </div>
+                </li>
                 <div id="main-menu-border-3" class="main-menu-border"></div>
-                <li class="main-menu-li" id="main-menu-li-a-4"><a class="main-menu-li-a" href="#">Portofolio</a></li>
+                <li class="main-menu-li" id="main-menu-li-a-4">
+                    <div class="main-menu-link-box">
+                        <span class="main-menu-link" onclick="btnAps(4)">Platforms</span>
+                    </div>
+                </li>
                 <div id="main-menu-border-4" class="main-menu-border"></div>
-                <li class="main-menu-li" id="main-menu-li-a-5"><a class="main-menu-li-a" href="#">Contact</a></li>
+                <li class="main-menu-li" id="main-menu-li-a-5">
+                    <div class="main-menu-link-box">
+                        <span class="main-menu-link" onclick="btnAps(5)">Contact</span>
+                    </div>
+                </li>
+                <div id="main-menu-border-5" class="main-menu-border"></div>
+                <li class="main-menu-li" id="main-menu-li-a-6">
+                    <div class="main-menu-link-box">
+                        <span class="main-menu-link" onclick="btnAps(6)">Login</span>
+                    </div>
+                </li>
             </ul>
         </nav>
 
-    </div>
-    <div>
+        <!-- 
+            Menu
+                Home   
+                About us
+                Portofolio
+                Platforms
+                Contact
+                Login - Promoapp
 
+
+         -->
+
+    </div>
+    <div id="page-content">
+        <div id="scroll-down-btn">
+            <div id="scroll-down-cirlce" onclick="scrollDown()">
+                <span>
+                    <i class="fas fa-arrow-down"></i>
+                </span>
+            </div>
+        </div>
+        <div id="page-1">
+
+        </div>
+        <div id="page-2">
+
+            <div class="row" style="height: 100%;width: 100%;">
+                <div id="page-2-left" class="row span-1-2" style="background-color: bisque;">
+
+                </div>
+                <div id="page-2-right" class="col span-2-2">
+                    <div id="page-2-right-1" class="row col-1-2" style="background-color: blueviolet;">
+
+                    </div>
+                    <div id="page-2-right-2" class="row col-2-2" style="background-color: yellow;">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="page-3">
+
+            <div class="col" style="height: 100%;width: 100%;">
+
+                <div id="page-3-top" class="row col-1-2" style="background-color:chartreuse">
+
+                </div>
+                <div id="page-3-bottom" class="row col-2-2" style="background-color:coral">
+
+                </div>
+
+            </div>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
     </div>
 </body>
 
 <script src="resources/js/script.js"></script>
-
+<script src="resources/js/page-trigger.js"></script>
 <script>
 
 
