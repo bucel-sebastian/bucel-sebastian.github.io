@@ -47,6 +47,7 @@ function btnAps(x) {
         page6();
         console.log("login");
     }
+    toggleMenu();
 }
 
 
@@ -133,25 +134,25 @@ var page3bottom = document.getElementById("page-3-bottom");
 
 function page1() {
 
-    page3top.style.transform = "translateX(2000px)";
-    page3bottom.style.transform = "translateX(-2000px)";
+    page3top.style.transform = "translateX(100%)";
+    page3bottom.style.transform = "translateX(-100%)";
 
 
-    page2left.style.transform = "translateX(-1000px)";
+    page2left.style.transform = "translateX(-100%)";
 
-    page2right1.style.transform = "translateY(-1000px)";
-    page2right2.style.transform = "translateY(1000px)";
+    page2right1.style.transform = "translateY(-100%)";
+    page2right2.style.transform = "translateY(100%)";
 
     setTimeout(() => {
-        page2right.style.transform = "translateX(1000px)";
+        page2right.style.transform = "translateX(100%)";
     }, 500);
 
 }
 
 function page2() {
 
-    page3top.style.transform = "translateX(2000px)";
-    page3bottom.style.transform = "translateX(-2000px)";
+    page3top.style.transform = "translateX(100%)";
+    page3bottom.style.transform = "translateX(-100%)";
 
     page2right.style.transform = "translateX(0)";
     page2left.style.transform = "translateX(0)";
