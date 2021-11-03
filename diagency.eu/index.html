@@ -29,15 +29,31 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
+    <!-- Cookie Bot -->
+    <!-- <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="370ca35b-eef6-46ed-a86f-fb74d27e9c4e" data-blockingmode="auto" type="text/javascript"></script> -->
+
 </head>
 
-<body onmousewheel="checkScroll(event);">
+<!--  -->
+
+
+
+<body onmousewheel="checkScroll(event);" onload="pageStart()">
+
+    <div id="page-loader">
+        <img id="page-loader-icon" src="resources/img/logo-short.png" alt="diagency">
+    </div>
+
+
+
     <header>
         <div id="header-container">
             <div id="header-logo">
                 <img id="logo" src="resources/img/logo.png" alt="">
             </div>
-            <div id="header-menu">
+            <div id="header-menu" onmouseover="menuAnimation()">
                 <div id="menu" class="inactive-animation" onclick="toggleMenu();">
                     <div id="bar1"></div>
                     <div id="bar2">
@@ -113,11 +129,19 @@
 
     </div>
 
+    <!-- Cookie Bot -->
+    <!-- <script id="CookieDeclaration" src="https://consent.cookiebot.com/370ca35b-eef6-46ed-a86f-fb74d27e9c4e/cd.js" type="text/javascript" async></script> -->
 
     <div id="page-content">
+
+
+
         <div id="scroll-down-btn">
             <div id="scroll-down-cirlce" onclick="scrollDown()">
-                <span>
+                <span id="scroll-down-arrow">
+                    <i class="fas fa-arrow-down"></i>
+                </span>
+                <span id="scroll-down-arrow-clone">
                     <i class="fas fa-arrow-down"></i>
                 </span>
             </div>
@@ -126,7 +150,7 @@
 
         </div>
 
-        <div id="page-2">
+        <!-- <div id="page-2">
             <div id="page-2-full">
                 <div class="center-col">
                     <h2 id="page-2-anim-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
@@ -136,11 +160,117 @@
                         excepturi reprehenderit reiciendis similique tempora temporibus ad.</p>
                 </div>
             </div>
+        </div> -->
+
+
+        <!-- page -2rows -2 cols -->
+        <div class="page">
+            <div class="center-col">
+                <div class="row col-1-2">
+                    <div class="col span-1-2" id="box1" style="background-color:rebeccapurple"></div>
+                    <div class="col span-2-2" id="box2" style="background-color:brown"></div>
+                </div>
+                <div class="row col-2-2">
+                    <div class="col span-1-2" id="box4" style="background-color:crimson"></div>
+                    <div class="col span-2-2" id="box3" style="background-color:deeppink"></div>
+                </div>
+            </div>
         </div>
 
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!-- page 2cols -1 and 2 rows -->
+        <div class="page">
+            <div class="center-row">
+                <div class="col span-1-2 center-col" id="box5" style="background-color:coral">
+                    <form action="">
+                        <input type="text">
+                        <input type="text">
+                        <input type="text">
+                        <input type="text">
+                    </form>
+                </div>
+                <div class="col span-2-2">
+                    <div class="row col-1-2" id="box6" style="background-color:crimson"></div>
+                    <div class="row col-1-2" id="box7" style="background-color:deeppink"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- page 2cols -1 and 2 rows Reverse -->
+        <!-- <div class="page">
+            <div class="center-row">
+                <div class="col span-1-2">
+                    <div class="row col-1-2" style="background-color:crimson"></div>
+                    <div class="row col-1-2" style="background-color:deeppink"></div>
+                </div>
+                <div class="col span-2-2" style="background-color:coral">
+
+                </div>
+            </div>
+        </div> -->
+
+        <!-- page 2 rows 1col -->
+        <!-- <div class="page">
+            <div class="center-col">
+                <div class="row col-1-2" id="box1" style="background-color:deeppink">
+
+                </div>
+                <div class="row col-2-2" id="box2" style="background-color:coral">
+                </div>
+
+            </div>
+        </div> -->
 
 
-        <!-- <div id="page-2">
+        <!-- page 2 cols 1 row -->
+        <!-- <div class="page">
+            <div class="center-row">
+                <div class="col span-1-2" id="box1" style="background-color:deeppink"></div>
+                <div class="col span-2-2" id="box2" style="background-color:coral"></div>
+            </div>
+        </div> -->
+
+        <!-- page 2 rows -1 and 2 cols -->
+        <!-- <div class="page">
+            <div class="center-col">
+                <div class="row col-1-2">
+                    <div class="col span-1-2" style="background-color:deeppink"></div>
+                    <div class="col span-2-2" style="background-color:coral"></div>
+                </div>
+                <div class="row col-2-2" style="background-color:crimson"></div>
+            </div>
+        </div> -->
+
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!-- page 2 rows -1 and 2 cols Reverse -->
+
+        <!-- <div class="page">
+            <div class="center-col">
+                <div class="row col-1-2" style="background-color:crimson"></div>
+                <div class="row col-2-2">
+                    <div class="col span-1-2" style="background-color:deeppink"></div>
+                    <div class="col span-2-2" style="background-color:coral"></div>
+                </div>
+            </div>
+        </div> -->
+
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+
+
+
+    </div>
+
+
+    <!-- <div id="page-2">
 
             <div class="row" style="height: 100%;width: 100%;">
                 <div id="page-2-left" class="row span-1-2" style="background-color: bisque;">
@@ -168,9 +298,9 @@
 
                 </div>
 
-            </div> -->
+            </div> 
 
-    </div>
+        </div>-->
 
     <div>
 
@@ -182,6 +312,7 @@
     </div>
 </body>
 
+<script src="resources/js/start.js"></script>
 <script src="resources/js/script.js"></script>
 <script src="resources/js/page-trigger.js"></script>
 <script>

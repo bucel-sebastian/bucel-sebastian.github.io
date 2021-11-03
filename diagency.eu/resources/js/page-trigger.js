@@ -7,10 +7,10 @@ function setPage(page) {
         page1();
     }
     if (page === 2) {
-        page2();
+        pageEnter();
     }
     if (page === 3) {
-        page3();
+        pageEnter2();
     }
 }
 
@@ -24,7 +24,7 @@ function btnAps(x) {
     }
     else if (x === 2) {
         pageIndex = 2;
-        page2();
+        pageEnter();
         console.log("about us");
     }
     else if (x === 3) {
@@ -136,11 +136,16 @@ var page2full = document.getElementById("page-2-full");
 
 function page1() {
 
-    page2full.style.transform = "translateY(100%)";
-    document.getElementById("page-2-anim-1").style.transform = "translateY(-20%)";
-    document.getElementById("page-2-anim-1").style.opacity = "0";
-    document.getElementById("page-2-anim-2").style.transform = "translateY(-20%)";
-    document.getElementById("page-2-anim-2").style.opacity = "0";
+    document.getElementById("box1").style.transform = "translateY(-100%)";
+    document.getElementById("box2").style.transform = "translateX(100%)";
+    document.getElementById("box3").style.transform = "translateY(100%)";
+    document.getElementById("box4").style.transform = "translateX(-100%)";
+
+    // page2full.style.transform = "translateY(100%)";
+    // document.getElementById("page-2-anim-1").style.transform = "translateY(-20%)";
+    // document.getElementById("page-2-anim-1").style.opacity = "0";
+    // document.getElementById("page-2-anim-2").style.transform = "translateY(-20%)";
+    // document.getElementById("page-2-anim-2").style.opacity = "0";
     // page3top.style.transform = "translateX(100%)";
     // page3bottom.style.transform = "translateX(-100%)";
 
@@ -205,4 +210,65 @@ function page5() {
 }
 function page6() {
     console.log("page6");
+}
+
+
+
+
+// Transition 1
+// 2 rows each slide left and right
+// function pageEnter() {
+//     document.getElementById("box1").style.transform = "translateX(0)";
+//     document.getElementById("box2").style.transform = "translateX(0)";
+// }
+
+// Transition 2
+// 2 rows each slide top and bottom
+// function pageEnter() {
+//     document.getElementById("box1").style.transform = "translateY(0)";
+//     document.getElementById("box2").style.transform = "translateY(0)";
+// }
+
+// Transition 3
+// 2 cols each slide top and bottom
+// function pageEnter() {
+//     document.getElementById("box1").style.transform = "translateY(0)";
+//     document.getElementById("box2").style.transform = "translateY(0)";
+// }
+
+// Transition 4
+// 2 cols each slide left and right
+// function pageEnter() {
+//     document.getElementById("box1").style.transform = "translateX(0)";
+//     document.getElementById("box2").style.transform = "translateX(0)";
+// }
+
+// Transition 5
+// 1 row 2 cols 2 rows
+function pageEnter2() {
+    document.getElementById("box5").style.transform = "translate(0)";
+    document.getElementById("box6").style.transform = "translate(0)";
+    document.getElementById("box7").style.transform = "translate(0)";
+}
+
+// Transition 6
+// 1 row 2 cols 2 rows 
+// function pageEnter() {
+//     document.getElementById("box1").style.transform = "translate(0)";
+//     setTimeout(() => {
+//         document.getElementById("box2").style.transform = "translate(0)";
+//         setTimeout(() => {
+//             document.getElementById("box3").style.transform = "translate(0)";
+//         }, 100);
+//     }, 150);
+// }
+
+//Transition 7
+//4 boxes
+
+function pageEnter() {
+    document.getElementById("box1").style.transform = "translate(0)";
+    document.getElementById("box2").style.transform = "translate(0)";
+    document.getElementById("box3").style.transform = "translate(0)";
+    document.getElementById("box4").style.transform = "translate(0)";
 }
