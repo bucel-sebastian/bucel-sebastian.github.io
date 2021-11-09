@@ -157,6 +157,7 @@ function touchGesture() {
     if (scrollTimeout === 0) {
         if (touchEndY < touchStartY) {
             console.log("down");
+            scrollTimeout = 1;
             if (pageIndex < 10) {
                 pageIndex++;
                 setPage(pageIndex);
@@ -165,9 +166,13 @@ function touchGesture() {
                 pageIndex = 10;
                 setPage(pageIndex);
             }
+            setTimeout(() => {
+                scrollTimeout = 0;
+            }, 1000);
         }
         if (touchEndY > touchStartY) {
             console.log("up");
+            scrollTimeout = 1;
             if (pageIndex > 1) {
                 pageIndex--;
                 setPage(pageIndex);
@@ -176,6 +181,9 @@ function touchGesture() {
                 pageIndex = 1;
                 setPage(pageIndex);
             }
+            setTimeout(() => {
+                scrollTimeout = 0;
+            }, 1000);
         }
     }
 
