@@ -20,10 +20,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- CSS StylSheets -->
-    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/grid.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/animations.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.scss">
+    <link rel="stylesheet" type="text/css" href="resources/css/grid.scss">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.scss">
+    <link rel="stylesheet" type="text/css" href="resources/css/animations.scss">
 
     <!-- Font Awesome -->
 
@@ -40,7 +40,7 @@
 
 
 
-<body onmousewheel="checkScroll(event);" onload="pageStart()">
+<body onmousewheel="checkScroll(event)" onload="pageStart()">
 
     <div id="page-loader">
         <img id="page-loader-icon" src="resources/img/logo-short.png" alt="diagency">
@@ -51,7 +51,9 @@
     <header>
         <div id="header-container">
             <div id="header-logo">
-                <img id="logo" src="resources/img/logo.png" alt="">
+                <a href="index.html">
+                    <img id="logo" src="resources/img/logo.png" alt="diagency">
+                </a>
             </div>
             <div id="header-menu" onmouseover="menuAnimation()">
                 <div id="menu" class="inactive-animation" onclick="toggleMenu();">
@@ -110,7 +112,7 @@
                     </div>
                     <div id="language-switcher-border" class="main-menu-border"></div>
                     <div id="language-dropdown">
-                        <li class="language-dropdown-li" id="language-dropdown-li-1" onclick="changeLanguage(1)">
+                        <li class="language-dropdown-li" id="language-dropdown-li-1">
                             <span>English</span>
                         </li>
                         <li class="language-dropdown-li" id="language-dropdown-li-2" onclick="changeLanguage(2)">
@@ -137,17 +139,24 @@
 
 
         <div id="scroll-down-btn">
-            <div id="scroll-down-cirlce" onclick="scrollDown()">
+
+            <svg id="scroll-down-cirlce-2-svg">
+                <circle r="30.5px" cx="32.5" cy="32.5" id="scroll-down-circle-2"></circle>
+            </svg>
+
+            <div id="scroll-down-cirlce" onclick="scrollDownBtn()">
                 <span id="scroll-down-arrow">
-                    <i class="fas fa-arrow-down"></i>
+                    <i id="fa-arrow-down" class="fas fa-arrow-down"></i>
                 </span>
                 <span id="scroll-down-arrow-clone">
-                    <i class="fas fa-arrow-down"></i>
+                    <i id="fa-arrow-down-clone" class="fas fa-arrow-down"></i>
                 </span>
             </div>
         </div>
-        <div id="page-1">
+        <div class="page" id="home">
+            <div class="center-col" id="home-1-header">
 
+            </div>
         </div>
 
         <!-- <div id="page-2">
@@ -162,9 +171,151 @@
             </div>
         </div> -->
 
+        <!-- Platforms -->
+        <div class="page" id="platforms">
+            <div class="center-col">
+                <div class="row col-1-2" id="promoapp-platform">
+                    <div class="span-1-2 right-content">
+                        <img src="resources/img/altpromoapp.png" class="platform-logo" alt="promoapp">
+                    </div>
+                    <div class="span-2-2 left-content-col" id="promoapp-text">
+                        <h2>Campaign management plaftorm</h2>
+                        <hr>
+                        <p>
+                            PROMOAPP is a multi channel integrated platform that helps you manage easily and efficiently
+                            any type of campaigns that you have.
+                        </p>
+                        <a href="https://promoapp.io/"><span>Learn more</span></a>
+                    </div>
+                </div>
+                <div class="row col-2-2" id="provBrand-platform">
+                    <div class="span-1-2 right-content-col" id="provBrand-text">
+                        <h2>Brand engagement platform</h2>
+                        <hr>
+                        <p>
+                            Games, puzzles, contests developed for brand engagement all in one platform.
+                        </p>
+                        <a href="https://provocareabrandurilor.ro/">Learn more</a>
+                    </div>
+                    <div class="span-2-2 left-content">
+                        <img src="resources/img/altprovocarea.png" class="platform-logo" alt="provocare brandurilor">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- Contact 1 -->
+        <div class="page" id="contact1">
+            <div class="center-row" id="contact1-full-page">
+                <div class="col span-1-2 center-col" id="contact1-left" style="background-color:coral">
+                    "CONTACT INFO"
+                </div>
+                <div class="col span-2-2" id="contact1-right">
+                    <div class="row col-1-2" id="contact1-right-top" style="background-color:crimson">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d178.8562074825405!2d28.660400116925526!3d44.172056525715455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40bae5262d142c71%3A0xb3345431bc04a6fc!2sStrada%20Arhiepiscopiei%2019%2C%20Constan%C8%9Ba%20900178!5e0!3m2!1sen!2sro!4v1636029153362!5m2!1sen!2sro"
+                            style="border:0;" allowfullscreen="" id="contact-1-map"></iframe>
+                    </div>
+                    <div class="row col-1-2 center-row" id="contact1-right-bottom" style="background-color:deeppink">
+                        "POZA"</div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact 2 -form -->
+        <div class="page" id="contact2">
+            <div class="center-col" id="contact2-full-page">
+
+                <div class="center-col" id="contact-form-success">
+                    <h3>We recived your message!</h3>
+                    <h4>One of our colleagues will get back in touch with you as soon as possible.<h4>
+                </div>
+
+                <div class="center-col" id="contact-form-fail">
+                    <h3>Opss!</h3>
+                    <h4>There's an error!<br>Please try again later.<h4>
+                            <!-- <div >
+                        Try again!
+                    </div> -->
+                </div>
+
+                <form class="center-col" id="contact-form">
+
+                    <div class="contact-form-field-container">
+                        <input type="text" placeholder="Name*" name="nume" class="contact-form-field" required>
+                    </div>
+
+                    <div class="contact-form-field-container">
+                        <input type="text" placeholder="Company*" name="companie" class="contact-form-field" required>
+                    </div>
+                    <div class="contact-form-field-container">
+                        <input type="tel" placeholder="Phone*" name="telefon" class="contact-form-field" required>
+                    </div>
+                    <div class="contact-form-field-container">
+                        <input type="email" placeholder="you@domain.com*" name="email" class="contact-form-field"
+                            required>
+                    </div>
+                    <div class="contact-form-field-container">
+                        <input type="url" placeholder="https://www.example.com" name="website"
+                            class="contact-form-field">
+                    </div>
+                    <div class="contact-form-field-container">
+                        <textarea name="mesaj" id="" cols="" rows="4" placeholder="Your message*"
+                            class="contact-form-field" required></textarea>
+                    </div>
+
+                    <div class="contact-form-gdpr-field">
+                        <input type="checkbox" name="GDPR" id="GDPR" hidden>
+                        <div id="gdpr-checkbox" onclick="gdprCheckBox()">
+                            <div id="gdpr-inner-checkbox" class="gdpr-inner-checkbox">
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                        <p>I agree to the <a href="terms_and_conditions/">Terms and Conditions</a> and the
+                            <a href="privacy_policy/">Privacy Policy</a> and I declare that i have
+                            read the
+                            necessary information in accordance with <a
+                                href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2016.119.01.0001.01.ENG&toc=OJ:L:2016:119:TOC">Art.
+                                13 of GDPR</a>.
+                        </p>
+                    </div>
+
+                    <button id="contact-form-btn" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="page" id="login">
+            <div class="center-col" id="login-full-page">
+
+                <img src="resources/img/altpromoapp.png" alt="promoapp">
+                <a id="login-btn" href="https://campaigns.promoapp.ro/admin/login">
+                    <span><i class="fas fa-lock"></i> Log-in to
+                        PROMOAPP</span></a>
+
+            </div>
+        </div>
+
+        <!--  -->
+        <!--  -->
+        <!-- page 2cols -1 and 2 rows -->
+        <!-- <div class="page">
+            <div class="center-row">
+                <div class="col span-1-2 center-col">
+                </div>
+                <div class="col span-2-2">
+                    <div class="row col-1-2">
+                    </div>
+                    <div class="row col-1-2 center-row">
+                    </div>
+                </div>
+            </div>
+        </div> -->
 
         <!-- page -2rows -2 cols -->
-        <div class="page">
+        <!-- <div class="page">
             <div class="center-col">
                 <div class="row col-1-2">
                     <div class="col span-1-2" id="box1" style="background-color:rebeccapurple"></div>
@@ -175,30 +326,7 @@
                     <div class="col span-2-2" id="box3" style="background-color:deeppink"></div>
                 </div>
             </div>
-        </div>
-
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!-- page 2cols -1 and 2 rows -->
-        <div class="page">
-            <div class="center-row">
-                <div class="col span-1-2 center-col" id="box5" style="background-color:coral">
-                    <form action="">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                    </form>
-                </div>
-                <div class="col span-2-2">
-                    <div class="row col-1-2" id="box6" style="background-color:crimson"></div>
-                    <div class="row col-1-2" id="box7" style="background-color:deeppink"></div>
-                </div>
-            </div>
-        </div>
+        </div> -->
 
         <!-- page 2cols -1 and 2 rows Reverse -->
         <!-- <div class="page">
@@ -300,21 +428,16 @@
 
             </div> 
 
-        </div>-->
+        </div>
 
-    <div>
-
-    </div>
-
-    <div>
-
-    </div>
-    </div>
+   
+    </div>-->
 </body>
 
 <script src="resources/js/start.js"></script>
 <script src="resources/js/script.js"></script>
 <script src="resources/js/page-trigger.js"></script>
+<script src="resources/js/contact.js"></script>
 <script>
 
 

@@ -1,0 +1,14 @@
+
+@keyframes loader-logo {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0.5;
+    }
+    
+}
+
+#page-loader-icon{
+    animation: loader-logo 0.5s ease-in-out infinite alternate;
+}
