@@ -67,11 +67,13 @@ function btnAps(x) {
         else if (x === 5) {
             pageIndex = 5;
             setPage(pageIndex);
+            alert('contact');
             console.log("contact");
         }
         else if (x === 6) {
             pageIndex = 7;
             setPage(pageIndex);
+            alert('login');
             console.log("login");
         }
         toggleMenu();
