@@ -108,7 +108,6 @@ function scrollDown() {
 }
 
 function scrollDownBtn() {
-    console.log("scroll down apasat");
     if (scrollTimeout === 0) {
         scrollTimeout = 1;
         scrollDown();
@@ -123,19 +122,15 @@ function checkScroll(event) {
     if (scrollTimeout === 0) {
         if (y > 0) {
             scrollTimeout = 1;
-
             scrollDown();
             setTimeout(() => {
-
                 scrollTimeout = 0;
             }, 1000);
         }
         else {
             scrollTimeout = 1;
-
             scrollUp();
             setTimeout(() => {
-
                 scrollTimeout = 0;
             }, 1000);
         }
@@ -156,31 +151,28 @@ document.body.addEventListener("touchend", e => {
 }, false);
 
 function touchGesture() {
-    if (scrollTimeout === 0) {
-        if (touchEndY < touchStartY) {
-            console.log("down");
-            if (pageIndex < 10) {
-                pageIndex++;
-                setPage(pageIndex);
-            }
-            else {
-                pageIndex = 10;
-                setPage(pageIndex);
-            }
+    if (touchEndY < touchStartY) {
+        console.log("down");
+        if (pageIndex < 10) {
+            pageIndex++;
+            setPage(pageIndex);
         }
-        if (touchEndY > touchStartY) {
-            console.log("up");
-            if (pageIndex > 1) {
-                pageIndex--;
-                setPage(pageIndex);
-            }
-            else {
-                pageIndex = 1;
-                setPage(pageIndex);
-            }
+        else {
+            pageIndex = 10;
+            setPage(pageIndex);
         }
     }
-
+    if (touchEndY > touchStartY) {
+        console.log("up");
+        if (pageIndex > 1) {
+            pageIndex--;
+            setPage(pageIndex);
+        }
+        else {
+            pageIndex = 1;
+            setPage(pageIndex);
+        }
+    }
 }
 
 //////////////// Page Variables ////////////////////////////////
