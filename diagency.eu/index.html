@@ -20,10 +20,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- CSS StylSheets -->
-    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/grid.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/animations.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.scss">
+    <link rel="stylesheet" type="text/css" href="resources/css/grid.scss">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.scss">
+    <link rel="stylesheet" type="text/css" href="resources/css/animations.scss">
 
     <!-- Font Awesome -->
 
@@ -68,39 +68,39 @@
     <div id="main-menu">
         <nav id="main-menu-nav">
             <ul id="main-menu-ul">
-                <li class="main-menu-li" id="main-menu-li-a-1">
+                <li class="main-menu-li" id="main-menu-li-a-1" onclick="btnAps(1)">
                     <div class="main-menu-link-box">
-                        <span class="main-menu-link" id="home-btn">Home</span>
+                        <span class="main-menu-link" onclick="btnAps(1)">Home</span>
                     </div>
                 </li>
                 <div id="main-menu-border-1" class="main-menu-border"></div>
-                <li class="main-menu-li" id="main-menu-li-a-2">
+                <li class="main-menu-li" id="main-menu-li-a-2" onclick="btnAps(2)">
                     <div class="main-menu-link-box">
-                        <span class="main-menu-link" id="about-us-btn">About us</span>
+                        <span class="main-menu-link" onclick="btnAps(2)">About us</span>
                     </div>
                 </li>
                 <div id="main-menu-border-2" class="main-menu-border"></div>
-                <li class="main-menu-li" id="main-menu-li-a-3">
+                <li class="main-menu-li" id="main-menu-li-a-3" onclick="btnAps(3)">
                     <div class="main-menu-link-box">
-                        <span class="main-menu-link" id="portofolio-btn">Portofolio</span>
+                        <span class="main-menu-link" onclick="btnAps(3)">Portofolio</span>
                     </div>
                 </li>
                 <div id="main-menu-border-3" class="main-menu-border"></div>
-                <li class="main-menu-li" id="main-menu-li-a-4">
+                <li class="main-menu-li" id="main-menu-li-a-4" onclick="btnAps(4)">
                     <div class="main-menu-link-box">
-                        <span class="main-menu-link" id="platforms-btn">Platforms</span>
+                        <span class="main-menu-link" onclick="btnAps(4)">Platforms</span>
                     </div>
                 </li>
                 <div id="main-menu-border-4" class="main-menu-border"></div>
-                <li class="main-menu-li" id="main-menu-li-a-5">
+                <li class="main-menu-li" id="main-menu-li-a-5" onclick="btnAps(5)">
                     <div class="main-menu-link-box">
-                        <span class="main-menu-link" id="contact-btn">Contact</span>
+                        <span class="main-menu-link" onclick="btnAps(5)">Contact</span>
                     </div>
                 </li>
                 <div id="main-menu-border-5" class="main-menu-border"></div>
-                <li class="main-menu-li" id="main-menu-li-a-6">
+                <li class="main-menu-li" id="main-menu-li-a-6" onclick="btnAps(6)">
                     <div class="main-menu-link-box">
-                        <span class="main-menu-link" id="login-menu-btn">Login</span>
+                        <span class="main-menu-link" onclick="btnAps(6)">Login</span>
                     </div>
                 </li>
                 <div id="language-switcher" class="language-switcher">
@@ -141,7 +141,7 @@
                 <circle r="30.5px" cx="32.5" cy="32.5" id="scroll-down-circle-2"></circle>
             </svg>
 
-            <div id="scroll-down-cirlce">
+            <div id="scroll-down-cirlce" onclick="scrollDownBtn()">
                 <span id="scroll-down-arrow">
                     <i id="fa-arrow-down" class="fas fa-arrow-down"></i>
                 </span>
