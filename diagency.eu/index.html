@@ -36,9 +36,6 @@
 
 </head>
 
-<!--  -->
-
-
 
 <body onmousewheel="checkScroll(event)" onload="pageStart()">
 
@@ -73,37 +70,37 @@
             <ul id="main-menu-ul">
                 <li class="main-menu-li" id="main-menu-li-a-1">
                     <div class="main-menu-link-box">
-                        <span class="main-menu-link" onclick="btnAps(1)">Home</span>
+                        <span class="main-menu-link" id="home-btn">Home</span>
                     </div>
                 </li>
                 <div id="main-menu-border-1" class="main-menu-border"></div>
                 <li class="main-menu-li" id="main-menu-li-a-2">
                     <div class="main-menu-link-box">
-                        <span class="main-menu-link" onclick="btnAps(2)">About us</span>
+                        <span class="main-menu-link" id="about-us-btn">About us</span>
                     </div>
                 </li>
                 <div id="main-menu-border-2" class="main-menu-border"></div>
                 <li class="main-menu-li" id="main-menu-li-a-3">
                     <div class="main-menu-link-box">
-                        <span class="main-menu-link" onclick="btnAps(3)">Portofolio</span>
+                        <span class="main-menu-link" id="portofolio-btn">Portofolio</span>
                     </div>
                 </li>
                 <div id="main-menu-border-3" class="main-menu-border"></div>
                 <li class="main-menu-li" id="main-menu-li-a-4">
                     <div class="main-menu-link-box">
-                        <span class="main-menu-link" onclick="btnAps(4)">Platforms</span>
+                        <span class="main-menu-link" id="platforms-btn">Platforms</span>
                     </div>
                 </li>
                 <div id="main-menu-border-4" class="main-menu-border"></div>
                 <li class="main-menu-li" id="main-menu-li-a-5">
                     <div class="main-menu-link-box">
-                        <span class="main-menu-link" onclick="btnAps(5)">Contact</span>
+                        <span class="main-menu-link" id="contact-btn">Contact</span>
                     </div>
                 </li>
                 <div id="main-menu-border-5" class="main-menu-border"></div>
                 <li class="main-menu-li" id="main-menu-li-a-6">
                     <div class="main-menu-link-box">
-                        <span class="main-menu-link" onclick="btnAps(6)">Login</span>
+                        <span class="main-menu-link" id="login-menu-btn">Login</span>
                     </div>
                 </li>
                 <div id="language-switcher" class="language-switcher">
@@ -144,7 +141,7 @@
                 <circle r="30.5px" cx="32.5" cy="32.5" id="scroll-down-circle-2"></circle>
             </svg>
 
-            <div id="scroll-down-cirlce" onclick="scrollDownBtn()">
+            <div id="scroll-down-cirlce">
                 <span id="scroll-down-arrow">
                     <i id="fa-arrow-down" class="fas fa-arrow-down"></i>
                 </span>
@@ -287,15 +284,23 @@
             </div>
         </div>
 
+        <!-- Login page -->
+
         <div class="page" id="login">
             <div class="center-col" id="login-full-page">
 
                 <img id="promoapp-logo" src="resources/img/altpromoapp.png" alt="promoapp">
                 <a id="login-btn" href="https://campaigns.promoapp.ro/admin/login">
                     <span><i class="fas fa-lock"></i> Log-in to
-                        PROMOAPP</span></a>
+                        PROMOAPP</span>
+                </a>
 
             </div>
+            <!-- <div id="login-page-background">
+                <div id="login-page-animation">
+                    
+                </div>
+            </div> -->
         </div>
 
         <!--  -->

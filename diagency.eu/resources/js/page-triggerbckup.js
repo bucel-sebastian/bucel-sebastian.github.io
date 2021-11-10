@@ -1,16 +1,6 @@
-let pageIndex = 1;
+
+var pageIndex = 1;
 let scrollTimeout = 0;
-
-let homeBtn = document.getElementById("home-btn");
-let aboutBtn = document.getElementById("about-us-btn");
-let portofolioBtn = document.getElementById("portofolio-btn");
-let platformsBtn = document.getElementById("platforms-btn");
-let contactBtn = document.getElementById("contact-btn");
-let loginBtn = document.getElementById("login-menu-btn");
-
-let scrollDownBtn = document.getElementById("scroll-down-btn");
-
-
 
 
 function scrollArrowBlack() {
@@ -24,9 +14,8 @@ function scrollArrowWhite() {
     document.getElementById("fa-arrow-down-clone").style.color = "#fff";
 }
 
-// Set page
-
 function setPage(page) {
+    console.log(pageIndex);
     if (page === 1) {
         home();
     }
@@ -51,135 +40,52 @@ function setPage(page) {
 }
 
 
-// menu buttons events
 
-homeBtn.addEventListener("click", () => {
-    console.log("merge");
-    if (scrollTimeout != 1) {
+function btnAps(x) {
+    if (scrollTimeout === 0) {
         scrollTimeout = 1;
-        pageIndex = 1;
-        setPage(pageIndex);
-        toggleMenu();
-        setTimeout(() => {
-            scrollTimeout = 0;
-        }, 1000);
-    }
-}, false);
-
-aboutBtn.addEventListener("click", () => {
-    if (scrollTimeout != 1) {
-        scrollTimeout = 1;
-        pageIndex = 2;
-        setPage(pageIndex);
-        toggleMenu();
-        setTimeout(() => {
-            scrollTimeout = 0;
-        }, 1000);
-    }
-}, false);
-
-portofolioBtn.addEventListener("click", () => {
-    if (scrollTimeout != 1) {
-        scrollTimeout = 1;
-        pageIndex = 3;
-        setPage(pageIndex);
-        toggleMenu();
-        setTimeout(() => {
-            scrollTimeout = 0;
-        }, 1000);
-    }
-}, false);
-
-platformsBtn.addEventListener("click", () => {
-    if (scrollTimeout != 1) {
-        scrollTimeout = 1;
-        pageIndex = 4;
-        setPage(pageIndex);
-        toggleMenu();
-        setTimeout(() => {
-            scrollTimeout = 0;
-        }, 1000);
-    }
-}, false);
-
-contactBtn.addEventListener("click", () => {
-    if (scrollTimeout != 1) {
-        scrollTimeout = 1;
-        pageIndex = 5;
-        setPage(pageIndex);
-        toggleMenu();
-        setTimeout(() => {
-            scrollTimeout = 0;
-        }, 1000);
-    }
-}, false);
-
-loginBtn.addEventListener("click touchstart", () => {
-    if (scrollTimeout != 1) {
-        scrollTimeout = 1;
-        pageIndex = 7;
-        setPage(pageIndex);
-        toggleMenu();
-        setTimeout(() => {
-            scrollTimeout = 0;
-        }, 1000);
-    }
-}, false);
-
-// Scroll Down Button
-
-scrollDownBtn.addEventListener("click", () => {
-    if (scrollTimeout != 1) {
-        scrollTimeout = 1;
-        if (pageIndex < 7) {
-            pageIndex++;
+        if (x === 1) {
+            pageIndex = 1;
             setPage(pageIndex);
+            console.log("home");
         }
-        else {
+        else if (x === 2) {
+            pageIndex = 2;
+            setPage(pageIndex);
+            console.log("about us");
+        }
+        else if (x === 3) {
+            pageIndex = 3;
+            setPage(pageIndex);
+            console.log("portofolio");
+        }
+        else if (x === 4) {
+            pageIndex = 4;
+            setPage(pageIndex);
+
+        }
+        else if (x === 5) {
+            pageIndex = 5;
+            setPage(pageIndex);
+            alert('contact');
+            console.log("contact");
+        }
+        else if (x === 6) {
             pageIndex = 7;
             setPage(pageIndex);
+            alert('login');
+            console.log("login");
         }
+        toggleMenu();
         setTimeout(() => {
             scrollTimeout = 0;
-        }, 1000);
+        }, 700);
     }
-})
 
-
-// Check Scroll
-
-function checkScroll(event) {
-    var y = event.deltaY;
-    if (scrollTimeout != 1) {
-        scrollTimeout = 1;
-        if (y > 0) {
-            scrollDown();
-            setTimeout(() => {
-                scrollTimeout = 0;
-            }, 1000);
-        }
-        else {
-            scrollUp();
-            setTimeout(() => {
-                scrollTimeout = 0;
-            }, 1000);
-        }
-    }
 }
 
-// Scroll up / down
 
-function scrollDown() {
-    if (pageIndex < 7) {
-        pageIndex++;
-        setPage(pageIndex);
-    }
-    else {
-        pageIndex = 7;
-        setPage(pageIndex);
-    }
-}
-
+// SCOLL FUNCTIONS
 function scrollUp() {
     if (pageIndex > 1) {
         pageIndex--;
@@ -190,39 +96,74 @@ function scrollUp() {
         setPage(pageIndex);
     }
 }
+function scrollDown() {
+    if (pageIndex < 10) {
+        pageIndex++;
+        setPage(pageIndex);
+    }
+    else {
+        pageIndex = 10;
+        setPage(pageIndex);
+    }
+}
 
-
-// Touch Events
-
-document.body.addEventListener("touchstart", e => {
-    touchStartY = e.changedTouches[0].screenY;
-}, false);
-
-document.body.addEventListener("touchend", e => {
-    touchEndY = e.changedTouches[0].screenY;
-
-    if (scrollTimeout != 1) {
+function scrollDownBtn() {
+    if (scrollTimeout === 0) {
         scrollTimeout = 1;
-        touchGesture(touchStartY, touchEndY);
+        scrollDown();
         setTimeout(() => {
             scrollTimeout = 0;
         }, 1000);
     }
+}
 
+function checkScroll(event) {
+    var y = event.deltaY;
+    if (scrollTimeout === 0) {
+        if (y > 0) {
+            scrollTimeout = 1;
+            scrollDown();
+            setTimeout(() => {
+                scrollTimeout = 0;
+            }, 1000);
+        }
+        else {
+            scrollTimeout = 1;
+            scrollUp();
+            setTimeout(() => {
+                scrollTimeout = 0;
+            }, 1000);
+        }
+    }
+}
+
+// SCROLL FUNCTONS STOP
+
+document.body.addEventListener("touchstart", e => {
+    touchStartY = e.changedTouches[0].screenY;
+    console.log("touchend", touchStartY);
+}, false);
+document.body.addEventListener("touchend", e => {
+    touchEndY = e.changedTouches[0].screenY;
+    console.log("touchend", touchEndY);
+
+    touchGesture();
 }, false);
 
-function touchGesture(yStart, yEnd) {
-    if (yStart > yEnd) {
-        if (pageIndex < 7) {
+function touchGesture() {
+    if (touchEndY < touchStartY) {
+        console.log("down");
+        if (pageIndex < 10) {
             pageIndex++;
             setPage(pageIndex);
         }
         else {
-            pageIndex = 7;
+            pageIndex = 10;
             setPage(pageIndex);
         }
     }
-    if (yStart < yEnd) {
+    if (touchEndY > touchStartY) {
+        console.log("up");
         if (pageIndex > 1) {
             pageIndex--;
             setPage(pageIndex);
@@ -233,21 +174,6 @@ function touchGesture(yStart, yEnd) {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //////////////// Page Variables ////////////////////////////////
 
@@ -445,4 +371,100 @@ function loginPage() {
     loginFullPage.style.transform = "translate(0)";
 
 
+}
+// function page2() {
+
+//     page3top.style.transform = "translateX(100%)";
+//     page3bottom.style.transform = "translateX(-100%)";
+
+//     page2right.style.transform = "translateX(0)";
+//     page2left.style.transform = "translateX(0)";
+
+//     page2right1.style.transform = "translateY(0)";
+//     page2right2.style.transform = "translateY(0)";
+
+// }
+
+// function page3() {
+
+//     page2right.style.transform = "translateX(0)";
+//     page2left.style.transform = "translateX(0)";
+
+//     page2right1.style.transform = "translateY(0)";
+//     page2right2.style.transform = "translateY(0)";
+
+
+//     page3top.style.transform = "translateX(0)";
+//     page3bottom.style.transform = "translateX(0)";
+
+// }
+
+function page4() {
+    console.log("page4");
+}
+function page5() {
+    console.log("page5");
+}
+function page6() {
+    console.log("page6");
+}
+
+
+
+
+// Transition 1
+// 2 rows each slide left and right
+// function pageEnter() {
+//     document.getElementById("box1").style.transform = "translateX(0)";
+//     document.getElementById("box2").style.transform = "translateX(0)";
+// }
+
+// Transition 2
+// 2 rows each slide top and bottom
+// function pageEnter() {
+//     document.getElementById("box1").style.transform = "translateY(0)";
+//     document.getElementById("box2").style.transform = "translateY(0)";
+// }
+
+// Transition 3
+// 2 cols each slide top and bottom
+// function pageEnter() {
+//     document.getElementById("box1").style.transform = "translateY(0)";
+//     document.getElementById("box2").style.transform = "translateY(0)";
+// }
+
+// Transition 4
+// 2 cols each slide left and right
+// function pageEnter() {
+//     document.getElementById("box1").style.transform = "translateX(0)";
+//     document.getElementById("box2").style.transform = "translateX(0)";
+// }
+
+// Transition 5
+// 1 row 2 cols 2 rows
+function pageEnter2() {
+    console.log("empty");
+}
+
+// Transition 6
+// 1 row 2 cols 2 rows 
+// function pageEnter() {
+//     document.getElementById("box1").style.transform = "translate(0)";
+//     setTimeout(() => {
+//         document.getElementById("box2").style.transform = "translate(0)";
+//         setTimeout(() => {
+//             document.getElementById("box3").style.transform = "translate(0)";
+//         }, 100);
+//     }, 150);
+// }
+
+//Transition 7
+//4 boxes
+
+function pageEnter() {
+    console.log("empty");
+    // document.getElementById("box1").style.transform = "translate(0)";
+    // document.getElementById("box2").style.transform = "translate(0)";
+    // document.getElementById("box3").style.transform = "translate(0)";
+    // document.getElementById("box4").style.transform = "translate(0)";
 }
