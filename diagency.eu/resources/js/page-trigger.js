@@ -67,13 +67,11 @@ function btnAps(x) {
         else if (x === 5) {
             pageIndex = 5;
             setPage(pageIndex);
-            alert('contact');
             console.log("contact");
         }
         else if (x === 6) {
             pageIndex = 7;
             setPage(pageIndex);
-            alert('login');
             console.log("login");
         }
         toggleMenu();
@@ -140,39 +138,55 @@ function checkScroll(event) {
 // SCROLL FUNCTONS STOP
 
 document.body.addEventListener("touchstart", e => {
-    touchStartY = e.changedTouches[0].screenY;
-    console.log("touchend", touchStartY);
+    if (document.getElementById("main-menu").classList.contains("change-main-menu")) {
+        console.log("menu open");
+    }
+    else {
+        touchStartY = e.changedTouches[0].screenY;
+        console.log("touchend", touchStartY);
+    }
+
 }, false);
 document.body.addEventListener("touchend", e => {
-    touchEndY = e.changedTouches[0].screenY;
-    console.log("touchend", touchEndY);
+    if (document.getElementById("main-menu").classList.contains("change-main-menu")) {
+        console.log("menu open");
+    }
+    else {
+        touchEndY = e.changedTouches[0].screenY;
+        console.log("touchend", touchEndY);
 
-    touchGesture();
+        touchGesture();
+    }
+
 }, false);
 
 function touchGesture() {
-    if (touchEndY < touchStartY) {
-        console.log("down");
-        if (pageIndex < 10) {
-            pageIndex++;
-            setPage(pageIndex);
+
+    if (touchEndY - touchStartY > 100 || touchStartY - touchEndY > 100) {
+        if (touchEndY < touchStartY) {
+            console.log("down");
+            if (pageIndex < 10) {
+                pageIndex++;
+                setPage(pageIndex);
+            }
+            else {
+                pageIndex = 10;
+                setPage(pageIndex);
+            }
         }
-        else {
-            pageIndex = 10;
-            setPage(pageIndex);
+        if (touchEndY > touchStartY) {
+            console.log("up");
+            if (pageIndex > 1) {
+                pageIndex--;
+                setPage(pageIndex);
+            }
+            else {
+                pageIndex = 1;
+                setPage(pageIndex);
+            }
         }
     }
-    if (touchEndY > touchStartY) {
-        console.log("up");
-        if (pageIndex > 1) {
-            pageIndex--;
-            setPage(pageIndex);
-        }
-        else {
-            pageIndex = 1;
-            setPage(pageIndex);
-        }
-    }
+
 }
 
 //////////////// Page Variables ////////////////////////////////
@@ -195,6 +209,7 @@ let contact2FullPage = document.getElementById("contact2-full-page");
 
 let login = document.getElementById("login");
 let loginFullPage = document.getElementById("login-full-page");
+let loginBackground = document.getElementById("login-page-background");
 
 
 
@@ -227,6 +242,24 @@ function home() {
 
     // Login
     loginFullPage.style.transform = "translateY(-100%)";
+    loginBackground.style.transform = "translateY(-100%)";
+    // Login Animations
+    document.getElementById("Graph-Line-1").style.transitionDelay = "0s";
+    document.getElementById("Graph-Line-2").style.transitionDelay = "0s";
+    document.getElementById("Line-1").style.transitionDelay = "0s";
+    document.getElementById("Line-2").style.transitionDelay = "0s";
+    document.getElementById("Line-3").style.transitionDelay = "0s";
+    document.getElementById("Line-4").style.transitionDelay = "0s";
+    document.getElementById("Circle-1-full").style.transitionDelay = "0s";
+    document.getElementById("Circle-2-full").style.transitionDelay = "0s";
+    document.getElementById("Graph-Line-1").style.strokeDashoffset = "1600";
+    document.getElementById("Graph-Line-2").style.strokeDashoffset = "1600";
+    document.getElementById("Line-1").style.strokeDashoffset = "600";
+    document.getElementById("Line-2").style.strokeDashoffset = "600";
+    document.getElementById("Line-3").style.strokeDashoffset = "600";
+    document.getElementById("Line-4").style.strokeDashoffset = "600";
+    document.getElementById("Circle-1-full").style.transform = "rotate(180deg)";
+    document.getElementById("Circle-2-full").style.transform = "rotate(-180deg)";
 
     // all pages
 
@@ -259,6 +292,24 @@ function platformsPage() {
 
     // Login
     loginFullPage.style.transform = "translateY(-100%)";
+    loginBackground.style.transform = "translateY(-100%)";
+    // Login Animations
+    document.getElementById("Graph-Line-1").style.transitionDelay = "0s";
+    document.getElementById("Graph-Line-2").style.transitionDelay = "0s";
+    document.getElementById("Line-1").style.transitionDelay = "0s";
+    document.getElementById("Line-2").style.transitionDelay = "0s";
+    document.getElementById("Line-3").style.transitionDelay = "0s";
+    document.getElementById("Line-4").style.transitionDelay = "0s";
+    document.getElementById("Circle-1-full").style.transitionDelay = "0s";
+    document.getElementById("Circle-2-full").style.transitionDelay = "0s";
+    document.getElementById("Graph-Line-1").style.strokeDashoffset = "1600";
+    document.getElementById("Graph-Line-2").style.strokeDashoffset = "1600";
+    document.getElementById("Line-1").style.strokeDashoffset = "600";
+    document.getElementById("Line-2").style.strokeDashoffset = "600";
+    document.getElementById("Line-3").style.strokeDashoffset = "600";
+    document.getElementById("Line-4").style.strokeDashoffset = "600";
+    document.getElementById("Circle-1-full").style.transform = "rotate(180deg)";
+    document.getElementById("Circle-2-full").style.transform = "rotate(-180deg)";
 
     // all pages
 
@@ -294,6 +345,24 @@ function contact1Page() {
 
     // Login
     loginFullPage.style.transform = "translateY(-100%)";
+    loginBackground.style.transform = "translateY(-100%)";
+    // Login Animations
+    document.getElementById("Graph-Line-1").style.transitionDelay = "0s";
+    document.getElementById("Graph-Line-2").style.transitionDelay = "0s";
+    document.getElementById("Line-1").style.transitionDelay = "0s";
+    document.getElementById("Line-2").style.transitionDelay = "0s";
+    document.getElementById("Line-3").style.transitionDelay = "0s";
+    document.getElementById("Line-4").style.transitionDelay = "0s";
+    document.getElementById("Circle-1-full").style.transitionDelay = "0s";
+    document.getElementById("Circle-2-full").style.transitionDelay = "0s";
+    document.getElementById("Graph-Line-1").style.strokeDashoffset = "1600";
+    document.getElementById("Graph-Line-2").style.strokeDashoffset = "1600";
+    document.getElementById("Line-1").style.strokeDashoffset = "600";
+    document.getElementById("Line-2").style.strokeDashoffset = "600";
+    document.getElementById("Line-3").style.strokeDashoffset = "600";
+    document.getElementById("Line-4").style.strokeDashoffset = "600";
+    document.getElementById("Circle-1-full").style.transform = "rotate(180deg)";
+    document.getElementById("Circle-2-full").style.transform = "rotate(-180deg)";
 
 
     setTimeout(() => {
@@ -314,6 +383,7 @@ function contact1Page() {
 
 function contact2Page() {
 
+    scrollArrowWhite();
 
     // other pages start
 
@@ -330,6 +400,28 @@ function contact2Page() {
 
     //Login
     loginFullPage.style.transform = "translateY(-100%)";
+    loginBackground.style.transform = "translateY(-100%)";
+    // Login Animations
+    document.getElementById("Graph-Line-1").style.transitionDelay = "0s";
+    document.getElementById("Graph-Line-2").style.transitionDelay = "0s";
+    document.getElementById("Line-1").style.transitionDelay = "0s";
+    document.getElementById("Line-2").style.transitionDelay = "0s";
+    document.getElementById("Line-3").style.transitionDelay = "0s";
+    document.getElementById("Line-4").style.transitionDelay = "0s";
+    document.getElementById("Circle-1-full").style.transitionDelay = "0s";
+    document.getElementById("Circle-2-full").style.transitionDelay = "0s";
+    document.getElementById("Graph-Line-1").style.strokeDashoffset = "1600";
+    document.getElementById("Graph-Line-2").style.strokeDashoffset = "1600";
+    document.getElementById("Line-1").style.strokeDashoffset = "600";
+    document.getElementById("Line-2").style.strokeDashoffset = "600";
+    document.getElementById("Line-3").style.strokeDashoffset = "600";
+    document.getElementById("Line-4").style.strokeDashoffset = "600";
+    document.getElementById("Circle-1-full").style.transform = "rotate(180deg)";
+    document.getElementById("Circle-2-full").style.transform = "rotate(-180deg)";
+
+
+
+
 
     setTimeout(() => {
         login.style.transform = "translate(500%)";
@@ -344,6 +436,8 @@ function contact2Page() {
 
 
 function loginPage() {
+
+    scrollArrowBlack();
 
     //other pages start
 
@@ -369,6 +463,26 @@ function loginPage() {
 
     login.style.transform = "translate(0)";
     loginFullPage.style.transform = "translate(0)";
+    loginBackground.style.transform = "translate(0)";
+
+    // Animations
+    document.getElementById("Graph-Line-1").style.transitionDelay = "2s";
+    document.getElementById("Graph-Line-2").style.transitionDelay = "1s";
+    document.getElementById("Line-1").style.transitionDelay = "1.5s";
+    document.getElementById("Line-2").style.transitionDelay = "2s";
+    document.getElementById("Line-3").style.transitionDelay = "2.5s";
+    document.getElementById("Line-4").style.transitionDelay = "3s";
+    document.getElementById("Circle-1-full").style.transitionDelay = "1.1s";
+    document.getElementById("Circle-2-full").style.transitionDelay = "1s";
+
+    document.getElementById("Graph-Line-1").style.strokeDashoffset = "0";
+    document.getElementById("Graph-Line-2").style.strokeDashoffset = "0";
+    document.getElementById("Line-1").style.strokeDashoffset = "0";
+    document.getElementById("Line-2").style.strokeDashoffset = "0";
+    document.getElementById("Line-3").style.strokeDashoffset = "0";
+    document.getElementById("Line-4").style.strokeDashoffset = "0";
+    document.getElementById("Circle-1-full").style.transform = "rotate(0)";
+    document.getElementById("Circle-2-full").style.transform = "rotate(0)";
 
 
 }

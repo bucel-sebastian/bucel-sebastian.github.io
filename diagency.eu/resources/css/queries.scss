@@ -1,0 +1,134 @@
+
+/* Smaller LAPTOP */
+@media only screen and (max-width: 1366px){
+    #login-page-background{
+        padding:0 100px;
+
+    }
+}
+
+
+/* IPAD PRO */
+@media only screen and (max-width: 1025px){
+    .platform-logo{
+        width: 70%;
+    }
+    #provBrand-text{
+        padding: 0 0 0 50px;
+    }
+    #promoapp-text{
+        padding: 0 50px 0 0;
+    }
+    #login-page-background{
+        padding:0 10px;
+
+    }
+
+}
+
+
+
+
+
+
+/* IPAD */
+@media only screen and (max-width: 768px) {
+
+    html{
+        font-size: 22px;
+    }
+
+    header{
+        height: 80px;
+    }
+
+    #logo{
+        width: 154px;
+    }
+    #header-container{
+        padding: 20px 20px 20px 10px;
+    }
+    #login-page-background{
+        width: 200%;
+        height: 200%;
+        top: -100%;
+        left: -100%;
+        padding:0 300px;
+
+    }
+
+}
+
+/* GALAXY FOLD (512px) */
+@media only screen and (max-width: 550px){
+    html{
+        font-size: 18px;
+    }
+    .platform-logo{
+        margin: 0 5px;
+        width: 90%;
+    }
+    #provBrand-text p{
+        text-align: left;
+    }
+    #promoapp-logo{
+        width: 350px;
+    }
+    #login-btn span{
+        font-size: 100%;
+    }
+}
+
+
+/* DE RETINUT CA SA VEZI CUM E PE IPHONE 380px x 622px */
+/* IPHONE X (376px) */
+@media only screen and (max-width: 450px){
+    html{
+        font-size: 16px;
+    }
+
+
+    .main-menu-link{
+        font-size: 130%;
+    }
+    
+    #scroll-down-btn{
+        bottom: 20px;
+    }
+
+    #main-menu-border-1,
+    #main-menu-border-2,
+    #main-menu-border-3,
+    #main-menu-border-4,
+    #main-menu-border-5{
+        margin: 10px 0;
+    }
+    .language-switcher{
+        height: 150px;
+    }
+    .contact-form-field,
+    .contact-form-field-container,
+    .contact-form-gdpr-field{
+        width: 300px;
+    }
+
+    .contact-form-field-container{
+        margin:0;
+    }
+    .contact-form-gdpr-field{
+        margin-top: 10px;
+    }
+
+
+    #promoapp-logo{
+        width: 300px;
+    }
+    #login-page-background{
+        width: 400%;
+        height: 400%;
+        top: -150%;
+        left: -150%;
+        padding:0 300px;
+
+    }
+}
