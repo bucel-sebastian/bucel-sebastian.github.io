@@ -12,29 +12,40 @@
   padding: 0;
 }
 
-/* line 32, ../Websites/test-server/resources/scss/style.scss */
+/* line 31, ../Websites/test-server/resources/scss/style.scss */
+#page-header {
+  position: fixed;
+  width: 100%;
+}
+
+/* line 35, ../Websites/test-server/resources/scss/style.scss */
+#header-wrapper {
+  width: 100%;
+  padding: 0 25px;
+}
+
+/* line 39, ../Websites/test-server/resources/scss/style.scss */
 .header-row {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0 25px;
 }
 
-/* line 41, ../Websites/test-server/resources/scss/style.scss */
+/* line 48, ../Websites/test-server/resources/scss/style.scss */
 .header-logo-container img {
   height: 90px;
   width: auto;
   opacity: 0;
 }
 
-/* line 47, ../Websites/test-server/resources/scss/style.scss */
+/* line 54, ../Websites/test-server/resources/scss/style.scss */
 .burger-menu {
   cursor: pointer;
 }
 
-/* line 51, ../Websites/test-server/resources/scss/style.scss */
+/* line 58, ../Websites/test-server/resources/scss/style.scss */
 .burger-menu-text {
   cursor: pointer;
   display: flex;
@@ -44,12 +55,12 @@
   font-size: 28px;
 }
 
-/* line 59, ../Websites/test-server/resources/scss/style.scss */
+/* line 66, ../Websites/test-server/resources/scss/style.scss */
 .burger-menu-text span {
   font-size: 28px;
 }
 
-/* line 62, ../Websites/test-server/resources/scss/style.scss */
+/* line 69, ../Websites/test-server/resources/scss/style.scss */
 .bar {
   width: 90%;
   height: 3px;
@@ -59,26 +70,26 @@
   transition: 0.3s ease;
 }
 
-/* line 71, ../Websites/test-server/resources/scss/style.scss */
+/* line 78, ../Websites/test-server/resources/scss/style.scss */
 .bar-2 {
   margin-left: auto;
   margin-right: 0;
 }
 
-/* line 76, ../Websites/test-server/resources/scss/style.scss */
+/* line 83, ../Websites/test-server/resources/scss/style.scss */
 .burger-menu:hover .bar-2 {
   margin-left: 0;
   margin-right: auto;
 }
 
-/* line 80, ../Websites/test-server/resources/scss/style.scss */
+/* line 87, ../Websites/test-server/resources/scss/style.scss */
 .burger-menu:hover .bar-1,
 .burger-menu:hover .bar-3 {
   margin-left: auto;
   margin-right: 0;
 }
 
-/* line 93, ../Websites/test-server/resources/scss/style.scss */
+/* line 100, ../Websites/test-server/resources/scss/style.scss */
 .footer-1 {
   padding: 0 25px;
   background-color: #fff;
@@ -86,13 +97,13 @@
   border-bottom: 1px solid #CF1C30;
 }
 
-/* line 100, ../Websites/test-server/resources/scss/style.scss */
+/* line 107, ../Websites/test-server/resources/scss/style.scss */
 .footer-2 {
   padding: 25px 25px;
   background-color: #000;
 }
 
-/* line 105, ../Websites/test-server/resources/scss/style.scss */
+/* line 112, ../Websites/test-server/resources/scss/style.scss */
 .footer-2 .footer-row {
   display: flex;
   flex-direction: row;
@@ -101,7 +112,7 @@
   justify-content: space-between;
 }
 
-/* line 113, ../Websites/test-server/resources/scss/style.scss */
+/* line 120, ../Websites/test-server/resources/scss/style.scss */
 .footer-social-link {
   color: #fff;
   text-decoration: none;
@@ -110,17 +121,17 @@
   transition: 0.3s ease;
 }
 
-/* line 120, ../Websites/test-server/resources/scss/style.scss */
+/* line 127, ../Websites/test-server/resources/scss/style.scss */
 .footer-social-link:hover {
   color: #CF1C30;
 }
 
-/* line 123, ../Websites/test-server/resources/scss/style.scss */
+/* line 130, ../Websites/test-server/resources/scss/style.scss */
 .copyrights {
   color: #7F7F7F;
 }
 
-/* line 130, ../Websites/test-server/resources/scss/style.scss */
+/* line 137, ../Websites/test-server/resources/scss/style.scss */
 .heading {
   color: #323232;
   position: relative;
@@ -128,14 +139,14 @@
   padding: 10px 80px;
 }
 
-/* line 136, ../Websites/test-server/resources/scss/style.scss */
+/* line 143, ../Websites/test-server/resources/scss/style.scss */
 .heading-text {
   font-size: 38px;
   position: relative;
   z-index: 10;
 }
 
-/* line 141, ../Websites/test-server/resources/scss/style.scss */
+/* line 148, ../Websites/test-server/resources/scss/style.scss */
 .heading::before {
   content: "";
   width: 150px;
@@ -147,25 +158,124 @@
   background-color: #CF1C30;
 }
 
-/* line 151, ../Websites/test-server/resources/scss/style.scss */
+/* line 158, ../Websites/test-server/resources/scss/style.scss */
 .center-align {
   margin: 10px auto;
 }
 
-/* line 155, ../Websites/test-server/resources/scss/style.scss */
+/* line 162, ../Websites/test-server/resources/scss/style.scss */
 .left-align {
   margin: 10px auto 10px 0;
 }
 
-/* line 159, ../Websites/test-server/resources/scss/style.scss */
+/* line 166, ../Websites/test-server/resources/scss/style.scss */
 .right-align {
   margin: 10px 0 10px auto;
 }
 
-/* line 173, ../Websites/test-server/resources/scss/style.scss */
+/* line 180, ../Websites/test-server/resources/scss/style.scss */
 #hero-section {
+  position: relative;
   width: 100%;
   height: 100vh;
+  padding: 200px 0 0 0;
+}
+
+/* line 187, ../Websites/test-server/resources/scss/style.scss */
+.hero-text {
+  margin: 0 0 0 180px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* line 195, ../Websites/test-server/resources/scss/style.scss */
+.hero-text span {
+  margin-top: 10px;
+  font-size: 86px;
+}
+
+/* line 199, ../Websites/test-server/resources/scss/style.scss */
+#hero-text-we {
+  position: relative;
+}
+
+/* line 202, ../Websites/test-server/resources/scss/style.scss */
+#hero-text-we::before {
+  content: "";
+  position: absolute;
+  width: 600%;
+  height: 3px;
+  bottom: 0;
+  left: -600%;
+  background-color: #CF1C30;
+}
+
+/* line 212, ../Websites/test-server/resources/scss/style.scss */
+.hero-img {
+  position: relative;
+  width: 250px;
+  margin-left: 100px;
+}
+
+/* line 217, ../Websites/test-server/resources/scss/style.scss */
+.hero-img img {
+  width: 100%;
+}
+
+/* line 220, ../Websites/test-server/resources/scss/style.scss */
+.hero-img::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #CF1C30;
+  bottom: -5%;
+  left: -70%;
+}
+
+/* line 232, ../Websites/test-server/resources/scss/style.scss */
+#hero-scroll {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 50px;
+}
+
+/* line 240, ../Websites/test-server/resources/scss/style.scss */
+.hero-scroll-btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  color: #CF1C30;
+  font-size: 24px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+/* line 251, ../Websites/test-server/resources/scss/style.scss */
+.hero-scroll-btn::before {
+  width: 85%;
+  height: 3px;
+  background-color: #CF1C30;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+}
+
+/* line 260, ../Websites/test-server/resources/scss/style.scss */
+.hero-scroll-btn::after {
+  width: 50%;
+  height: 3px;
+  background-color: #CF1C30;
+  position: absolute;
+  bottom: 10px;
+  right: -10%;
+  content: "";
 }
 
 /*# sourceMappingURL=style.css.map */
