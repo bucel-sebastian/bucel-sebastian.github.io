@@ -31,6 +31,7 @@ $textBlue: #0A142F;
 #page-header{
     position: fixed;
     width: 100%;
+    z-index: 1000;
 }
 #header-wrapper{
     width: 100%;
@@ -80,16 +81,24 @@ $textBlue: #0A142F;
     margin-right: 0;
 }
 
-.burger-menu:hover .bar-2{
-    margin-left: 0;
-    margin-right: auto;
+.closed-menu:hover .bar-2{
+    transform: translateX(-10%);
 }
-.burger-menu:hover .bar-1,
-.burger-menu:hover .bar-3{
-    margin-left: auto;
-    margin-right: 0;
+.closed-menu:hover .bar-1,
+.closed-menu:hover .bar-3{
+    transform: translateX(10%);
 }
 
+.menu-open .bar-1{
+    transform: translate(0px, 10px) rotate(45deg);
+}
+.menu-open .bar-3{
+    transform: translate(0px, -6px) rotate(-45deg);
+}
+.menu-open .bar-2{
+    transform: translateX(20px);
+    opacity: 0;
+}
 // Header - end
 
 
@@ -165,6 +174,30 @@ $textBlue: #0A142F;
 
 .right-align{
     margin:10px 0 10px auto;
+}
+
+.texting{
+    color:$black;
+    font-size: 22px;
+    position: relative;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.texting-center-align{
+    text-align: center;
+}
+
+.section-limited-width{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section-full-width{
+    max-width: 100%;
+    width: 100%;
 }
 
 
@@ -256,6 +289,7 @@ $textBlue: #0A142F;
     bottom: 0;
     left: 0;
     content: "";
+    transition: 0.3s ease;
 }
 .hero-scroll-btn::after{
     width: 50%;
@@ -265,8 +299,13 @@ $textBlue: #0A142F;
     bottom: 10px;
     right: -10%;
     content: "";
+    transition: 0.3s ease;
 }
-
-
+.hero-scroll-btn:hover::after{
+    transform: translateX(-160%);
+}
+.hero-scroll-btn:hover::before{
+    transform: translateX(15%);
+}
 
 // Hero section - end

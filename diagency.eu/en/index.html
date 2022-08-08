@@ -41,7 +41,7 @@
                         <img src="/resources/assets/img/logo.svg" alt="di agency">
                     </div>
                     <div class="header-menu-container">
-                        <div class="burger-menu">
+                        <div class="burger-menu closed-menu">
                             <div class="burger-menu-text">
                                 <span>ME</span>
                                 <span>NU</span>
@@ -122,6 +122,9 @@
 
     <div id="page-wrap">
         <div id="page-content">
+
+            <!-- HERO SECTION -->
+
             <div id="hero-section">
 
                 <div class="hero-text">
@@ -133,17 +136,41 @@
                     </div>
                 </div>
                 <div id="hero-scroll">
-                   <button class="hero-scroll-btn">
+                   <button class="hero-scroll-btn" id="scroll-down-btn">
                         <span>scroll</span>
                    </button> 
                 </div>
+                <div id="hero-background-animations">
+                    <span>WE</span>
+                    <span>ARE</span>
+                    <span>diagency</span>
+                    <span>CREATIVE</span>
+                    <span></span>
+                </div>
             </div>
-            <div>
+
+            <!-- ABOUT US SECTION -->
+
+            <div class="section section-limited-width" id="about-us">
+                <div class="heading center-align">
+                    <h2 class="heading-text">
+                        About us
+                    </h2>
+                </div>
+                <div class="texting texting-center-align">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quasi animi necessitatibus unde optio obcaecati incidunt, sequi dolorem error saepe vel. Molestiae optio neque dolorum praesentium iste vel consequatur et?
+                </div>
+            </div>
+            
+
+
+
+
+            <div class="section" id="about-us">
 
             </div>
-            <div>
 
-            </div>
+
         </div>
     </div>
 
@@ -152,11 +179,7 @@
 
 
     <div>
-        <div class="heading">
-            <h2 class="heading-text">
-                About us
-            </h2>
-        </div>
+        
         <div class="heading center-align">
             <h2 class="heading-text">
                 What they say about us
@@ -232,8 +255,18 @@
         </div>
     </footer>
 
-    <script src="/resources/js/menu.js"></script>
+<!-- JavaScript - start -->
 
+    <!-- ANIME JS -->
+    <script src="/resources/js/node_modules/animejs/lib/anime.min.js"></script>
+
+
+    <!--  -->
+
+    <script src="/resources/js/menu.js"></script>
+    <script src="/resources/js/animations/home.js"></script>
+
+<!-- JavaScript - end -->
 
 
 </body>
