@@ -1,0 +1,179 @@
+
+$black: #000;
+$white: #fff;
+$gray: #7F7F7F;
+
+$redPrimary: #C01C2B;
+$redAccent: #CF1C30;
+
+$headingGray: #323232;
+$textBlue: #0A142F;
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/resources/fonts/montserrat.ttf');
+}
+
+*{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+
+
+
+
+// Header - start
+
+.header-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.header-logo-container img{
+    height: 90px;
+    width: auto;
+    opacity: 0;
+}
+
+.burger-menu{
+    cursor: pointer;
+}
+
+.burger-menu-text{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    font-size: 28px;
+}
+.burger-menu-text span{
+    font-size: 28px;
+}
+.bar{
+    width: 90%;
+    height: 3px;
+    background-color: red;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: 0.3s ease;
+}
+
+.bar-2{
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.burger-menu:hover .bar-2{
+    margin-left: 0;
+    margin-right: auto;
+}
+.burger-menu:hover .bar-1,
+.burger-menu:hover .bar-3{
+    margin-left: auto;
+    margin-right: 0;
+}
+
+// Header - end
+
+
+
+
+
+// Footer - start
+.footer-1{
+    padding: 0 25px;
+    background-color: $white;
+    border-top: 1px solid $redAccent;
+    border-bottom: 1px solid $redAccent;
+}
+
+.footer-2{
+    padding: 25px 25px;
+    background-color: $black;
+}
+
+.footer-2 .footer-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.footer-social-link{
+    color: $white;
+    text-decoration: none;
+    font-size: 32px;
+    margin:0 5px;
+    transition: 0.3s ease;
+}
+.footer-social-link:hover{
+    color:$redAccent;
+}
+.copyrights{
+    color: $gray;
+}
+
+// Footer - end
+
+
+.heading{
+    color: $headingGray;
+    position: relative;
+    width: max-content;
+    padding: 10px 80px;    
+}
+.heading-text{
+    font-size: 38px;
+    position: relative;
+    z-index: 10;
+}
+.heading::before{
+    content:"";
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background-color: $redAccent;
+}
+.center-align{
+    margin:10px auto;
+}
+
+.left-align{
+    margin:10px auto 10px 0;
+}
+
+.right-align{
+    margin:10px 0 10px auto;
+}
+
+
+
+
+
+
+
+
+
+// Hero section - start
+
+#hero-section{
+    width: 100%;
+    height: 100vh;
+}
+
+
+// Hero section - end

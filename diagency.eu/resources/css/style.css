@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("/resources/fonts/montserrat.ttf");
+}
+
+/* line 18, ../Websites/test-server/resources/scss/style.scss */
+* {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 32, ../Websites/test-server/resources/scss/style.scss */
+.header-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+
+/* line 41, ../Websites/test-server/resources/scss/style.scss */
+.header-logo-container img {
+  height: 90px;
+  width: auto;
+  opacity: 0;
+}
+
+/* line 47, ../Websites/test-server/resources/scss/style.scss */
+.burger-menu {
+  cursor: pointer;
+}
+
+/* line 51, ../Websites/test-server/resources/scss/style.scss */
+.burger-menu-text {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  font-size: 28px;
+}
+
+/* line 59, ../Websites/test-server/resources/scss/style.scss */
+.burger-menu-text span {
+  font-size: 28px;
+}
+
+/* line 62, ../Websites/test-server/resources/scss/style.scss */
+.bar {
+  width: 90%;
+  height: 3px;
+  background-color: red;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  transition: 0.3s ease;
+}
+
+/* line 71, ../Websites/test-server/resources/scss/style.scss */
+.bar-2 {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* line 76, ../Websites/test-server/resources/scss/style.scss */
+.burger-menu:hover .bar-2 {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* line 80, ../Websites/test-server/resources/scss/style.scss */
+.burger-menu:hover .bar-1,
+.burger-menu:hover .bar-3 {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* line 93, ../Websites/test-server/resources/scss/style.scss */
+.footer-1 {
+  padding: 0 25px;
+  background-color: #fff;
+  border-top: 1px solid #CF1C30;
+  border-bottom: 1px solid #CF1C30;
+}
+
+/* line 100, ../Websites/test-server/resources/scss/style.scss */
+.footer-2 {
+  padding: 25px 25px;
+  background-color: #000;
+}
+
+/* line 105, ../Websites/test-server/resources/scss/style.scss */
+.footer-2 .footer-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+/* line 113, ../Websites/test-server/resources/scss/style.scss */
+.footer-social-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 32px;
+  margin: 0 5px;
+  transition: 0.3s ease;
+}
+
+/* line 120, ../Websites/test-server/resources/scss/style.scss */
+.footer-social-link:hover {
+  color: #CF1C30;
+}
+
+/* line 123, ../Websites/test-server/resources/scss/style.scss */
+.copyrights {
+  color: #7F7F7F;
+}
+
+/* line 130, ../Websites/test-server/resources/scss/style.scss */
+.heading {
+  color: #323232;
+  position: relative;
+  width: max-content;
+  padding: 10px 80px;
+}
+
+/* line 136, ../Websites/test-server/resources/scss/style.scss */
+.heading-text {
+  font-size: 38px;
+  position: relative;
+  z-index: 10;
+}
+
+/* line 141, ../Websites/test-server/resources/scss/style.scss */
+.heading::before {
+  content: "";
+  width: 150px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #CF1C30;
+}
+
+/* line 151, ../Websites/test-server/resources/scss/style.scss */
+.center-align {
+  margin: 10px auto;
+}
+
+/* line 155, ../Websites/test-server/resources/scss/style.scss */
+.left-align {
+  margin: 10px auto 10px 0;
+}
+
+/* line 159, ../Websites/test-server/resources/scss/style.scss */
+.right-align {
+  margin: 10px 0 10px auto;
+}
+
+/* line 173, ../Websites/test-server/resources/scss/style.scss */
+#hero-section {
+  width: 100%;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=style.css.map */
