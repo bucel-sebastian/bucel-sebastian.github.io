@@ -8,28 +8,26 @@
   src: url("/resources/fonts/Montserrat-Regular.ttf");
 }
 
-/* line 22, ../Websites/test-server/resources/scss/style.scss */
 * {
   font-family: 'Montserrat-bold';
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
-/* line 34, ../Websites/test-server/resources/scss/style.scss */
 #page-header {
   position: fixed;
   width: 100%;
   z-index: 1000;
+  transition: 0.5s ease;
 }
 
-/* line 39, ../Websites/test-server/resources/scss/style.scss */
 #header-wrapper {
   width: 100%;
   padding: 0 25px;
 }
 
-/* line 43, ../Websites/test-server/resources/scss/style.scss */
 .header-row {
   display: flex;
   flex-direction: row;
@@ -38,19 +36,17 @@
   justify-content: space-between;
 }
 
-/* line 52, ../Websites/test-server/resources/scss/style.scss */
 .header-logo-container img {
   height: 90px;
   width: auto;
   opacity: 0;
+  transition: 0.5s ease;
 }
 
-/* line 58, ../Websites/test-server/resources/scss/style.scss */
 .burger-menu {
   cursor: pointer;
 }
 
-/* line 62, ../Websites/test-server/resources/scss/style.scss */
 .burger-menu-text {
   cursor: pointer;
   display: flex;
@@ -58,14 +54,13 @@
   align-items: center;
   align-items: center;
   font-size: 28px;
+  transition: 0.3s ease;
 }
 
-/* line 70, ../Websites/test-server/resources/scss/style.scss */
 .burger-menu-text span {
   font-size: 28px;
 }
 
-/* line 73, ../Websites/test-server/resources/scss/style.scss */
 .bar {
   width: 90%;
   height: 3px;
@@ -75,40 +70,37 @@
   transition: 0.3s ease;
 }
 
-/* line 82, ../Websites/test-server/resources/scss/style.scss */
 .bar-2 {
   margin-left: auto;
   margin-right: 0;
 }
 
-/* line 87, ../Websites/test-server/resources/scss/style.scss */
 .closed-menu:hover .bar-2 {
   transform: translateX(-10%);
 }
 
-/* line 90, ../Websites/test-server/resources/scss/style.scss */
 .closed-menu:hover .bar-1,
 .closed-menu:hover .bar-3 {
   transform: translateX(10%);
 }
 
-/* line 95, ../Websites/test-server/resources/scss/style.scss */
 .menu-open .bar-1 {
   transform: translate(0px, 10px) rotate(45deg);
 }
 
-/* line 98, ../Websites/test-server/resources/scss/style.scss */
 .menu-open .bar-3 {
   transform: translate(0px, -6px) rotate(-45deg);
 }
 
-/* line 101, ../Websites/test-server/resources/scss/style.scss */
 .menu-open .bar-2 {
   transform: translateX(20px);
   opacity: 0;
 }
 
-/* line 112, ../Websites/test-server/resources/scss/style.scss */
+.menu-open .burger-menu-text {
+  color: #fff;
+}
+
 .footer-1 {
   padding: 20px 25px;
   background-color: #fff;
@@ -116,7 +108,6 @@
   border-bottom: 1px solid #CF1C30;
 }
 
-/* line 119, ../Websites/test-server/resources/scss/style.scss */
 .footer-1 .footer-row {
   display: flex;
   flex-direction: row;
@@ -126,13 +117,11 @@
   justify-content: space-around;
 }
 
-/* line 129, ../Websites/test-server/resources/scss/style.scss */
 .footer-2 {
   padding: 25px 25px;
   background-color: #000;
 }
 
-/* line 134, ../Websites/test-server/resources/scss/style.scss */
 .footer-2 .footer-row {
   display: flex;
   flex-direction: row;
@@ -141,7 +130,6 @@
   justify-content: space-between;
 }
 
-/* line 142, ../Websites/test-server/resources/scss/style.scss */
 .footer-social-link {
   color: #fff;
   text-decoration: none;
@@ -150,17 +138,14 @@
   transition: 0.3s ease;
 }
 
-/* line 149, ../Websites/test-server/resources/scss/style.scss */
 .footer-social-link:hover {
   color: #CF1C30;
 }
 
-/* line 152, ../Websites/test-server/resources/scss/style.scss */
 .copyrights {
   color: #7F7F7F;
 }
 
-/* line 159, ../Websites/test-server/resources/scss/style.scss */
 .heading, .heading-alternative {
   color: #323232;
   position: relative;
@@ -168,7 +153,6 @@
   padding: 10px 80px;
 }
 
-/* line 166, ../Websites/test-server/resources/scss/style.scss */
 .heading-red {
   color: #CF1C30;
   position: relative;
@@ -176,7 +160,6 @@
   padding: 10px 80px;
 }
 
-/* line 172, ../Websites/test-server/resources/scss/style.scss */
 .heading-red-stroke {
   text-shadow: -1px 1px #CF1C30, 1px 1px #CF1C30, 1px -1px #CF1C30, -1px -1px #CF1C30;
   color: #fff;
@@ -185,14 +168,12 @@
   padding: 10px 80px;
 }
 
-/* line 182, ../Websites/test-server/resources/scss/style.scss */
 .heading-text, .heading-alternative-text {
   font-size: 44px;
   position: relative;
   z-index: 10;
 }
 
-/* line 187, ../Websites/test-server/resources/scss/style.scss */
 .heading::before {
   content: "";
   width: 150px;
@@ -204,22 +185,18 @@
   background-color: #CF1C30;
 }
 
-/* line 197, ../Websites/test-server/resources/scss/style.scss */
 .center-align {
   margin: 10px auto;
 }
 
-/* line 201, ../Websites/test-server/resources/scss/style.scss */
 .left-align {
   margin: 10px auto 10px 0;
 }
 
-/* line 205, ../Websites/test-server/resources/scss/style.scss */
 .right-align {
   margin: 10px 0 10px auto;
 }
 
-/* line 209, ../Websites/test-server/resources/scss/style.scss */
 .texting {
   color: #000;
   font-size: 22px;
@@ -228,12 +205,10 @@
   margin: 10px auto;
 }
 
-/* line 217, ../Websites/test-server/resources/scss/style.scss */
 .texting-center-align {
   text-align: center;
 }
 
-/* line 221, ../Websites/test-server/resources/scss/style.scss */
 .section-limited-width {
   max-width: 1200px;
   width: 100%;
@@ -241,13 +216,11 @@
   position: relative;
 }
 
-/* line 228, ../Websites/test-server/resources/scss/style.scss */
 .section-full-width {
   max-width: 100%;
   width: 100%;
 }
 
-/* line 243, ../Websites/test-server/resources/scss/style.scss */
 #hero-section {
   position: relative;
   width: 100%;
@@ -255,7 +228,6 @@
   padding: 200px 0 0 0;
 }
 
-/* line 250, ../Websites/test-server/resources/scss/style.scss */
 .hero-text {
   margin: 0 0 0 180px;
   display: flex;
@@ -264,18 +236,15 @@
   justify-content: center;
 }
 
-/* line 258, ../Websites/test-server/resources/scss/style.scss */
 .hero-text span {
   margin-top: 10px;
   font-size: 86px;
 }
 
-/* line 262, ../Websites/test-server/resources/scss/style.scss */
 #hero-text-we {
   position: relative;
 }
 
-/* line 265, ../Websites/test-server/resources/scss/style.scss */
 #hero-text-we::before {
   content: "";
   position: absolute;
@@ -286,19 +255,16 @@
   background-color: #CF1C30;
 }
 
-/* line 275, ../Websites/test-server/resources/scss/style.scss */
 .hero-img {
   position: relative;
   width: 250px;
   margin-left: 100px;
 }
 
-/* line 280, ../Websites/test-server/resources/scss/style.scss */
 .hero-img img {
   width: 100%;
 }
 
-/* line 283, ../Websites/test-server/resources/scss/style.scss */
 .hero-img::before {
   content: "";
   position: absolute;
@@ -309,7 +275,6 @@
   left: -70%;
 }
 
-/* line 295, ../Websites/test-server/resources/scss/style.scss */
 #hero-scroll {
   width: 100%;
   display: flex;
@@ -318,7 +283,6 @@
   bottom: 50px;
 }
 
-/* line 303, ../Websites/test-server/resources/scss/style.scss */
 .hero-scroll-btn {
   cursor: pointer;
   background: none;
@@ -330,7 +294,6 @@
   padding-bottom: 15px;
 }
 
-/* line 314, ../Websites/test-server/resources/scss/style.scss */
 .hero-scroll-btn::before {
   width: 85%;
   height: 3px;
@@ -342,7 +305,6 @@
   transition: 0.3s ease;
 }
 
-/* line 324, ../Websites/test-server/resources/scss/style.scss */
 .hero-scroll-btn::after {
   width: 50%;
   height: 3px;
@@ -354,17 +316,14 @@
   transition: 0.3s ease;
 }
 
-/* line 334, ../Websites/test-server/resources/scss/style.scss */
 .hero-scroll-btn:hover::after {
   transform: translateX(-160%);
 }
 
-/* line 337, ../Websites/test-server/resources/scss/style.scss */
 .hero-scroll-btn:hover::before {
   transform: translateX(15%);
 }
 
-/* line 349, ../Websites/test-server/resources/scss/style.scss */
 .platforms-container {
   display: flex;
   flex-direction: row;
@@ -373,31 +332,26 @@
   width: 100%;
 }
 
-/* line 357, ../Websites/test-server/resources/scss/style.scss */
 .platform-link {
   width: 15%;
   margin: 0 25px;
 }
 
-/* line 362, ../Websites/test-server/resources/scss/style.scss */
 .platform-box {
   width: 100%;
   height: max-content;
 }
 
-/* line 367, ../Websites/test-server/resources/scss/style.scss */
 .platform-box img {
   width: 100%;
   height: max-content;
 }
 
-/* line 381, ../Websites/test-server/resources/scss/style.scss */
 .contact-form-container {
   width: 100%;
   padding: 10px 80px;
 }
 
-/* line 386, ../Websites/test-server/resources/scss/style.scss */
 .contact-form-container input,
 .contact-form-container textarea {
   width: 100%;
@@ -409,12 +363,10 @@
   font-size: 22px;
 }
 
-/* line 397, ../Websites/test-server/resources/scss/style.scss */
 .contact-form-container textarea {
   resize: vertical;
 }
 
-/* line 407, ../Websites/test-server/resources/scss/style.scss */
 .slider-button {
   border-radius: 1000px;
   border: 2px solid #CF1C30;
@@ -426,7 +378,6 @@
   font-size: 30px;
 }
 
-/* line 418, ../Websites/test-server/resources/scss/style.scss */
 .slider-button-alternative {
   border-radius: 1000px;
   border: none;
@@ -438,7 +389,6 @@
   font-size: 30px;
 }
 
-/* line 429, ../Websites/test-server/resources/scss/style.scss */
 .slider-row {
   display: flex;
   flex-direction: row;
@@ -447,13 +397,11 @@
   align-content: center;
 }
 
-/* line 445, ../Websites/test-server/resources/scss/style.scss */
 #certificates-slider {
   width: 90%;
   margin: 20px auto 0;
 }
 
-/* line 452, ../Websites/test-server/resources/scss/style.scss */
 #service-slider-buttons {
   display: flex;
   flex-direction: row;
@@ -462,7 +410,6 @@
   align-content: center;
 }
 
-/* line 460, ../Websites/test-server/resources/scss/style.scss */
 .slider-service-btn {
   width: 50px;
   height: 50px;
@@ -476,30 +423,50 @@
   transition: 0.3s ease;
 }
 
-/* line 473, ../Websites/test-server/resources/scss/style.scss */
 .slider-service-btn.active {
   background: #CF1C30;
   color: #fff;
 }
 
-/* line 478, ../Websites/test-server/resources/scss/style.scss */
 .slider-button-container {
   width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
-/* line 482, ../Websites/test-server/resources/scss/style.scss */
 .badge-img {
   width: 300px;
   height: auto;
   margin: 0 15px;
 }
 
-/* line 492, ../Websites/test-server/resources/scss/style.scss */
+.services-header {
+  width: max-content;
+  margin: 0 0 30px auto;
+  font-size: 28px;
+  color: #fff;
+  text-align: right;
+  position: relative;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+}
+
+.services-header::after {
+  content: "";
+  width: 200%;
+  height: 5px;
+  background: #fff;
+  position: absolute;
+  bottom: -5px;
+  right: -100%;
+}
+
 #clients-section {
   padding: 10px 80px;
 }
 
-/* line 496, ../Websites/test-server/resources/scss/style.scss */
 .client-name {
   font-family: "Montserrat-bold";
   text-transform: uppercase;
@@ -507,40 +474,138 @@
   font-size: 42px;
 }
 
-/* line 503, ../Websites/test-server/resources/scss/style.scss */
 .client-header {
   font-family: "Montserrat-regular";
   font-size: 24px;
   margin: 20px 0 15px;
 }
 
-/* line 509, ../Websites/test-server/resources/scss/style.scss */
 .client-text {
   font-family: "Montserrat-regular";
   font-size: 18px;
 }
 
-/* line 522, ../Websites/test-server/resources/scss/style.scss */
+#portofolio-slider {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .portofolio-underheader {
   text-align: center;
   font-family: "Montserrat-regular";
   font-size: 18px;
 }
 
-/* line 528, ../Websites/test-server/resources/scss/style.scss */
 .portofolio-slide-item {
-  width: 200px;
-  height: 300px;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+  height: 400px;
   border-radius: 30px;
   background: red;
   transition: 0.2s;
-  margin: 10px 25px;
+  margin: 40px 25px;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* line 536, ../Websites/test-server/resources/scss/style.scss */
 .portofolio-slide-item:hover {
-  width: 220px;
-  height: 320px;
+  margin: 0px 5px;
+  width: 340px;
+  height: 440px;
 }
 
-/*# sourceMappingURL=style.css.map */
+.portofolio-slide-item::after {
+  content: "View Case Study";
+  text-align: center;
+  width: 100%;
+  padding: 10px 0 20px;
+  background-color: #CF1C30;
+  color: #fff;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+.portofolio-slide-item:hover::after {
+  bottom: 0;
+}
+
+#main-menu {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#main-menu-bg-top,
+#main-menu-bg-bottom {
+  transition-delay: 10ms;
+  transform: scaleX(0);
+  transition: 0.5s ease-out;
+}
+
+#main-menu-bg-top {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #00000095;
+  transform-origin: center right;
+}
+
+#main-menu-bg-bottom {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #00000095;
+  transform-origin: center left;
+}
+
+#main-menu-nav {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.main-menu-li {
+  list-style: none;
+  text-align: center;
+  color: #fff;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-menu-li-a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  transition: 0.3s ease;
+  display: block;
+  transform: translateY(150%);
+  cursor: pointer;
+}
+
+.main-menu-li-a:hover {
+  color: #CF1C30;
+  font-size: 2.2em;
+}

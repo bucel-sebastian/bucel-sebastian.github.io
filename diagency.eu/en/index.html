@@ -30,7 +30,7 @@
     <link href="/resources/fontawesome/css/all.css" rel="stylesheet">
 
 </head>
-<body>
+<body id="start">
     <header id="page-header">
         <div id="header-wrapper">
             <div id="header-desktop">
@@ -71,6 +71,57 @@
             </div>
         </div>
     </header>
+
+    <div id="main-menu">
+        <div id="main-menu-bg-top">
+
+        </div>
+        <div id="main-menu-bg-bottom">
+
+        </div>
+        <div id="main-menu-container">
+            <nav id="main-menu-nav">
+                <ul id="main-menu-ul">
+                    <li class="main-menu-li">
+                        <a class="main-menu-li-a" data-destination="start">
+                            Home
+                        </a>  
+                    </li>
+                    <li class="main-menu-li">
+                        <a class="main-menu-li-a" data-destination="about-us">
+                            About us
+                        </a>  
+                    </li>
+                    <li class="main-menu-li">
+                        <a class="main-menu-li-a" data-destination="services">
+                            Services
+                        </a>  
+                    </li>
+                    <li class="main-menu-li">
+                        <a class="main-menu-li-a" data-destination="clients">
+                            Clients
+                        </a>  
+                    </li>
+                    <li class="main-menu-li">
+                        <a class="main-menu-li-a" data-destination="portfolio">
+                            Porforolio
+                        </a>  
+                    </li>
+                    <li class="main-menu-li">
+                        <a class="main-menu-li-a" data-destination="contact">
+                            Contact
+                        </a>  
+                    </li>
+                    <li class="main-menu-li">
+                        <a class="main-menu-li-a" data-destination="platforms">
+                            Our platforms
+                        </a>  
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+    </div>
     
     <!-- <div id="">
 
@@ -128,7 +179,7 @@
 
             <div id="hero-section">
 
-                <div class="hero-text">
+                <div class="hero-text" >
                     <span id="hero-text-we">WE</span>
                     <span style="writing-mode: vertical-rl;text-orientation: upright;margin-top: 3%;">ARE</span>
                     <div class="hero-img">
@@ -165,7 +216,7 @@
             
             <!-- Expertise from a-z -->
 
-            <div class="section">
+            <div class="section" id="services">
                 <div class="heading-alternative right-align">
                     <h2 class="heading-alternative-text" style="display: flex;flex-direction:row;">Expertise from &nbsp;<div style="display:flex;flex-direction:row;">
                         <span style="color:#C01C2B">a</span><span style="display:block;width: 30px;height: 2px;background:#C01C2B;transform: translateY(50px) rotate(45deg);"></span><span style="color:#C01C2B;padding-top: 45px;">z</span>
@@ -176,14 +227,37 @@
                     <div>
 
                     </div>
-                    <div blop>
+                    <div style="position: relative;display: flex;justify-content: center;align-items: center;align-content: center;">
                     
 
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" style="width:80%;margin:0 auto;display:block;">
+                            <filter id="inset-shadow" x="-50%" y="-50%" width="200%" height="200%">
+                                <feComponentTransfer in=SourceAlpha>
+                                  <feFuncA type="table" tableValues="2 0" />
+                                </feComponentTransfer>
+                                <feGaussianBlur stdDeviation="10"/>
+                                <feOffset dx="10" dy="30" result="offsetblur"/>
+                                <feFlood flood-color="rgb(0, 0, 0)" result="color"/>
+                                <feComposite in2="offsetblur" operator="in"/>
+                                <feComposite in2="SourceAlpha" operator="in" />
+                                <feMerge>
+                                  <feMergeNode in="SourceGraphic" />
+                                  <feMergeNode />
+                                </feMerge>
+                              </filter>
                             <g id="_1" data-name="1">
-                                <path class=" morphtest" id="morphtest"
+
+                                <mask id="svgmask1">
+                                    <path class="morphtest" id="morphtest"
                                     d="M69.24,585.24c11,47,40.84,167.75,144,268.23,40.35,39.31,107.17,90.36,291.31,141,123.73,34,339.41,90.94,633.39,56.68,153.87-17.94,335.89-41.28,518.12-166.59,77.78-53.49,171.91-120.19,216-247.06,8.79-25.3,51.72-157.66-9.88-302.12-47.49-111.35-133.8-172.2-170.83-194.82C1487.74,16.12,1344.63,173.86,988.29,149,665.75,126.5,585.08-16.56,355.82,55.82c-49.52,15.64-194,63.65-267.6,204C22.19,385.71,53.07,516.09,69.24,585.24Z"
-                                    style="fill:#ed1c24" />
+                                    style="fill:#fff"/>
+                                </mask>
+                                
+                                <image xlink:href="/resources/assets/img/books.jpg" mask="url(#svgmask1)" fill="#ed1c24"></image>
+                                <!-- <rect x="0" y="0" width="1920" height="1080" fill="#ed1c24" opacity="0.5" mask="url(#svgmask1)" style="filter:url(#shadowtest)"/> -->
+                                <path class="morphtest" id="morphtest" d="M69.24,585.24c11,47,40.84,167.75,144,268.23,40.35,39.31,107.17,90.36,291.31,141,123.73,34,339.41,90.94,633.39,56.68,153.87-17.94,335.89-41.28,518.12-166.59,77.78-53.49,171.91-120.19,216-247.06,8.79-25.3,51.72-157.66-9.88-302.12-47.49-111.35-133.8-172.2-170.83-194.82C1487.74,16.12,1344.63,173.86,988.29,149,665.75,126.5,585.08-16.56,355.82,55.82c-49.52,15.64-194,63.65-267.6,204C22.19,385.71,53.07,516.09,69.24,585.24Z"
+                                    fill="#ed1c24" opacity="0.5"  style="filter:url(#inset-shadow)"/>
+                                
                             </g>
                             <!-- <g id="_2" data-name="2">
                                 <path
@@ -196,6 +270,20 @@
                                     style="fill:#ed1c24" />
                             </g> -->
                         </svg>
+                        <div style="position:absolute;width:100%;height:100%;display:flex;justify-content:center;align-items:center;align-content:center;">
+                            <div style="width: 80%;height: 100%;padding: 200px 150px;margin:0 auto;">
+                                <div>
+                                    <div class="services-header">
+                                        <h2 style="color:#fff;text-align: right;font-size: 28px;">Above the line</h2>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p style="color:#fff;text-align:justify;font-size: 18px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus odit vitae id quod molestiae architecto aliquam quibusdam, quas reiciendis iste labore sequi nobis unde quisquam facere voluptatum inventore ipsum ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, fuga, quisquam iusto recusandae ad veritatis reiciendis laborum pariatur impedit fugiat consequatur veniam nam dolor earum eaque? Minima, aliquam porro? Delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, fugiat voluptates! Voluptas veritatis veniam, magnam sint harum incidunt quod quis repellat rerum asperiores, laudantium voluptates est eaque quae. Ullam, est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sunt iure provident laudantium eaque dolor cumque dolore quis beatae, eum consequuntur deserunt sit earum assumenda optio quia obcaecati minima dignissimos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vitae iste voluptatibus laboriosam cupiditate ratione doloremque modi consequuntur optio. Repellendus est accusamus at nostrum alias odit porro rem, optio dolore.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+  
                     </div>
                 </div>
                 <div>
@@ -299,6 +387,19 @@
                         <img src="/resources/assets/img/promoapp-logo.png" alt="">
                     </div>
                 </div>
+                <div>
+                    <div>
+                        <div>
+
+                        </div>
+                        <div>
+
+                        </div>
+                        <div>
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="section" id="portfolio">
@@ -321,15 +422,26 @@
                             </div>
                             <div style="width: 100%; overflow:hidden;">
                                 <div style="display: flex;align-items: center;align-content: center;">
-                                    <div class="portofolio-slide-item">
+                                    <a href="/en/case-studies/echipamentul/">
+                                        <div class="portofolio-slide-item" style="background-image: url(/resources/assets/img/echipamentul-casestudy.png);">
+                                        
+                                        </div>
+                                    </a>
+                                    <a href="/en/case-studies/kuantika/">
+                                        <div class="portofolio-slide-item" style="background-image: url(/resources/assets/img/kuantika-casestudy.png);">
 
-                                    </div>
-                                    <div class="portofolio-slide-item">
+                                        </div>
+                                    </a>
+                                    <a href="/en/case-studies/sugus/">
+                                        <div class="portofolio-slide-item" style="background-image: url(/resources/assets/img/sugus-casestudy.png);">
 
-                                    </div>
-                                    <div class="portofolio-slide-item">
+                                        </div>
+                                    </a>
+                                    <a href="/en/case-studies/sugus/">
+                                        <div class="portofolio-slide-item" style="background-image: url(/resources/assets/img/sugus-casestudy.png);">
 
-                                    </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="slider-button-container">
@@ -468,16 +580,36 @@
                         <img src="/resources/assets/img/logo.svg" style="width:150px" alt="diagency">
                     </div>
                     <div>
-                        Adress
+                        <ul>
+                            <li>lorem </li>
+                            <li>lorem </li>
+                            <li>lorem </li>
+                            <li>lorem </li>
+                        </ul>
                     </div>
                     <div>
-                        Navi 1
+                        <ul>
+                            <li>lorem </li>
+                            <li>lorem </li>
+                            <li>lorem </li>
+                            <li>lorem </li>
+                        </ul>
                     </div>
                     <div>
-                        Navi 1
+                        <ul>
+                            <li>lorem </li>
+                            <li>lorem </li>
+                            <li>lorem </li>
+                            <li>lorem </li>
+                        </ul>
                     </div>
                     <div>
-                        Navi 1
+                        <ul>
+                            <li>lorem </li>
+                            <li>lorem </li>
+                            <li>lorem </li>
+                            <li>lorem </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -526,6 +658,7 @@
     <!--  -->
 
     <script src="/resources/js/menu.js"></script>
+    <script src="/resources/js/scroll.js"></script>
     <script src="/resources/js/animations/home.js"></script>
     <script src="/resources/js/animations/send-btn.js"></script>
 
