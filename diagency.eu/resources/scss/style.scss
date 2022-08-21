@@ -11,13 +11,16 @@ $textBlue: #0A142F;
 
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('/resources/fonts/montserrat.ttf');
+    font-family: 'Montserrat-bold';
+    src: url('/resources/fonts/Montserrat-Bold.ttf');
+}
+@font-face {
+    font-family: 'Montserrat-regular';
+    src: url('/resources/fonts/Montserrat-Regular.ttf');
 }
 
 *{
-    font-family: 'Montserrat';
-    font-weight: bold;
+    font-family: 'Montserrat-bold';
     box-sizing: border-box;
     margin:0;
     padding:0;
@@ -107,11 +110,21 @@ $textBlue: #0A142F;
 
 // Footer - start
 .footer-1{
-    padding: 0 25px;
+    padding: 20px 25px;
     background-color: $white;
     border-top: 1px solid $redAccent;
     border-bottom: 1px solid $redAccent;
 }
+
+.footer-1 .footer-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-around;
+}
+
 
 .footer-2{
     padding: 25px 25px;
@@ -143,14 +156,31 @@ $textBlue: #0A142F;
 // Footer - end
 
 
-.heading{
+.heading,.heading-alternative{
     color: $headingGray;
     position: relative;
     width: max-content;
     padding: 10px 80px;    
 }
-.heading-text{
-    font-size: 38px;
+
+.heading-red{
+    color: $redAccent;
+    position: relative;
+    width: max-content;
+    padding: 10px 80px;    
+}
+.heading-red-stroke{
+    text-shadow: -1px 1px $redAccent,
+    1px 1px $redAccent,
+    1px -1px $redAccent,
+    -1px -1px $redAccent;
+    color:$white;
+    position: relative;
+    width: max-content;
+    padding: 10px 80px;    
+}
+.heading-text,.heading-alternative-text{
+    font-size: 44px;
     position: relative;
     z-index: 10;
 }
@@ -309,3 +339,203 @@ $textBlue: #0A142F;
 }
 
 // Hero section - end
+
+
+
+
+
+// Platforms - start
+
+.platforms-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.platform-link{
+    width: 15%;
+    margin:0 25px;
+}
+
+.platform-box{
+    width: 100%;
+    height: max-content;
+}
+
+.platform-box img{
+    width: 100%;
+    height: max-content;
+}
+
+// Platforms - end
+
+
+
+
+// Contact - start
+
+
+
+.contact-form-container{
+    width: 100%;
+    padding: 10px 80px;
+}
+
+.contact-form-container input,
+.contact-form-container textarea{
+    width: 100%;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid $redAccent;
+    color:$black;
+    padding: 10px;
+    font-size: 22px;
+}
+
+.contact-form-container textarea{
+    resize: vertical;
+}
+
+// Contact - end
+
+
+
+// SLIDER - start
+
+.slider-button{
+    border-radius: 1000px;
+    border: 2px solid $redAccent;
+    color: $redAccent;
+    background:none;
+    outline: none;
+    padding: 7px 12px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.slider-button-alternative{
+    border-radius: 1000px;
+    border: none;
+    color: $redAccent;
+    background:none;
+    outline: none;
+    padding: 2px 4px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.slider-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+// SLIDER - end
+
+
+
+
+
+// Certificates - start
+
+#certificates-slider{
+    width: 90%;
+    margin:20px auto 0 ;
+}
+
+// Certificates - end
+
+#service-slider-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.slider-service-btn{
+    width: 50px;
+    height: 50px;
+    background: none;
+    outline: none;
+    border:2px solid $redAccent;
+    border-radius: 100px;
+    font-size: 1.3em;
+    cursor: pointer;
+    margin:0 20px;
+    transition: 0.3s ease;
+}
+
+.slider-service-btn.active{
+    background: $redAccent;
+    color:$white;
+}
+
+.slider-button-container{
+    width:10%;
+}
+
+.badge-img{
+    width: 300px;
+    height: auto;
+    margin: 0 15px;
+}
+
+
+
+// Clients section - start
+
+#clients-section{
+    padding: 10px 80px;
+}
+
+.client-name{
+    font-family: "Montserrat-bold";
+    text-transform: uppercase;
+    color:$redAccent;
+    font-size:42px;
+}
+
+.client-header{
+    font-family: "Montserrat-regular";
+    font-size: 24px;
+    margin: 20px 0 15px;
+}
+
+.client-text{
+    font-family: "Montserrat-regular";
+    font-size: 18px;
+}
+
+
+// Clients section - end
+
+
+
+
+// Portofolio - start
+
+.portofolio-underheader{
+    text-align: center;
+    font-family: "Montserrat-regular";
+    font-size: 18px;
+}
+
+.portofolio-slide-item{
+    width: 200px;
+    height: 300px;
+    border-radius: 30px;
+    background:red;
+    transition: 0.2s;
+    margin: 10px 25px;
+}
+.portofolio-slide-item:hover{
+    width: 220px;
+    height: 320px;
+}
+
+// Portofolio - end
