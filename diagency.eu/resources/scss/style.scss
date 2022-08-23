@@ -28,6 +28,19 @@ $textBlue: #0A142F;
 }
 
 
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: $redAccent;
+    color: $redAccent;
+}
+::-webkit-scrollbar-track{
+    background: $headingGray;
+
+}
+// html::-webkit-scrollbar-{}
 
 
 
@@ -251,7 +264,9 @@ $textBlue: #0A142F;
     width: 100%;
 }
 
-
+.section{
+    padding-top: 100px;
+}
 
 
 
@@ -311,7 +326,37 @@ $textBlue: #0A142F;
     left: -70%;
 }
 
+#hero-text-we .letter{
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
+    transform: rotateY(-90deg);
+    cursor: unset;
+    transition: color 0.3s ease;
+    // transition: 0.3s ease;
+}
+#hero-text-are .letter {
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
+    transform: rotateX(-90deg);
+    cursor: unset;
+    transition: color 0.3s ease;
+    // transition: 0.3s ease;
+    }
 
+    #hero-text-are .letter:hover,#hero-text-we .letter:hover{
+        color:$redAccent;
+
+    }
+
+.hero-img{
+    transform: scaleX(0);
+    transform-origin: center left;
+    }
+.hero-img img{
+    opacity: 0;
+}
 
 #hero-scroll{
     width: 100%;
@@ -330,6 +375,8 @@ $textBlue: #0A142F;
     font-size: 24px;
     position: relative;
     padding-bottom: 15px;
+    opacity: 0;
+    transform: translateY(-100px);
 }
 
 .hero-scroll-btn::before{
@@ -390,6 +437,22 @@ $textBlue: #0A142F;
     height: max-content;
 }
 
+#platforms-heading{
+    transform-origin: center right;
+    transform: scaleX(0);
+}
+#platforms-heading-text{
+    overflow: hidden;
+
+}
+
+#platforms-heading-text .letter{
+    display: inline-block;
+    line-height: 1em;
+    transform: translateY(-100px);
+}
+
+
 // Platforms - end
 
 
@@ -417,6 +480,18 @@ $textBlue: #0A142F;
 
 .contact-form-container textarea{
     resize: vertical;
+}
+
+
+
+#contact-heading-text .letter{
+    display: inline-block;
+    line-height: 1em;
+    transform: translateY(-100px);
+}
+
+#contact-heading-text{
+  overflow: hidden;
 }
 
 // Contact - end
@@ -533,6 +608,16 @@ $textBlue: #0A142F;
     right: -100%;
 }
 
+#services-header-text .letter{
+    display: inline-block;
+    line-height: 1em;
+    transform: translateY(-100px);
+}
+
+#services-header-text{
+    overflow: hidden;
+  }
+
 // Services section - end
 
 
@@ -561,6 +646,66 @@ $textBlue: #0A142F;
     font-family: "Montserrat-regular";
     font-size: 18px;
 }
+
+.client-logo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+    margin-top: -150px;
+}
+
+#client-logo-blob{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    filter: drop-shadow(8px 12px 5px #00000065);
+
+}
+
+.client-logo img{
+    position: absolute;
+    max-width: 600px;
+    width: 100%;
+
+}
+
+
+
+
+.clients-slider-element{
+    width: 150px;
+    height: 100px;
+    margin: 15px 25px;
+    border: 1px solid $redAccent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    
+}
+.clients-slider-element:hover{
+    width: 160px;
+    height: 110px;
+    margin:10px 20px;
+}
+
+
+#clients-heading-text-1,
+#clients-heading-text-2{
+    overflow: hidden;
+}
+
+#clients-heading-text-1 .letter,
+#clients-heading-text-2 .letter{
+    display: inline-block;
+    line-height: 1em;
+    transform: translateY(-100px);
+}
+
+
 
 
 // Clients section - end
@@ -616,10 +761,43 @@ $textBlue: #0A142F;
 .portofolio-slide-item:hover::after{
     bottom: 0;
 }
+#portfolio-heading{
+    transform-origin: center right;
+    transform: scaleX(0);
+}
 
+#portfolio-heading-text .letter{
+    display: inline-block;
+    line-height: 1em;
+    transform: translateY(-100px);
+}
+
+#portfolio-heading-text{
+  overflow: hidden;
+}
 
 // Portofolio - end
 
+// Marketing professional - start
+
+#marketing-portfolio-heading{
+    transform-origin: center right;
+    transform: scaleX(0);
+}
+
+#marketing-portfolio-heading-text-1 .letter,
+#marketing-portfolio-heading-text-2 .letter{
+    display: inline-block;
+    line-height: 1em;
+    transform: translateY(-100px);
+}
+
+#marketing-portfolio-heading-text-1,
+#marketing-portfolio-heading-text-2{
+  overflow: hidden;
+}
+
+// Marketing professional - end
 
 // Main menu - start
 
@@ -699,3 +877,24 @@ $textBlue: #0A142F;
     font-size: 2.2em;
 }
 // Main menu - end
+
+
+
+// About us Section - start
+
+#about-us-heading{
+    transform-origin: center right;
+    transform: scaleX(0);
+}
+
+#about-us-heading-text .letter{
+    display: inline-block;
+    line-height: 1em;
+    transform: translateY(-100px);
+}
+
+#about-us-heading-text{
+  overflow: hidden;
+}
+
+// About us Section - end

@@ -90,6 +90,8 @@ menuLinks.forEach(element => {
 
 document.getElementById("scroll-down-btn").addEventListener("click",e=>{
    
-    document.getElementById("about-us").scrollIntoView();
+    document.getElementById("about-us").scrollIntoView({
+        top: 100
+    });
 });
 
