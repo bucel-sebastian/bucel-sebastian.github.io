@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Montserrat-bold';
-  src: url("/resources/fonts/Montserrat-Bold.ttf");
+  src: url("/diagency.eu/resources/fonts/Montserrat-Bold.ttf");
 }
 
 @font-face {
   font-family: 'Montserrat-regular';
-  src: url("/resources/fonts/Montserrat-Regular.ttf");
+  src: url("/diagency.eu/resources/fonts/Montserrat-Regular.ttf");
 }
 
 /* line 22, ../Websites/test-server/resources/scss/style.scss */
