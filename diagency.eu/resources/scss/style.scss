@@ -7,24 +7,25 @@ $redPrimary: #C01C2B;
 $redAccent: #CF1C30;
 
 $headingGray: #323232;
-$textBlue: #0A142F;
+$textBlue: #272265;
 
 
 @font-face {
-    font-family: 'Montserrat-bold';
-    src: url('/resources/fonts/Montserrat-Bold.ttf');
+    font-family: 'Magison';
+    src: url('/diagency.eu/resources/fonts/Magison.ttf');
 }
 @font-face {
-    font-family: 'Montserrat-regular';
-    src: url('/resources/fonts/Montserrat-Regular.ttf');
+    font-family: 'Bolt Rounded';
+    src: url('/diagency.eu/resources/fonts/Bolt-Rounded.ttf');
 }
 
 *{
-    font-family: 'Montserrat-bold';
+    font-family: 'Magison';
     box-sizing: border-box;
     margin:0;
     padding:0;
     scroll-behavior: smooth;
+    color: $textBlue;
 }
 
 
@@ -37,7 +38,7 @@ $textBlue: #0A142F;
     color: $redAccent;
 }
 ::-webkit-scrollbar-track{
-    background: $headingGray;
+    background: $textBlue;
 
 }
 // html::-webkit-scrollbar-{}
@@ -218,16 +219,16 @@ $textBlue: #0A142F;
     position: relative;
     z-index: 10;
 }
-.heading::before{
-    content:"";
-    width: 150px;
-    height: 30px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    background-color: $redAccent;
-}
+// .heading::before{
+//     content:"";
+//     width: 150px;
+//     height: 30px;
+//     position: absolute;
+//     bottom: 0;
+//     right: 0;
+//     z-index: 1;
+//     background-color: $redAccent;
+// }
 .center-align{
     margin:10px auto;
 }
@@ -241,7 +242,7 @@ $textBlue: #0A142F;
 }
 
 .texting{
-    color:$black;
+    color:$textBlue;
     font-size: 22px;
     position: relative;
     width: 100%;
@@ -289,11 +290,12 @@ $textBlue: #0A142F;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-   
+   cursor: none;
 }
 .hero-text span{
-    margin-top: 10px;
+    margin-top: 16px;
     font-size: 86px;
+    cursor: none;
 }
 #hero-text-we{
     position: relative;
@@ -643,20 +645,20 @@ $textBlue: #0A142F;
 }
 
 .client-name{
-    font-family: "Montserrat-bold";
+    font-family: "Magison";
     text-transform: uppercase;
     color:$redAccent;
     font-size:42px;
 }
 
 .client-header{
-    font-family: "Montserrat-regular";
+    font-family: "Bolt Rounded";
     font-size: 24px;
     margin: 20px 0 15px;
 }
 
 .client-text{
-    font-family: "Montserrat-regular";
+    font-family: "Bolt Rounded";
     font-size: 18px;
 }
 
@@ -735,7 +737,7 @@ $textBlue: #0A142F;
 
 .portofolio-underheader{
     text-align: center;
-    font-family: "Montserrat-regular";
+    font-family: "Bolt Rounded";
     font-size: 18px;
 }
 
@@ -942,4 +944,31 @@ $textBlue: #0A142F;
 }
 .client-blob-2{
     d: path("M1587.17,590.48c-31.71-200-372.1-498.34-833.49-387.84C182.5,339.44,71.19,1071.55,188.14,1175.75c92.75,82.64,379.77-105.51,493.61-2.82,104.11,93.91,26.8,282.92,132.57,441.43,159.53,239.07,951.14,68.16,978.75-141,19.3-146.21-346.49-221-361-476.69C1421.39,809.5,1611.34,743,1587.17,590.48Z");
+}
+
+
+
+.white-pixel{
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    margin: 2.5px;
+}
+
+.black-pixel{
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+    margin: 2.5px;
+}
+
+.heading-pixel-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#about-us-heading-text .letter:nth-last-child(1),
+#about-us-heading-text .letter:nth-last-child(2){
+    color: #e31e3a;
 }

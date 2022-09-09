@@ -1,4 +1,3 @@
-/* line 1, ../Websites/test-server/resources/scss/send-btn.scss */
 .contact-submit {
   --primary: #C01C2B;
   --primary-dark: #8f1822;
@@ -63,7 +62,6 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-/* line 63, ../Websites/test-server/resources/scss/send-btn.scss */
 .contact-submit .left,
 .contact-submit .right {
   position: absolute;
@@ -75,7 +73,6 @@
   transform: translate(calc(var(--plane-x) * 1px), calc(var(--plane-y) * 1px)) translateZ(0);
 }
 
-/* line 72, ../Websites/test-server/resources/scss/send-btn.scss */
 .contact-submit .left:before, .contact-submit .left:after,
 .contact-submit .right:before,
 .contact-submit .right:after {
@@ -92,7 +89,6 @@
   clip-path: polygon(calc(var(--first-x, var(--left-wing-first-x)) * 1%) calc(var(--first-y, var(--left-wing-first-y)) * 1%), calc(var(--second-x, var(--left-wing-second-x)) * 1%) calc(var(--second-y, var(--left-wing-second-y)) * 1%), calc(var(--third-x, var(--left-wing-third-x)) * 1%) calc(var(--third-y, var(--left-wing-third-y)) * 1%));
 }
 
-/* line 87, ../Websites/test-server/resources/scss/send-btn.scss */
 .contact-submit .left:after {
   --x: 0;
   --z-index: 1;
@@ -105,7 +101,6 @@
   --third-y: var(--left-body-third-y);
 }
 
-/* line 98, ../Websites/test-server/resources/scss/send-btn.scss */
 .contact-submit .right:before {
   --x: -.4%;
   --z-index: 2;
@@ -118,7 +113,6 @@
   --third-y: var(--right-wing-third-y);
 }
 
-/* line 109, ../Websites/test-server/resources/scss/send-btn.scss */
 .contact-submit .right:after {
   --x: 0;
   --z-index: 1;
@@ -131,7 +125,6 @@
   --third-y: var(--right-body-third-y);
 }
 
-/* line 120, ../Websites/test-server/resources/scss/send-btn.scss */
 .contact-submit span {
   display: block;
   position: relative;
@@ -139,7 +132,6 @@
   opacity: var(--text-opacity);
 }
 
-/* line 125, ../Websites/test-server/resources/scss/send-btn.scss */
 .contact-submit span.success {
   z-index: 0;
   position: absolute;
@@ -150,5 +142,3 @@
   opacity: var(--success-opacity);
   color: var(--success);
 }
-
-/*# sourceMappingURL=send-btn.css.map */

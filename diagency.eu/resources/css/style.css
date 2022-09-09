@@ -1,40 +1,36 @@
 @font-face {
-  font-family: 'Montserrat-bold';
-  src: url("/diagency.eu/resources/fonts/Montserrat-Bold.ttf");
+  font-family: 'Magison';
+  src: url("/diagency.eu/resources/fonts/Magison.ttf");
 }
 
 @font-face {
-  font-family: 'Montserrat-regular';
-  src: url("/diagency.eu/resources/fonts/Montserrat-Regular.ttf");
+  font-family: 'Bolt Rounded';
+  src: url("/diagency.eu/resources/fonts/Bolt-Rounded.ttf");
 }
 
-/* line 22, ../Websites/test-server/resources/scss/style.scss */
 * {
-  font-family: 'Montserrat-bold';
+  font-family: 'Magison';
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  color: #272265;
 }
 
-/* line 31, ../Websites/test-server/resources/scss/style.scss */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* line 34, ../Websites/test-server/resources/scss/style.scss */
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: #CF1C30;
   color: #CF1C30;
 }
 
-/* line 39, ../Websites/test-server/resources/scss/style.scss */
 ::-webkit-scrollbar-track {
-  background: #323232;
+  background: #272265;
 }
 
-/* line 49, ../Websites/test-server/resources/scss/style.scss */
 #page-header {
   position: fixed;
   width: 100%;
@@ -42,13 +38,11 @@
   transition: 0.5s ease;
 }
 
-/* line 63, ../Websites/test-server/resources/scss/style.scss */
 #header-wrapper {
   width: 100%;
   padding: 0 25px;
 }
 
-/* line 72, ../Websites/test-server/resources/scss/style.scss */
 .header-row {
   display: flex;
   flex-direction: row;
@@ -57,7 +51,6 @@
   justify-content: space-between;
 }
 
-/* line 81, ../Websites/test-server/resources/scss/style.scss */
 .header-logo-container img {
   height: 90px;
   width: auto;
@@ -65,12 +58,10 @@
   transition: 0.5s ease;
 }
 
-/* line 88, ../Websites/test-server/resources/scss/style.scss */
 .burger-menu {
   cursor: pointer;
 }
 
-/* line 92, ../Websites/test-server/resources/scss/style.scss */
 .burger-menu-text {
   cursor: pointer;
   display: flex;
@@ -81,12 +72,10 @@
   transition: 0.3s ease;
 }
 
-/* line 101, ../Websites/test-server/resources/scss/style.scss */
 .burger-menu-text span {
   font-size: 28px;
 }
 
-/* line 104, ../Websites/test-server/resources/scss/style.scss */
 .bar {
   width: 90%;
   height: 3px;
@@ -96,45 +85,37 @@
   transition: 0.3s ease;
 }
 
-/* line 113, ../Websites/test-server/resources/scss/style.scss */
 .bar-2 {
   margin-left: auto;
   margin-right: 0;
 }
 
-/* line 118, ../Websites/test-server/resources/scss/style.scss */
 .closed-menu:hover .bar-2 {
   transform: translateX(-10%);
 }
 
-/* line 121, ../Websites/test-server/resources/scss/style.scss */
 .closed-menu:hover .bar-1,
 .closed-menu:hover .bar-3 {
   transform: translateX(10%);
 }
 
-/* line 126, ../Websites/test-server/resources/scss/style.scss */
 .menu-open .bar-1 {
   transform: translate(0px, 10px) rotate(45deg);
 }
 
-/* line 129, ../Websites/test-server/resources/scss/style.scss */
 .menu-open .bar-3 {
   transform: translate(0px, -6px) rotate(-45deg);
 }
 
-/* line 132, ../Websites/test-server/resources/scss/style.scss */
 .menu-open .bar-2 {
   transform: translateX(20px);
   opacity: 0;
 }
 
-/* line 136, ../Websites/test-server/resources/scss/style.scss */
 .menu-open .burger-menu-text {
   color: #fff;
 }
 
-/* line 146, ../Websites/test-server/resources/scss/style.scss */
 .footer-1 {
   padding: 20px 25px;
   background-color: #fff;
@@ -142,7 +123,6 @@
   border-bottom: 1px solid #CF1C30;
 }
 
-/* line 153, ../Websites/test-server/resources/scss/style.scss */
 .footer-1 .footer-row {
   display: flex;
   flex-direction: row;
@@ -152,13 +132,11 @@
   justify-content: space-around;
 }
 
-/* line 163, ../Websites/test-server/resources/scss/style.scss */
 .footer-2 {
   padding: 25px 25px;
   background-color: #000;
 }
 
-/* line 168, ../Websites/test-server/resources/scss/style.scss */
 .footer-2 .footer-row {
   display: flex;
   flex-direction: row;
@@ -167,7 +145,6 @@
   justify-content: space-between;
 }
 
-/* line 176, ../Websites/test-server/resources/scss/style.scss */
 .footer-social-link {
   color: #fff;
   text-decoration: none;
@@ -176,17 +153,14 @@
   transition: 0.3s ease;
 }
 
-/* line 183, ../Websites/test-server/resources/scss/style.scss */
 .footer-social-link:hover {
   color: #CF1C30;
 }
 
-/* line 186, ../Websites/test-server/resources/scss/style.scss */
 .copyrights {
   color: #7F7F7F;
 }
 
-/* line 193, ../Websites/test-server/resources/scss/style.scss */
 .heading, .heading-alternative {
   color: #323232;
   position: relative;
@@ -194,7 +168,6 @@
   padding: 10px 80px;
 }
 
-/* line 200, ../Websites/test-server/resources/scss/style.scss */
 .heading-red {
   color: #CF1C30;
   position: relative;
@@ -202,7 +175,6 @@
   padding: 10px 80px;
 }
 
-/* line 206, ../Websites/test-server/resources/scss/style.scss */
 .heading-red-stroke {
   text-shadow: -1px 1px #CF1C30, 1px 1px #CF1C30, 1px -1px #CF1C30, -1px -1px #CF1C30;
   color: #fff;
@@ -211,55 +183,36 @@
   padding: 10px 80px;
 }
 
-/* line 216, ../Websites/test-server/resources/scss/style.scss */
 .heading-text, .heading-alternative-text {
   font-size: 44px;
   position: relative;
   z-index: 10;
 }
 
-/* line 221, ../Websites/test-server/resources/scss/style.scss */
-.heading::before {
-  content: "";
-  width: 150px;
-  height: 30px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-  background-color: #CF1C30;
-}
-
-/* line 231, ../Websites/test-server/resources/scss/style.scss */
 .center-align {
   margin: 10px auto;
 }
 
-/* line 235, ../Websites/test-server/resources/scss/style.scss */
 .left-align {
   margin: 10px auto 10px 0;
 }
 
-/* line 239, ../Websites/test-server/resources/scss/style.scss */
 .right-align {
   margin: 10px 0 10px auto;
 }
 
-/* line 243, ../Websites/test-server/resources/scss/style.scss */
 .texting {
-  color: #000;
+  color: #272265;
   font-size: 22px;
   position: relative;
   width: 100%;
   margin: 10px auto;
 }
 
-/* line 251, ../Websites/test-server/resources/scss/style.scss */
 .texting-center-align {
   text-align: center;
 }
 
-/* line 255, ../Websites/test-server/resources/scss/style.scss */
 .section-limited-width {
   max-width: 1200px;
   width: 100%;
@@ -267,18 +220,15 @@
   position: relative;
 }
 
-/* line 262, ../Websites/test-server/resources/scss/style.scss */
 .section-full-width {
   max-width: 100%;
   width: 100%;
 }
 
-/* line 267, ../Websites/test-server/resources/scss/style.scss */
 .section {
   padding-top: 100px;
 }
 
-/* line 279, ../Websites/test-server/resources/scss/style.scss */
 #hero-section {
   position: relative;
   width: 100%;
@@ -286,27 +236,25 @@
   padding: 200px 0 0 0;
 }
 
-/* line 286, ../Websites/test-server/resources/scss/style.scss */
 .hero-text {
   margin: 0 0 0 180px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
+  cursor: none;
 }
 
-/* line 294, ../Websites/test-server/resources/scss/style.scss */
 .hero-text span {
-  margin-top: 10px;
+  margin-top: 16px;
   font-size: 86px;
+  cursor: none;
 }
 
-/* line 298, ../Websites/test-server/resources/scss/style.scss */
 #hero-text-we {
   position: relative;
 }
 
-/* line 301, ../Websites/test-server/resources/scss/style.scss */
 #hero-text-we::before {
   content: "";
   position: absolute;
@@ -317,19 +265,16 @@
   background-color: #CF1C30;
 }
 
-/* line 311, ../Websites/test-server/resources/scss/style.scss */
 .hero-img {
   position: relative;
   width: 250px;
   margin-left: 100px;
 }
 
-/* line 316, ../Websites/test-server/resources/scss/style.scss */
 .hero-img img {
   width: 100%;
 }
 
-/* line 319, ../Websites/test-server/resources/scss/style.scss */
 .hero-img::before {
   content: "";
   position: absolute;
@@ -340,7 +285,6 @@
   left: -70%;
 }
 
-/* line 329, ../Websites/test-server/resources/scss/style.scss */
 #hero-text-we .letter {
   display: inline-block;
   line-height: 1em;
@@ -350,7 +294,6 @@
   transition: color 0.3s ease;
 }
 
-/* line 338, ../Websites/test-server/resources/scss/style.scss */
 #hero-text-are .letter {
   display: inline-block;
   line-height: 1em;
@@ -360,23 +303,19 @@
   transition: color 0.3s ease;
 }
 
-/* line 348, ../Websites/test-server/resources/scss/style.scss */
 #hero-text-are .letter:hover, #hero-text-we .letter:hover {
   color: #CF1C30;
 }
 
-/* line 353, ../Websites/test-server/resources/scss/style.scss */
 .hero-img {
   transform: scaleX(0);
   transform-origin: center left;
 }
 
-/* line 357, ../Websites/test-server/resources/scss/style.scss */
 .hero-img img {
   opacity: 0;
 }
 
-/* line 361, ../Websites/test-server/resources/scss/style.scss */
 #hero-scroll {
   width: 100%;
   display: flex;
@@ -385,7 +324,6 @@
   bottom: 50px;
 }
 
-/* line 369, ../Websites/test-server/resources/scss/style.scss */
 .hero-scroll-btn {
   cursor: pointer;
   background: none;
@@ -399,7 +337,6 @@
   transform: translateY(-100px);
 }
 
-/* line 382, ../Websites/test-server/resources/scss/style.scss */
 .hero-scroll-btn::before {
   width: 85%;
   height: 3px;
@@ -411,7 +348,6 @@
   transition: 0.3s ease;
 }
 
-/* line 392, ../Websites/test-server/resources/scss/style.scss */
 .hero-scroll-btn::after {
   width: 50%;
   height: 3px;
@@ -423,17 +359,14 @@
   transition: 0.3s ease;
 }
 
-/* line 402, ../Websites/test-server/resources/scss/style.scss */
 .hero-scroll-btn:hover::after {
   transform: translateX(-160%);
 }
 
-/* line 405, ../Websites/test-server/resources/scss/style.scss */
 .hero-scroll-btn:hover::before {
   transform: translateX(15%);
 }
 
-/* line 417, ../Websites/test-server/resources/scss/style.scss */
 .platforms-container {
   display: flex;
   flex-direction: row;
@@ -442,51 +375,43 @@
   width: 100%;
 }
 
-/* line 425, ../Websites/test-server/resources/scss/style.scss */
 .platform-link {
   width: 15%;
   margin: 0 25px;
 }
 
-/* line 430, ../Websites/test-server/resources/scss/style.scss */
 .platform-box {
   width: 100%;
   height: max-content;
   overflow: hidden;
 }
 
-/* line 436, ../Websites/test-server/resources/scss/style.scss */
 .platform-box img {
   width: 100%;
   height: max-content;
   transform: translateY(100%);
 }
 
-/* line 442, ../Websites/test-server/resources/scss/style.scss */
 #platforms-heading {
   transform-origin: center right;
   transform: scaleX(0);
 }
 
-/* line 446, ../Websites/test-server/resources/scss/style.scss */
 #platforms-heading-text {
   overflow: hidden;
 }
 
-/* line 451, ../Websites/test-server/resources/scss/style.scss */
 #platforms-heading-text .letter {
   display: inline-block;
   line-height: 1em;
   transform: translateY(-100px);
 }
 
-/* line 467, ../Websites/test-server/resources/scss/style.scss */
 .contact-form-container {
   width: 100%;
   padding: 10px 80px;
 }
 
-/* line 472, ../Websites/test-server/resources/scss/style.scss */
 .contact-form-container input,
 .contact-form-container textarea {
   width: 100%;
@@ -498,24 +423,20 @@
   font-size: 22px;
 }
 
-/* line 483, ../Websites/test-server/resources/scss/style.scss */
 .contact-form-container textarea {
   resize: vertical;
 }
 
-/* line 489, ../Websites/test-server/resources/scss/style.scss */
 #contact-heading-text .letter {
   display: inline-block;
   line-height: 1em;
   transform: translateY(-100px);
 }
 
-/* line 495, ../Websites/test-server/resources/scss/style.scss */
 #contact-heading-text {
   overflow: hidden;
 }
 
-/* line 505, ../Websites/test-server/resources/scss/style.scss */
 .slider-button {
   border-radius: 1000px;
   border: 2px solid #CF1C30;
@@ -527,7 +448,6 @@
   font-size: 30px;
 }
 
-/* line 516, ../Websites/test-server/resources/scss/style.scss */
 .slider-button-alternative {
   border-radius: 1000px;
   border: none;
@@ -539,7 +459,6 @@
   font-size: 30px;
 }
 
-/* line 527, ../Websites/test-server/resources/scss/style.scss */
 .slider-row {
   display: flex;
   flex-direction: row;
@@ -548,13 +467,11 @@
   align-content: center;
 }
 
-/* line 543, ../Websites/test-server/resources/scss/style.scss */
 #certificates-slider {
   width: 90%;
   margin: 20px auto 0;
 }
 
-/* line 550, ../Websites/test-server/resources/scss/style.scss */
 #service-slider-buttons {
   display: flex;
   flex-direction: row;
@@ -563,7 +480,6 @@
   align-content: center;
 }
 
-/* line 558, ../Websites/test-server/resources/scss/style.scss */
 .slider-service-btn {
   width: 50px;
   height: 50px;
@@ -577,13 +493,11 @@
   transition: 0.3s ease;
 }
 
-/* line 571, ../Websites/test-server/resources/scss/style.scss */
 .slider-service-btn.active {
   background: #CF1C30;
   color: #fff;
 }
 
-/* line 576, ../Websites/test-server/resources/scss/style.scss */
 .slider-button-container {
   width: 10%;
   display: flex;
@@ -592,14 +506,12 @@
   align-content: center;
 }
 
-/* line 584, ../Websites/test-server/resources/scss/style.scss */
 .badge-img {
   width: 300px;
   height: auto;
   margin: 0 15px;
 }
 
-/* line 592, ../Websites/test-server/resources/scss/style.scss */
 .services-header {
   width: max-content;
   margin: 0 0 30px auto;
@@ -611,7 +523,6 @@
   text-transform: uppercase;
 }
 
-/* line 603, ../Websites/test-server/resources/scss/style.scss */
 .services-header::after {
   content: "";
   width: 200%;
@@ -622,19 +533,16 @@
   right: -150%;
 }
 
-/* line 613, ../Websites/test-server/resources/scss/style.scss */
 #services-header-text .letter {
   display: inline-block;
   line-height: 1em;
   transform: translateY(-100px);
 }
 
-/* line 619, ../Websites/test-server/resources/scss/style.scss */
 #services-header-text {
   overflow: hidden;
 }
 
-/* line 624, ../Websites/test-server/resources/scss/style.scss */
 .service-container {
   position: absolute;
   width: 100%;
@@ -645,33 +553,28 @@
   align-content: center;
 }
 
-/* line 641, ../Websites/test-server/resources/scss/style.scss */
 #clients-section {
   padding: 10px 80px;
 }
 
-/* line 645, ../Websites/test-server/resources/scss/style.scss */
 .client-name {
-  font-family: "Montserrat-bold";
+  font-family: "Magison";
   text-transform: uppercase;
   color: #CF1C30;
   font-size: 42px;
 }
 
-/* line 652, ../Websites/test-server/resources/scss/style.scss */
 .client-header {
-  font-family: "Montserrat-regular";
+  font-family: "Bolt Rounded";
   font-size: 24px;
   margin: 20px 0 15px;
 }
 
-/* line 658, ../Websites/test-server/resources/scss/style.scss */
 .client-text {
-  font-family: "Montserrat-regular";
+  font-family: "Bolt Rounded";
   font-size: 18px;
 }
 
-/* line 663, ../Websites/test-server/resources/scss/style.scss */
 .client-logo {
   position: relative;
   display: flex;
@@ -682,7 +585,6 @@
   margin-top: -150px;
 }
 
-/* line 673, ../Websites/test-server/resources/scss/style.scss */
 #client-logo-blob {
   position: relative;
   width: 100%;
@@ -691,14 +593,12 @@
   filter: drop-shadow(8px 12px 5px #00000065);
 }
 
-/* line 682, ../Websites/test-server/resources/scss/style.scss */
 .client-logo img {
   position: absolute;
   max-width: 600px;
   width: 100%;
 }
 
-/* line 692, ../Websites/test-server/resources/scss/style.scss */
 .clients-slider-element {
   width: 150px;
   height: 100px;
@@ -709,20 +609,17 @@
   transition: 0.3s ease;
 }
 
-/* line 702, ../Websites/test-server/resources/scss/style.scss */
 .clients-slider-element:hover {
   width: 160px;
   height: 110px;
   margin: 10px 20px;
 }
 
-/* line 709, ../Websites/test-server/resources/scss/style.scss */
 #clients-heading-text-1,
 #clients-heading-text-2 {
   overflow: hidden;
 }
 
-/* line 714, ../Websites/test-server/resources/scss/style.scss */
 #clients-heading-text-1 .letter,
 #clients-heading-text-2 .letter {
   display: inline-block;
@@ -730,20 +627,17 @@
   transform: translateY(-100px);
 }
 
-/* line 731, ../Websites/test-server/resources/scss/style.scss */
 #portofolio-slider {
   width: 90%;
   margin: 0 auto;
 }
 
-/* line 736, ../Websites/test-server/resources/scss/style.scss */
 .portofolio-underheader {
   text-align: center;
-  font-family: "Montserrat-regular";
+  font-family: "Bolt Rounded";
   font-size: 18px;
 }
 
-/* line 742, ../Websites/test-server/resources/scss/style.scss */
 .portofolio-slide-item {
   overflow: hidden;
   position: relative;
@@ -759,14 +653,12 @@
   background-size: cover;
 }
 
-/* line 756, ../Websites/test-server/resources/scss/style.scss */
 .portofolio-slide-item:hover {
   margin: 0px 5px;
   width: 340px;
   height: 440px;
 }
 
-/* line 761, ../Websites/test-server/resources/scss/style.scss */
 .portofolio-slide-item::after {
   content: "View Case Study";
   text-align: center;
@@ -780,36 +672,30 @@
   transition: 0.3s ease;
 }
 
-/* line 774, ../Websites/test-server/resources/scss/style.scss */
 .portofolio-slide-item:hover::after {
   bottom: 0;
 }
 
-/* line 777, ../Websites/test-server/resources/scss/style.scss */
 #portfolio-heading {
   transform-origin: center right;
   transform: scaleX(0);
 }
 
-/* line 782, ../Websites/test-server/resources/scss/style.scss */
 #portfolio-heading-text .letter {
   display: inline-block;
   line-height: 1em;
   transform: translateY(-100px);
 }
 
-/* line 788, ../Websites/test-server/resources/scss/style.scss */
 #portfolio-heading-text {
   overflow: hidden;
 }
 
-/* line 796, ../Websites/test-server/resources/scss/style.scss */
 #marketing-portfolio-heading {
   transform-origin: center right;
   transform: scaleX(0);
 }
 
-/* line 801, ../Websites/test-server/resources/scss/style.scss */
 #marketing-portfolio-heading-text-1 .letter,
 #marketing-portfolio-heading-text-2 .letter {
   display: inline-block;
@@ -817,13 +703,11 @@
   transform: translateY(-100px);
 }
 
-/* line 808, ../Websites/test-server/resources/scss/style.scss */
 #marketing-portfolio-heading-text-1,
 #marketing-portfolio-heading-text-2 {
   overflow: hidden;
 }
 
-/* line 817, ../Websites/test-server/resources/scss/style.scss */
 #main-menu {
   width: 100vw;
   height: 100vh;
@@ -838,7 +722,6 @@
   align-content: center;
 }
 
-/* line 830, ../Websites/test-server/resources/scss/style.scss */
 #main-menu-bg-top,
 #main-menu-bg-bottom {
   transition-delay: 10ms;
@@ -846,7 +729,6 @@
   transition: 0.5s ease-out;
 }
 
-/* line 837, ../Websites/test-server/resources/scss/style.scss */
 #main-menu-bg-top {
   width: 100%;
   height: 50%;
@@ -857,7 +739,6 @@
   transform-origin: center right;
 }
 
-/* line 846, ../Websites/test-server/resources/scss/style.scss */
 #main-menu-bg-bottom {
   width: 100%;
   height: 50%;
@@ -868,7 +749,6 @@
   transform-origin: center left;
 }
 
-/* line 855, ../Websites/test-server/resources/scss/style.scss */
 #main-menu-nav {
   width: 100%;
   height: 100%;
@@ -880,7 +760,6 @@
   align-content: center;
 }
 
-/* line 870, ../Websites/test-server/resources/scss/style.scss */
 .main-menu-li {
   list-style: none;
   text-align: center;
@@ -890,7 +769,6 @@
   overflow: hidden;
 }
 
-/* line 879, ../Websites/test-server/resources/scss/style.scss */
 .main-menu-li-a {
   color: #fff;
   text-decoration: none;
@@ -901,69 +779,80 @@
   cursor: pointer;
 }
 
-/* line 888, ../Websites/test-server/resources/scss/style.scss */
 .main-menu-li-a:hover {
   color: #CF1C30;
   font-size: 2.2em;
 }
 
-/* line 898, ../Websites/test-server/resources/scss/style.scss */
 #about-us-heading {
   transform-origin: center right;
   transform: scaleX(0);
 }
 
-/* line 903, ../Websites/test-server/resources/scss/style.scss */
 #about-us-heading-text .letter {
   display: inline-block;
   line-height: 1em;
   transform: translateY(-100px);
 }
 
-/* line 909, ../Websites/test-server/resources/scss/style.scss */
 #about-us-heading-text {
   overflow: hidden;
 }
 
-/* line 916, ../Websites/test-server/resources/scss/style.scss */
 #service-blob, #service-blob-mask {
   transition: 1s ease;
 }
 
-/* line 921, ../Websites/test-server/resources/scss/style.scss */
 .service-blob-0 {
   d: path("M138.41,568.29c47.49,158,3.12,208.63,53.65,296.47,71.43,124.19,235.83,154.59,300.7,166.59,256.06,47.36,314-96.87,626.83-117.17,303.35-19.7,407.92,105.64,566.12,5.64,131-82.77,175.11-241.87,186.35-282.35,16.89-60.87,52.5-189.14-9.88-302.12-38.26-69.29-102.94-113.91-255.53-169.41C1331.81,66,1097,49.05,1017.94,44.53,658.06,23.94,435.87,83.78,367.12,103.82,226.18,144.9,55.49,196.75,33.94,305.71,19.15,380.49,89.66,406.11,138.41,568.29Z");
 }
 
-/* line 924, ../Websites/test-server/resources/scss/style.scss */
 .service-blob-1 {
   d: path("M45.24,606.41C64.48,797,80,950.42,182.18,1004.53c104.3,55.22,187.62-51.86,420.7-84.71,155-21.84,180.66,16.71,536.47,66.36,367.74,51.31,588.13,80,640.94-12.71,50-87.73-105.22-187.35-62.11-360,35.16-140.83,160.59-163.36,160.94-275.29.41-136.11-184.64-236.07-194.83-241.42-204.56-107.41-319.64,38.41-662.11,11.3C761,87.38,729.6-5.23,475.84,9.8c-124.3,7.36-269.27,15.94-364.25,120.85C8.67,244.31,24.83,404.36,45.24,606.41Z");
 }
 
-/* line 927, ../Websites/test-server/resources/scss/style.scss */
 .service-blob-2 {
   d: path("M69.24,585.24c11,47,40.84,167.75,144,268.23,40.35,39.31,107.17,90.36,291.31,141,123.73,34,339.41,90.94,633.39,56.68,153.87-17.94,335.89-41.28,518.12-166.59,77.78-53.49,171.91-120.19,216-247.06,8.79-25.3,51.72-157.66-9.88-302.12-47.49-111.35-133.8-172.2-170.83-194.82C1487.74,16.12,1344.63,173.86,988.29,149,665.75,126.5,585.08-16.56,355.82,55.82c-49.52,15.64-194,63.65-267.6,204C22.19,385.71,53.07,516.09,69.24,585.24Z");
 }
 
-/* line 932, ../Websites/test-server/resources/scss/style.scss */
 #client-blob {
   fill: #323232;
   transition: 1s ease;
 }
 
-/* line 937, ../Websites/test-server/resources/scss/style.scss */
 .client-blob-0 {
   d: path("M1838.2,627.14c-118.75-289.43-430.73-543.6-755.92-504.89C857.33,149,606.77,318.23,585.85,508.68c-14.56,132.49,91.85,185.83,59.23,296.16-51.31,173.58-342,133.94-425.91,304.63-78.06,158.79,64.35,415.15,222.83,550,283.72,241.45,788.24,237.57,1117-33.85C1831.72,1400.43,1986.48,988.52,1838.2,627.14Z");
 }
 
-/* line 940, ../Websites/test-server/resources/scss/style.scss */
 .client-blob-1 {
   d: path("M1110.48,91.23C925.42,79.38,494,51.76,227.63,362-58.68,695.51-45,1292.28,284,1566.41c252.24,210.11,686,227.5,826.44,56.41,92.74-112.94-.73-236.9,110-386.42,118.46-160,280.63-92.64,437.19-239.76,152.57-143.35,224.24-419.28,129.75-614.89C1664.23,126.68,1304.64,103.66,1110.48,91.23Z");
 }
 
-/* line 943, ../Websites/test-server/resources/scss/style.scss */
 .client-blob-2 {
   d: path("M1587.17,590.48c-31.71-200-372.1-498.34-833.49-387.84C182.5,339.44,71.19,1071.55,188.14,1175.75c92.75,82.64,379.77-105.51,493.61-2.82,104.11,93.91,26.8,282.92,132.57,441.43,159.53,239.07,951.14,68.16,978.75-141,19.3-146.21-346.49-221-361-476.69C1421.39,809.5,1611.34,743,1587.17,590.48Z");
 }
 
-/*# sourceMappingURL=style.css.map */
+.white-pixel {
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  margin: 2.5px;
+}
+
+.black-pixel {
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  margin: 2.5px;
+}
+
+.heading-pixel-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#about-us-heading-text .letter:nth-last-child(1),
+#about-us-heading-text .letter:nth-last-child(2) {
+  color: #e31e3a;
+}
