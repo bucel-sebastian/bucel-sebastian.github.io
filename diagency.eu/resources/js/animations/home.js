@@ -204,12 +204,21 @@ function homeScrollAnimations(){
     let platformsSectionContainer = document.getElementById("platforms-container");
 
     if(isInViewPort(aboutUsSection) && aboutUsSectionAnim != true){
+
+        
         
         anime.timeline({loop:false})
         .add({
             targets: "#about-us-heading",
             scaleX: [0,1],
             duration:1500
+        })
+        .add({
+            targets: '#about-us-html .black-pixel',
+            translateX: [50,0],
+            easing: 'cubicBezier(.5, .05, .1, .3)',
+            opacity: 1,
+            delay: anime.stagger(200, {grid: [15, 100], from: 600})
         })
 
         setTimeout(() => {
@@ -222,7 +231,11 @@ function homeScrollAnimations(){
                 delay: (el, i) => 30 * i
             })
         }, 500);
+
+
         aboutUsSectionAnim=true;   
+
+
     }
 
     if(isInViewPort(servicesSection) && servicesSectionAnim != true){

@@ -219,7 +219,7 @@ $textBlue: #272265;
     padding: 10px 80px;    
 }
 .heading-text,.heading-alternative-text{
-    font-size: 44px;
+    font-size: 54px;
     position: relative;
     z-index: 10;
 }
@@ -247,11 +247,16 @@ $textBlue: #272265;
 
 .texting{
     color:$textBlue;
-    font-size: 22px;
+    font-size: 28px;
     position: relative;
     width: 100%;
     max-width: 1200px;
     margin: 10px auto;
+}
+
+.texting-red{
+    color: $redPrimary;
+    text-transform: up;
 }
 
 .texting-center-align{
@@ -969,6 +974,9 @@ $textBlue: #272265;
     height: 5px;
     background-color: #000;
     margin: 2.5px;
+    background-attachment: fixed;
+    opacity: 0;
+    transition: 0.2s ease;
 }
 
 .heading-pixel-row{
@@ -982,3 +990,34 @@ $textBlue: #272265;
     color: #e31e3a;
 }
 
+$from-r:  236;
+$from-g: 29;
+$from-b: 59;
+$to-r: 39;
+$to-g: 35;
+$to-b: 94;
+$from: rgba($from-r, $from-g,$from-b, 1);
+$to: rgba($to-r, $to-g,$to-b, 1);
+$numberRows: 12;
+$numberCols: 100;
+
+
+@function calcRgbaColor($index,$leftSide) {
+    $add : $index + 1;
+    @if $leftSide == true {
+      $add : $index - 1;
+    }
+    @return rgba($from-r + $add*($to-r - $from-r)/$numberCols,$from-g + $add*($to-g - $from-g)/$numberCols,$from-b + $add*($to-b - $from-b)/$numberCols, 1);
+}
+
+@for $j from 0 to $numberCols {
+    .black-pixel[data-col="#{$j}"]{
+        background: linear-gradient(to left, calcRgbaColor($j,true), calcRgbaColor($j,false));
+    }
+}
+
+@for $j from $numberCols to 0 {
+    #expertise-html .black-pixel[data-col="#{$j}"]{
+        background: linear-gradient(to left, calcRgbaColor($j,true), calcRgbaColor($j,false));
+    }
+}
