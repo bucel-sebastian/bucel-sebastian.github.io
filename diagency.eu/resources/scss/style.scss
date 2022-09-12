@@ -12,11 +12,11 @@ $textBlue: #272265;
 
 @font-face {
     font-family: 'Magison';
-    src: url('/diagency.eu/resources/fonts/Magison.ttf');
+    src: url('/resources/fonts/Magison.ttf');
 }
 @font-face {
     font-family: 'Bolt Rounded';
-    src: url('/diagency.eu/resources/fonts/Bolt-Rounded.ttf');
+    src: url('/resources/fonts/Bolt-Rounded.ttf');
 }
 
 *{
@@ -256,7 +256,7 @@ $textBlue: #272265;
 
 .texting-red{
     color: $redPrimary;
-    text-transform: up;
+    text-transform: uppercase;
 }
 
 .texting-center-align{
@@ -999,7 +999,7 @@ $to-b: 94;
 $from: rgba($from-r, $from-g,$from-b, 1);
 $to: rgba($to-r, $to-g,$to-b, 1);
 $numberRows: 12;
-$numberCols: 100;
+$numberCols: 95;
 
 
 @function calcRgbaColor($index,$leftSide) {
