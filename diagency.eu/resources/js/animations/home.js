@@ -234,7 +234,7 @@ function homeScrollAnimations(){
         setTimeout(() => {
             anime.timeline({loop:false})
             .add({
-                targets: '#about-us .texting',
+                targets: '#about-us .texting p',
                 translateY: [100, 0],
                 duration: 1000,
                 opacity: [0,1],
