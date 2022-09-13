@@ -1,8 +1,13 @@
+
+
 window.onload = function() {startAnimationsFunction()};
-window.onscroll = function() {caseStudyAnimations();};
+
 function startAnimationsFunction(){
     heroAnimations();
+    
 }
+
+window.onscroll = function() {homeScrollAnimations();};
 
 function heroAnimations(){
     var textWrapper = document.querySelector('#hero-text-we');
@@ -66,25 +71,22 @@ function heroAnimations(){
 }
 
 
-
-
-
 let aboutSectionAnim = false, servicesSectionAnim = false, portfolioSectionAnim = false, platformsSectionAnim = false, portfolioDigitalSectionAnim = false, clientsSectionAnim = false, contactSectionAnim = false, platformsSectionContainerAnim = false;
 
 
-function caseStudyAnimations(){
+function homeScrollAnimations(){
     console.log("no scroll animations yet");
 
     
 
     let aboutSection = document.getElementById("case-study-about");
-    let servicesSection = document.getElementById("services-header-text");
-    let portfolioSection = document.getElementById("portfolio");
-    let platformsSection = document.getElementById("platforms-heading");
-    let portfolioDigitalSection = document.getElementById("marketing-portfolio-heading");
-    let clientsSection = document.getElementById("clients-heading");
-    let contactSection = document.getElementById("contact-heading");
-    let platformsSectionContainer = document.getElementById("platforms-container");
+    // let servicesSection = document.getElementById("services-header-text");
+    // let portfolioSection = document.getElementById("portfolio");
+    // let platformsSection = document.getElementById("platforms-heading");
+    // let portfolioDigitalSection = document.getElementById("marketing-portfolio-heading");
+    // let clientsSection = document.getElementById("clients-heading");
+    // let contactSection = document.getElementById("contact-heading");
+    // let platformsSectionContainer = document.getElementById("platforms-container");
 
     if(isInViewPort(aboutSection) && aboutSectionAnim != true){
 
@@ -117,12 +119,12 @@ function caseStudyAnimations(){
         setTimeout(() => {
             anime.timeline({loop:false})
             .add({
-                targets: '#about-us .texting',
+                targets: '#case-study-about .texting p',
                 translateY: [100, 0],
                 duration: 1000,
                 opacity: [0,1],
                 easing: "easeOutExpo",
-                delay: (el, i) => 200 * i
+                delay: (el, i) => 500 * i
             })
         }, 500);
 
@@ -136,155 +138,212 @@ function caseStudyAnimations(){
 
     }
 
-    if(isInViewPort(servicesSection) && servicesSectionAnim != true){
+    // if(isInViewPort(servicesSection) && servicesSectionAnim != true){
 
-        console.log("services");
+    //     console.log("services");
         
-        anime.timeline({loop:false})
-        .add({
-                targets: "#services-header-text .letter",
-                translateY: [-100,0],
-                easing: "easeOutExpo",
-                duration: 1400,
-                delay: (el, i) => 30 * i
-            })
+    //     anime.timeline({loop:false})
+    //     .add({
+    //             targets: "#services-header-text .letter",
+    //             translateY: [-100,0],
+    //             easing: "easeOutExpo",
+    //             duration: 1400,
+    //             delay: (el, i) => 30 * i
+    //         })
 
-            anime.timeline({loop:false}).add({
-                targets: '#expertise-html .black-pixel',
-                translateX: [-50,0],
-                easing: 'cubicBezier(.5, .05, .1, .3)',
-                opacity: 1,
-                delay: anime.stagger(100, {grid: [15, 100], from: 600})
-            })
-            servicesSectionAnim=true;   
-    }
+    //         anime.timeline({loop:false}).add({
+    //             targets: '#expertise-html .black-pixel',
+    //             translateX: [-50,0],
+    //             easing: 'cubicBezier(.5, .05, .1, .3)',
+    //             opacity: 1,
+    //             delay: anime.stagger(100, {grid: [15, 100], from: 600})
+    //         })
+    //         servicesSectionAnim=true;   
+    // }
 
 
-    if(isInViewPort(portfolioSection) && portfolioSectionAnim != true){
+    // if(isInViewPort(portfolioSection) && portfolioSectionAnim != true){
         
-        anime.timeline({loop:false})
-        .add({
-            targets: "#portfolio-heading",
-            scaleX: [0,1],
-            duration:00
-        })
-        .add({
-            targets: "#portfolio-heading-text .letter",
-            translateY: [-100,0],
-            easing: "easeOutExpo",
-            duration: 1400,
-            delay: (el, i) => 30 * i
-        })
+    //     anime.timeline({loop:false})
+    //     .add({
+    //         targets: "#portfolio-heading",
+    //         scaleX: [0,1],
+    //         duration:00
+    //     })
+    //     .add({
+    //         targets: "#portfolio-heading-text .letter",
+    //         translateY: [-100,0],
+    //         easing: "easeOutExpo",
+    //         duration: 1400,
+    //         delay: (el, i) => 30 * i
+    //     })
 
     
             
         
-        portfolioSectionAnim=true;   
-    }
-    if(isInViewPort(platformsSection) && platformsSectionAnim != true){
+    //     portfolioSectionAnim=true;   
+    // }
+    // if(isInViewPort(platformsSection) && platformsSectionAnim != true){
         
-        anime.timeline({loop:false})
-        .add({
-            targets: "#platforms-heading",
-            scaleX: [0,1],
-            duration:1500
-        })
+    //     anime.timeline({loop:false})
+    //     .add({
+    //         targets: "#platforms-heading",
+    //         scaleX: [0,1],
+    //         duration:1500
+    //     })
 
-        setTimeout(() => {
-            anime.timeline({loop:false})
-            .add({
-                targets: "#platforms-heading-text .letter",
-                translateY: [-100,0],
-                easing: "easeOutExpo",
-                duration: 1400,
-                delay: (el, i) => 30 * i
-            })
-        }, 500);
-        platformsSectionAnim=true;   
-    }
+    //     setTimeout(() => {
+    //         anime.timeline({loop:false})
+    //         .add({
+    //             targets: "#platforms-heading-text .letter",
+    //             translateY: [-100,0],
+    //             easing: "easeOutExpo",
+    //             duration: 1400,
+    //             delay: (el, i) => 30 * i
+    //         })
+    //     }, 500);
+    //     platformsSectionAnim=true;   
+    // }
 
-    if(isInViewPort(portfolioDigitalSection) && portfolioDigitalSectionAnim != true){
+    // if(isInViewPort(portfolioDigitalSection) && portfolioDigitalSectionAnim != true){
         
-        anime.timeline({loop:false})
-        .add({
-            targets: "#marketing-portfolio-heading",
-            scaleX: [0,1],
-            duration:1500
-        })
+    //     anime.timeline({loop:false})
+    //     .add({
+    //         targets: "#marketing-portfolio-heading",
+    //         scaleX: [0,1],
+    //         duration:1500
+    //     })
 
-        setTimeout(() => {
-            anime.timeline({loop:false})
-            .add({
-                targets: "#marketing-portfolio-heading-text-2 .letter",
-                translateY: [-100,0],
-                easing: "easeOutExpo",
-                duration: 1400,
-                delay: (el, i) => 30 * i
-            })
-            setTimeout(() => {
-                anime.timeline({loop:false})
-                .add({
-                    targets: "#marketing-portfolio-heading-text-1 .letter",
-                    translateY: [-100,0],
-                    easing: "easeOutExpo",
-                    duration: 1400,
-                    delay: (el, i) => 30 * i
-                })
-            }, 500);
-        }, 500);
-        portfolioDigitalSectionAnim=true;   
-    }
+    //     setTimeout(() => {
+    //         anime.timeline({loop:false})
+    //         .add({
+    //             targets: "#marketing-portfolio-heading-text-2 .letter",
+    //             translateY: [-100,0],
+    //             easing: "easeOutExpo",
+    //             duration: 1400,
+    //             delay: (el, i) => 30 * i
+    //         })
+    //         setTimeout(() => {
+    //             anime.timeline({loop:false})
+    //             .add({
+    //                 targets: "#marketing-portfolio-heading-text-1 .letter",
+    //                 translateY: [-100,0],
+    //                 easing: "easeOutExpo",
+    //                 duration: 1400,
+    //                 delay: (el, i) => 30 * i
+    //             })
+    //         }, 500);
+    //     }, 500);
+    //     portfolioDigitalSectionAnim=true;   
+    // }
     
-    if(isInViewPort(clientsSection) && clientsSectionAnim != true){
+    // if(isInViewPort(clientsSection) && clientsSectionAnim != true){
         
         
         
-            anime.timeline({loop:false})
-            .add({
-                targets: "#clients-heading-text-2 .letter",
-                translateY: [-100,0],
-                easing: "easeOutExpo",
-                duration: 1400,
-                delay: (el, i) => 30 * i
-            })
-            setTimeout(() => {
-                anime.timeline({loop:false})
-                .add({
-                    targets: "#clients-heading-text-1 .letter",
-                    translateY: [-100,0],
-                    easing: "easeOutExpo",
-                    duration: 1400,
-                    delay: (el, i) => 30 * i
-                })
-            }, 500);
+    //         anime.timeline({loop:false})
+    //         .add({
+    //             targets: "#clients-heading-text-2 .letter",
+    //             translateY: [-100,0],
+    //             easing: "easeOutExpo",
+    //             duration: 1400,
+    //             delay: (el, i) => 30 * i
+    //         })
+    //         setTimeout(() => {
+    //             anime.timeline({loop:false})
+    //             .add({
+    //                 targets: "#clients-heading-text-1 .letter",
+    //                 translateY: [-100,0],
+    //                 easing: "easeOutExpo",
+    //                 duration: 1400,
+    //                 delay: (el, i) => 30 * i
+    //             })
+    //         }, 500);
        
-        clientsSectionAnim=true;   
-    }
+    //     clientsSectionAnim=true;   
+    // }
 
-    if(isInViewPort(contactSection) && contactSectionAnim != true){
+    // if(isInViewPort(contactSection) && contactSectionAnim != true){
         
-        anime.timeline({loop:false})
-        .add({
-            targets: "#contact-heading-text .letter",
-            translateY: [-100,0],
-            easing: "easeOutExpo",
-            duration: 1400,
-            delay: (el, i) => 30 * i
-        })
+    //     anime.timeline({loop:false})
+    //     .add({
+    //         targets: "#contact-heading-text .letter",
+    //         translateY: [-100,0],
+    //         easing: "easeOutExpo",
+    //         duration: 1400,
+    //         delay: (el, i) => 30 * i
+    //     })
     
-        contactSectionAnim=true;   
-    }
+    //     contactSectionAnim=true;   
+    // }
 
-    if(isInViewPort(platformsSectionContainer) && platformsSectionContainerAnim != true){
-        anime.timeline({loop:false})
-        .add({
-            targets:".platform-box img",
-            translateY: [500,0],
-            easing: "easeOutExpo",
-            duration: 1400,
-            delay: (el, i) => 100 * i
-        })
-        platformsSectionContainerAnim=true;
-    }
+    // if(isInViewPort(platformsSectionContainer) && platformsSectionContainerAnim != true){
+    //     anime.timeline({loop:false})
+    //     .add({
+    //         targets:".platform-box img",
+    //         translateY: [500,0],
+    //         easing: "easeOutExpo",
+    //         duration: 1400,
+    //         delay: (el, i) => 100 * i
+    //     })
+    //     platformsSectionContainerAnim=true;
+    // }
 
 }
+
+
+
+
+// // Get the an HTML element
+// var element = document.querySelector('<a selector>');
+
+// // Get its bounding client rectangle
+// var bounding = element.getBoundingClientRect();
+
+function isInViewPort(element) {
+    // Get the bounding client rectangle position in the viewport
+    var bounding = element.getBoundingClientRect();
+
+    // Checking part. Here the code checks if it's *fully* visible
+    // Edit this part if you just want a partial visibility
+    if (
+        bounding.top >= 0 &&
+        bounding.left >= 0 &&
+        bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    ) {
+        // console.log('In the viewport! :)');
+        return true;
+    } else {
+        // console.log('Not in the viewport. :(');
+        return false;
+    }
+}
+
+// window.addEventListener('scroll', function (event) {
+//     if (isInViewport(theElementToWatch)) {
+//       // update the element display
+//     }
+// }, false);
+
+var textWrapper = document.querySelector('#about-heading-text');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+// textWrapper = document.querySelector('#services-header-text');
+// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+// textWrapper = document.querySelector('#portfolio-heading-text');
+// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+// textWrapper = document.querySelector('#platforms-heading-text');
+// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+// textWrapper = document.querySelector('#marketing-portfolio-heading-text-1');
+// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+// textWrapper = document.querySelector('#marketing-portfolio-heading-text-2');
+// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+// textWrapper = document.querySelector('#clients-heading-text-1');
+// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+// textWrapper = document.querySelector('#clients-heading-text-2');
+// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+// textWrapper = document.querySelector('#contact-heading-text');
+// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");

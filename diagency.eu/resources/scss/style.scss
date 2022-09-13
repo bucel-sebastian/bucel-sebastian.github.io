@@ -911,20 +911,25 @@ $textBlue: #272265;
 
 // About us Section - start
 
-#about-us-heading{
+#about-us-heading,
+#about-heading{
     transform-origin: center right;
     transform: scaleX(0);
 }
 
-#about-us-heading-text .letter{
+#about-us-heading-text .letter,
+#about-heading-text .letter{
     display: inline-block;
     line-height: 1em;
     transform: translateY(-100px);
 }
 
-#about-us-heading-text{
+#about-us-heading-text,
+#about-heading-text{
   overflow: hidden;
 }
+
+
 
 // About us Section - end
 
@@ -1020,4 +1025,58 @@ $numberCols: 95;
     #expertise-html .black-pixel[data-col="#{$j}"]{
         background: linear-gradient(to left, calcRgbaColor($j,true), calcRgbaColor($j,false));
     }
+}
+
+
+
+
+
+// CASE STUDY - STArt
+
+.case-study-about-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.case-study-chapters-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.case-study-chapter{
+    font-family: 'Bolt Rounded';
+    text-decoration: none;
+    color: $textBlue;
+    margin-right: 25px;
+    position: relative;
+    width: 180px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.case-study-chapter::after{
+    content: "";
+    width:100%;
+    position: absolute;
+    height: 5px;
+    bottom: -15px;
+    left: 0;
+    background-image: linear-gradient(to bottom, transparent 50%, $redAccent 50%),
+                    linear-gradient(to left, $white 50%, $redAccent 50%);
+  background-size: 10px 10px, 10px 10px;
+}
+
+.case-study-pruporsal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
 }

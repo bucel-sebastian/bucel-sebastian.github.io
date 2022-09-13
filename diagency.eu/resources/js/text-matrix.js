@@ -57,8 +57,27 @@ for(i=0; i<aboutusText.length;i++){
     }
     tmpHtml += "</div>";
 
-    aboutusHTML.innerHTML += tmpHtml;
-    marketingPortfolioHTML.innerHTML +=tmpHtml;
+
+    if(aboutusHTML){
+        aboutusHTML.innerHTML += tmpHtml;
+    }
+
+    if(marketingPortfolioHTML){
+        marketingPortfolioHTML.innerHTML +=tmpHtml;
+    }
+
+    if(document.getElementById("about-html")){
+        document.getElementById("about-html").innerHTML+=tmpHtml;
+    }
+    if(document.getElementById("services-html")){
+        document.getElementById("services-html").innerHTML=tmpHtml;
+    }
+    if(document.getElementById("research-html")){
+        document.getElementById("research-html").innerHTML=tmpHtml;
+    }
+    if(document.getElementById("proposal-html")){
+        document.getElementById("proposal-html").innerHTML=tmpHtml;
+    }
 }
 
 
@@ -80,7 +99,12 @@ for(i=0; i<expertiseText.length;i++){
     }
     tmpHtml += "</div>";
 
-    expertiseHTML.innerHTML += tmpHtml;
+    if(expertiseHTML){
+        expertiseHTML.innerHTML += tmpHtml;
+    }
 }
+
+
+
 
 
