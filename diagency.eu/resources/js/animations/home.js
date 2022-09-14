@@ -160,7 +160,7 @@ function heroAnimations(){
 }
 
 
-let aboutUsSectionAnim = false, servicesSectionAnim = false, portfolioSectionAnim = false, platformsSectionAnim = false, portfolioDigitalSectionAnim = false, clientsSectionAnim = false, contactSectionAnim = false, platformsSectionContainerAnim = false;
+let aboutUsSectionAnim = false, servicesSectionAnim = false, portfolioSectionAnim = false, platformsSectionAnim = false, portfolioDigitalSectionAnim = false, clientsSectionAnim = false, contactSectionAnim = false, platformsSectionContainerAnim = false, mapSectionAnim = false;
 
 
 function homeScrollAnimations(){
@@ -176,6 +176,7 @@ function homeScrollAnimations(){
     let clientsSection = document.getElementById("clients-heading");
     let contactSection = document.getElementById("contact-heading");
     let platformsSectionContainer = document.getElementById("platforms-container");
+    let mapSection = document.getElementById("map-heading");
 
     if(isInViewPort(aboutUsSection) && aboutUsSectionAnim != true){
 
@@ -248,6 +249,120 @@ function homeScrollAnimations(){
                 delay: anime.stagger(100, {grid: [15, 100], from: 600})
             })
             servicesSectionAnim=true;   
+    }
+
+    if(isInViewPort(mapSection) && mapSectionAnim != true){
+        
+            anime.timeline({loop:false})
+            .add({
+                targets: "#map-heading-text-2 .letter",
+                translateY: [-100,0],
+                easing: "easeOutExpo",
+                duration: 1400,
+                delay: (el, i) => 30 * i
+            })
+            setTimeout(() => {
+                anime.timeline({loop:false})
+                .add({
+                    targets: "#map-heading-text-1 .letter",
+                    translateY: [-100,0],
+                    easing: "easeOutExpo",
+                    duration: 1400,
+                    delay: (el, i) => 30 * i
+                })
+            }, 500);
+
+            setTimeout(() => {
+                anime.timeline({loop:false})
+            .add({
+                targets: "#romania",
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 300
+            })
+            .add({
+                targets: "#france",
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 300,
+                delay:150
+            })
+            .add({
+                targets: "#spain",
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 300,
+                delay:150
+            })
+            .add({
+                targets: "#germany",
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 300,
+                delay:150
+            })
+            .add({
+                targets: "#denmark",
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 300,
+                delay:150
+            })
+            .add({
+                targets: "#finland",
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 300,
+                delay:150
+            })
+            .add({
+                targets: "#sweden",
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 300,
+                delay:150
+            })
+            .add({
+                targets: "#hungary",
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 300,
+                delay:150
+            })
+            .add({
+                targets: "#slovakia",
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 300,
+                delay:150
+            })
+            .add({
+                targets: "#czech",
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 300,
+                delay:150
+            })
+            .add({
+                targets: "#poland",
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 300,
+                delay:150
+            })
+            .add({
+                targets: "#netherlands",
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 300,
+                delay:150
+            })
+            }, 1000);
+            
+
+
+        
+        mapSectionAnim=true;   
     }
 
 
@@ -433,6 +548,12 @@ textWrapper = document.querySelector('#clients-heading-text-1');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 textWrapper = document.querySelector('#clients-heading-text-2');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+textWrapper = document.querySelector('#map-heading-text-1');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+textWrapper = document.querySelector('#map-heading-text-2');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
 
 textWrapper = document.querySelector('#contact-heading-text');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");

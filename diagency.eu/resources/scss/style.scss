@@ -737,6 +737,7 @@ $textBlue: #272265;
 
 
 
+
 // Clients section - end
 
 
@@ -823,6 +824,18 @@ $textBlue: #272265;
 
 #marketing-portfolio-heading-text-1,
 #marketing-portfolio-heading-text-2{
+  overflow: hidden;
+}
+
+#map-heading-text-1 .letter,
+#map-heading-text-2 .letter{
+    display: inline-block;
+    line-height: 1em;
+    transform: translateY(-100px);
+}
+
+#map-heading-text-1,
+#map-heading-text-2{
   overflow: hidden;
 }
 
@@ -1008,6 +1021,11 @@ $textBlue: #272265;
 }
 .services-header h2{
     font-size: 38px;
+}
+
+.map-country-red{
+    opacity: 0;
+    transition: 0.5s ease;
 }
 
 #client-blob{
