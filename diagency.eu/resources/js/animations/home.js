@@ -35,11 +35,21 @@ serviceSliderBtns.forEach(button => {
         document.getElementById("service-blob").removeAttribute("class");
 
         document.getElementById("service-blob").classList.add("service-blob-"+serviceBlobIndex);
+
+
+        setService(e.target.dataset.service);
+
+
     })
 });
 
 function setService(id){
-    
+    let servicesClass = document.querySelectorAll(".service-container");
+    servicesClass.forEach(element => {
+        element.classList.remove("service-active");
+    });
+
+    document.getElementById("service-container-"+id).classList.add("service-active");
 }
 
 
