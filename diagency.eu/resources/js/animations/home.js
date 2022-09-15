@@ -1,3 +1,22 @@
+let happyClients = [
+    {"client":"Skil","title":"M.W  Group Trade Marketing Manager SKIL Europe","text":"Following the great success that we had in Romania, we asked for the support of D+I for other European countries such as France, Spain or even the Nordic countries. The team managed to gain height by offering us strategic marketing recommendations, support for digital or in-store promotional campaigns, and above all the development of a site dedicated to European promotions for our brand."},
+    {"client":"Mars","title":"A.T  Senior Activation Manager MARS","text":"My first experience with DI Agency was on a marketing project for one of our flagship brands for our organization. The agency brought good expertise that involeved targeting the right shoppers trough use of POSM materials and on line media. The feedback and results exceeded our previous campaign."},
+    {"client":"Coty","title":"C.S Coty Customer Marketing Leader","text":"DI Agency has a deep knowledge of the mechanics and shopper conversion and helped us along the campaign to boost the sales and achieve our targets. For the past years we worked on different campaigns both shopper campaigns, but also social media campaigns and we collaborated very well each time."},
+];
+
+let actualClient = happyClients[0];
+console.log(happyClients);
+console.log(actualClient);
+
+
+
+
+
+
+
+
+
+
 
 function changeServiceBlop(){
     let randomValue = Math.floor(Math.random() * 3);
@@ -64,7 +83,7 @@ let clientSliderButtons = document.querySelectorAll(".clients-slider-element");
 
 clientSliderButtons.forEach(button => {
     button.addEventListener("click",e=>{
-        let clientId = e.target.dataset.clientId;
+        let clientId = button.dataset.id;
         setClientPage(clientId);
         if(clientBlobIndex+1>2){
             clientBlobIndex=0;
@@ -79,7 +98,42 @@ clientSliderButtons.forEach(button => {
 });
 
 function setClientPage(id){
-    console.log(id);
+    console.log(happyClients[(id-1)]);
+    actualClient = happyClients[(id-1)];
+
+    anime.timeline({loop: false})
+    .add({
+        targets: [".client-name",".client-header",".client-text",".client-logo img"],
+        opacity: [1,0],
+        duration: 1500
+    })
+    setTimeout(()=>{
+        document.getElementsByClassName("client-name")[0].innerHTML=actualClient.client;
+        document.getElementsByClassName("client-header")[0].innerHTML=actualClient.title;
+        document.getElementsByClassName("client-text")[0].innerHTML=actualClient.text;
+        document.getElementById("client-logo-img").src="/diagency.eu/resources/assets/img/clients/"+actualClient.client.toLowerCase()+"-logo.png";
+        anime.timeline({loop: false})
+            .add({
+            targets: [".client-name",".client-header",".client-text",".client-logo img"],
+            opacity: [0,1],
+            duration: 1000
+        })
+    },1000)
+    // .add({
+    //     targets: ".client-header",
+    //     opacity: [1,0],
+    //     duration: 1000
+    // })
+    // .add({
+    //     targets: ".client-text",
+    //     opacity: [1,0],
+    //     duration: 1000
+    // })
+    // .add({
+    //     targets: ".client-logo img",
+    //     opacity: [1,0],
+    //     duration: 1000
+    // })
 }
 
 
@@ -160,7 +214,7 @@ function heroAnimations(){
 }
 
 
-let aboutUsSectionAnim = false, servicesSectionAnim = false, portfolioSectionAnim = false, platformsSectionAnim = false, portfolioDigitalSectionAnim = false, clientsSectionAnim = false, contactSectionAnim = false, platformsSectionContainerAnim = false, mapSectionAnim = false;
+let aboutUsSectionAnim = false, servicesSectionAnim = false, portfolioSectionAnim = false, platformsSectionAnim = false, portfolioDigitalSectionAnim = false, clientsSectionAnim = false, contactSectionAnim = false, platformsSectionContainerAnim = false, mapSectionAnim = false,aboutUsIconsSectionAnim=false;
 
 
 function homeScrollAnimations(){
@@ -168,7 +222,8 @@ function homeScrollAnimations(){
 
     
 
-    let aboutUsSection = document.getElementById("about-us");
+    let aboutUsSection = document.getElementById("about-us-heading");
+    let aboutUsIconsSection = document.querySelector(".about-us-icon-container");
     let servicesSection = document.getElementById("services-header-text");
     let portfolioSection = document.getElementById("portfolio");
     let platformsSection = document.getElementById("platforms-heading");
@@ -202,7 +257,7 @@ function homeScrollAnimations(){
             translateX: [50,0],
             easing: 'cubicBezier(.5, .05, .1, .3)',
             opacity: 1,
-            delay: anime.stagger(200, {grid: [15, 100], from: 599})
+            delay: anime.stagger(50, {grid: [15, 100], from: 599})
         })
 
 
@@ -227,6 +282,20 @@ function homeScrollAnimations(){
 
 
     }
+
+    if(isInViewPort(aboutUsIconsSection) && aboutUsIconsSectionAnim != true){
+        anime.timeline({loop:false})
+        .add({
+            targets:".about-us-icon",
+            translateY: [500,0],
+            easing: "easeOutExpo",
+            duration: 1400,
+            delay: (el, i) => 100 * i
+        })
+
+        aboutUsIconsSectionAnim=true;
+    }
+
 
     if(isInViewPort(servicesSection) && servicesSectionAnim != true){
 
@@ -372,7 +441,7 @@ function homeScrollAnimations(){
         .add({
             targets: "#portfolio-heading",
             scaleX: [0,1],
-            duration:00
+            duration: 0
         })
         .add({
             targets: "#portfolio-heading-text .letter",
@@ -381,6 +450,16 @@ function homeScrollAnimations(){
             duration: 1400,
             delay: (el, i) => 30 * i
         })
+
+        anime.timeline({loop:false}).add({
+            targets: '#portfolio-html .black-pixel',
+            translateX: [50,0],
+            easing: 'cubicBezier(.5, .05, .1, .3)',
+            opacity: 1,
+            delay: anime.stagger(200, {grid: [15, 100], from: 599})
+        })
+
+        
 
     
             
@@ -393,7 +472,7 @@ function homeScrollAnimations(){
         .add({
             targets: "#platforms-heading",
             scaleX: [0,1],
-            duration:1500
+            duration:0
         })
 
         setTimeout(() => {
@@ -415,7 +494,7 @@ function homeScrollAnimations(){
         .add({
             targets: "#marketing-portfolio-heading",
             scaleX: [0,1],
-            duration:1500
+            duration:0
         })
 
         setTimeout(() => {
@@ -436,6 +515,16 @@ function homeScrollAnimations(){
                     duration: 1400,
                     delay: (el, i) => 30 * i
                 })
+                
+                anime.timeline({loop:false}).add({
+                    targets: '#marketing-portfolio-html .black-pixel',
+                    translateX: [50,0],
+                    easing: 'cubicBezier(.5, .05, .1, .3)',
+                    opacity: 1,
+                    delay: anime.stagger(200, {grid: [15, 100], from: 599})
+                })
+
+
             }, 500);
         }, 500);
         portfolioDigitalSectionAnim=true;   
@@ -478,6 +567,14 @@ function homeScrollAnimations(){
             delay: (el, i) => 30 * i
         })
     
+        anime.timeline({loop:false}).add({
+            targets: '#contact-html .black-pixel',
+            translateX: [50,0],
+            easing: 'cubicBezier(.5, .05, .1, .3)',
+            opacity: 1,
+            delay: anime.stagger(200, {grid: [15, 100], from: 599})
+        })
+
         contactSectionAnim=true;   
     }
 

@@ -80,9 +80,10 @@ function homeScrollAnimations(){
     
 
     let aboutSection = document.getElementById("case-study-about");
+    let platformsSectionContainer = document.getElementById("platforms-container");
     // let servicesSection = document.getElementById("services-header-text");
     // let portfolioSection = document.getElementById("portfolio");
-    // let platformsSection = document.getElementById("platforms-heading");
+    let platformsSection = document.getElementById("platforms-heading");
     // let portfolioDigitalSection = document.getElementById("marketing-portfolio-heading");
     // let clientsSection = document.getElementById("clients-heading");
     // let contactSection = document.getElementById("contact-heading");
@@ -136,6 +137,39 @@ function homeScrollAnimations(){
         aboutSectionAnim=true;   
 
 
+    }
+
+    if(isInViewPort(platformsSection) && platformsSectionAnim != true){
+        
+        anime.timeline({loop:false})
+        .add({
+            targets: "#platforms-heading",
+            scaleX: [0,1],
+            duration:0
+        })
+
+        setTimeout(() => {
+            anime.timeline({loop:false})
+            .add({
+                targets: "#platforms-heading-text .letter",
+                translateY: [-100,0],
+                easing: "easeOutExpo",
+                duration: 1400,
+                delay: (el, i) => 30 * i
+            })
+        }, 500);
+        platformsSectionAnim=true;   
+    }
+    if(isInViewPort(platformsSectionContainer) && platformsSectionContainerAnim != true){
+        anime.timeline({loop:false})
+        .add({
+            targets:".platform-box img",
+            translateY: [500,0],
+            easing: "easeOutExpo",
+            duration: 1400,
+            delay: (el, i) => 100 * i
+        })
+        platformsSectionContainerAnim=true;
     }
 
     // if(isInViewPort(servicesSection) && servicesSectionAnim != true){
