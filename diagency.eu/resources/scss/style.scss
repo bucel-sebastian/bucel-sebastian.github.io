@@ -1237,15 +1237,30 @@ $numberCols: 95;
     display: flex;
     align-items: center;
 }
+
 .international-flag{
     position: absolute;
     top: 0;
     height: 100%;
     opacity: 0.5;
+    width: 100%;
+    display: flex;
 }
+.international-flag::nth-of-type(2){
+    justify-content: flex-end;
+}
+
+
+
 .international-flag img{
     height: 100%;
 }
 .international-textes{
+    width: 100%;
+    padding: 0 25px;
     position: relative;
+    font-family: "Arial";
+}
+.international-textes p{
+    font-family: "Arial";
 }
