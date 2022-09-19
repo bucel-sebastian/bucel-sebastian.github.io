@@ -645,6 +645,15 @@ function homeScrollAnimations(){
         platformsSectionContainerAnim=true;
     }
 
+
+    let brandImg = document.querySelectorAll("#brands-logo-container img");
+    for(i=0;i<brandImg.length;i++){
+        if(!brandImg[i].classList.contains("visible") && isInViewPort(brandImg[i])){
+            brandImg[i].classList.add("visible");
+            brandImg[i].style.transform = "translateY(0)";
+            brandImg[i].style.opacity = "1";
+        }
+    }
 }
 
 

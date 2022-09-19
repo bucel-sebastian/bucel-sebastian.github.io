@@ -1283,9 +1283,12 @@ $numberCols: 95;
     width: 200px;
     margin: 10px 25px;
     height: auto;
+    transform: translateY(150px);
+    opacity: 0;
     filter: saturate(0);
     transition: 0.3s ease;
 }
+
 #brands-logo-container img:hover{
     filter: saturate(1);
 }
