@@ -1236,6 +1236,7 @@ $numberCols: 95;
     position: relative;
     display: flex;
     align-items: center;
+    margin: 25px 0;
 }
 
 .international-flag{
@@ -1247,7 +1248,10 @@ $numberCols: 95;
     display: flex;
 }
 
-.international-flag::nth-of-type(2){
+.international-quote:nth-child(2) {
+    text-align: right;
+}
+.international-quote:nth-child(2) .international-flag{
     justify-content: flex-end;
 }
 
@@ -1258,10 +1262,30 @@ $numberCols: 95;
 }
 .international-textes{
     width: 100%;
-    padding: 0 25px;
+    padding: 0 45px;
     position: relative;
     font-family: "Arial";
 }
 .international-textes p{
     font-family: "Arial";
+}
+
+
+#brands-logo-container{
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#brands-logo-container img{
+    width: 200px;
+    margin: 10px 25px;
+    height: auto;
+    filter: saturate(0);
+    transition: 0.3s ease;
+}
+#brands-logo-container img:hover{
+    filter: saturate(1);
 }
