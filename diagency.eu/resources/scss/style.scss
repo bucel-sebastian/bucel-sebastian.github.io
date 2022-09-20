@@ -1232,7 +1232,7 @@ $numberCols: 95;
 
 .international-quote{
     width: 100%;
-    height: 200px;
+    height: 100px;
     position: relative;
     display: flex;
     align-items: center;
@@ -1254,6 +1254,13 @@ $numberCols: 95;
 .international-quote:nth-child(2) .international-flag{
     justify-content: flex-end;
 }
+.international-quote:nth-child(4) {
+    text-align: right;
+}
+.international-quote:nth-child(4) .international-flag{
+    justify-content: flex-end;
+}
+
 
 
 
@@ -1292,3 +1299,4 @@ $numberCols: 95;
 #brands-logo-container img:hover{
     filter: saturate(1);
 }
+

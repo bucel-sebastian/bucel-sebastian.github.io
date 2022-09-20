@@ -23,7 +23,7 @@ let internationalProjects = [
     {"flag":"ro","content":"Cu o imbrățișare câștigă fiecare!"}
 ];
 
-let actualIntProject1, actualIntProject2, actualIntProject3;
+let actualIntProject1, actualIntProject2, actualIntProject3, actualIntProject4, actualIntProject5;
 
 
 let actualClient = happyClients[0];
@@ -33,36 +33,54 @@ console.log(actualClient);
 randomInternationalProjects();
 setInterval(() => {
     randomInternationalProjects();
-}, 10000);
+}, 2000);
 
 function randomInternationalProjects(){
-    let tmp1, tmp2 ,tmp3;
+    let tmp1, tmp2 ,tmp3, tmp4, tmp5;
     do {
         tmp1 = internationalProjects[Math.floor(Math.random() * internationalProjects.length)];
-    } while (tmp1 === actualIntProject1 || tmp1 === tmp2 || tmp1 === tmp3);
+    } while (tmp1 === actualIntProject1 || tmp1 === tmp2 || tmp1 === tmp3 || tmp1 === tmp4 || tmp1 === tmp5);
     do {
         tmp2 = internationalProjects[Math.floor(Math.random() * internationalProjects.length)];
-    } while (tmp2 === actualIntProject2 || tmp2 === tmp1 || tmp2 === tmp3);
+    } while (tmp2 === actualIntProject2 || tmp2 === tmp1 || tmp2 === tmp3 || tmp2 === tmp4 || tmp2 === tmp5);
     do {
         tmp3 = internationalProjects[Math.floor(Math.random() * internationalProjects.length)];
-    } while (tmp3 === actualIntProject3 || tmp3 === tmp2 || tmp3 === tmp1);
+    } while (tmp3 === actualIntProject3 || tmp3 === tmp1 || tmp3 === tmp2 || tmp3 === tmp4 || tmp3 === tmp5);
+    do {
+        tmp4 = internationalProjects[Math.floor(Math.random() * internationalProjects.length)];
+    } while (tmp4 === actualIntProject4 || tmp4 === tmp1 || tmp4 === tmp2 || tmp4 === tmp3 || tmp4 === tmp5);
+    do {
+        tmp5 = internationalProjects[Math.floor(Math.random() * internationalProjects.length)];
+    } while (tmp5 === actualIntProject5 || tmp5 === tmp2 || tmp5 === tmp1 || tmp5 === tmp3 || tmp5 === tmp4);
 
-    setInternationalProjects(tmp1,tmp2,tmp3);
+    setInternationalProjects(tmp1,tmp2,tmp3,tmp4,tmp5);
 }
 
-function setInternationalProjects(project1,project2,project3){
+function setInternationalProjects(project1,project2,project3,project4,project5){
     console.log(project1);
     console.log(project2);
     console.log(project3);
+    console.log(project4);
+    console.log(project5);
 
-    projects = [project1,project2,project3];
+    projects = [project1,project2,project3,project4,project5];
 
 
     let quotes = document.querySelectorAll(".international-quote");
     let flags = document.querySelectorAll(".international-flag");
     let textes = document.querySelectorAll(".international-textes");
 
+    for(i=0;i<projects.length;i++){
+        
 
+        textes[i].innerHTML = "<p>"+projects[i].content+"</p>";
+        flags[i].innerHTML = "<img src='/diagency.eu/resources/assets/img/"+projects[i].flag+"-flag.png' class='international-flag-img'>";
+        console.log("1");
+        
+        
+        
+
+    }
 }
 
 
