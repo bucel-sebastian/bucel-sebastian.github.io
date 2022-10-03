@@ -7,7 +7,16 @@ $(function() {
       loop: true,
       autoplay: true,
       autoplayTimeout: 2500,
-      dots:false
+      dots:false,
+      responsiveClass:true,
+      responsive:{
+        0:{
+          items:2,
+        },
+        600:{
+          items: 3,
+        }
+      }
     });
   });
   

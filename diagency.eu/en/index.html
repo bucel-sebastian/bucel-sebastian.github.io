@@ -453,7 +453,7 @@
                     <div style="position: relative;display: flex;justify-content: center;align-items: center;align-content: center;overflow: hidden;">
                     
 
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" style="width:80%;margin:0 auto;display:block;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" style="width:80%;margin:0 auto;display:block;" id="blop-services-svg">
                             <filter id="inset-shadow" x="-50%" y="-50%" width="200%" height="200%">
                                 <feComponentTransfer in=SourceAlpha>
                                   <feFuncA type="table" tableValues="2 0" />
@@ -674,7 +674,7 @@
                                 projects internationaly
                             </h2>
                         </div>
-                        <div style="padding: 10px 80px;">
+                        <div id="country-projects" style="padding: 10px 80px;">
                             <div class="texting texting-left-align">
                                 <div class="international-quote">
                                     <div class="international-flag">
@@ -1477,7 +1477,7 @@
                                 </button>
                             </div> -->
                             <div style="width: 100%; overflow:hidden;">
-                                <div style="display: flex;align-items: center;align-content: center;">
+                                <div id="case-studies-list" style="display: flex;align-items: center;align-content: center;">
                                     <a href="/en/case-study/echipamentul.ro/">
                                         <div class="portofolio-slide-item" style="background-image: url(/resources/assets/img/echipamentul-casestudy.png);">
                                         
@@ -1529,17 +1529,17 @@
                     <form action="" id="contact-form">
                         <div class="contact-form-container">
                             <label for="contact-name">Name</label>
-                            <input type="text" name="contact-name">
+                            <input type="text" name="contact-name" required>
                         </div>
 
                         <div class="contact-form-container">
                             <label for="contact-email">Email</label>
-                            <input type="email" name="contact-email">
+                            <input type="email" name="contact-email" required>
                         </div>
 
                         <div class="contact-form-container">
                             <label for="contact-phone">Phone number</label>
-                            <input type="tel" name="contact-phone">
+                            <input type="tel" name="contact-phone" required>
                         </div>
 
                         <div class="contact-form-container">
@@ -1547,7 +1547,7 @@
                             <textarea type="tel" name="contact-message"></textarea>
                         </div>
                         <div class="contact-form-container">
-                            <button class="contact-submit">
+                            <button class="contact-submit" id="send-button">
                                 <span class="default">Send</span>
                                 <span class="success">Sent</span>
                                 <div class="left"></div>
@@ -1609,7 +1609,7 @@
                     </div>
                 </div>
                 <br><br>
-                <div style="padding:0 100px">
+                <div style="padding:0 100px" id="badges-owl">
         
         
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -1777,6 +1777,7 @@
 
 
     <!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 

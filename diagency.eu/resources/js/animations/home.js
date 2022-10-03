@@ -224,7 +224,9 @@ function setClientPage(id){
 
 
 
-
+if(window.screen.width < 600){
+    document.getElementById("blop-services-svg").setAttribute("viewBox", "0 0 1080 1920");
+}
 
 
 
