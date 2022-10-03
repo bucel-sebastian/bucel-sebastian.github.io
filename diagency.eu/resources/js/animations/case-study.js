@@ -89,7 +89,7 @@ function homeScrollAnimations(){
     // let contactSection = document.getElementById("contact-heading");
     // let platformsSectionContainer = document.getElementById("platforms-container");
 
-    if(isInViewPort(aboutSection) && aboutSectionAnim != true){
+    if(aboutSectionAnim != true){
 
         
         

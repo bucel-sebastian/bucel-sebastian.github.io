@@ -1,26 +1,28 @@
 let happyClients = [
-    {"client":"Skil","title":"M.W  Group Trade Marketing Manager SKIL Europe","text":"Following the great success that we had in Romania, we asked for the support of D+I for other European countries such as France, Spain or even the Nordic countries. The team managed to gain height by offering us strategic marketing recommendations, support for digital or in-store promotional campaigns, and above all the development of a site dedicated to European promotions for our brand.","color":"#323232"},
-    {"client":"Mars","title":"A.T  Senior Activation Manager MARS","text":"My first experience with di agency was on a marketing project for one of our flagship brands for our organization. The agency brought good expertise that involeved targeting the right shoppers trough use of POSM materials and on line media. The feedback and results exceeded our previous campaign.","color":"#20c997"},
-    {"client":"Coty","title":"C.S Coty Customer Marketing Leader","text":"di agency has a deep knowledge of the mechanics and shopper conversion and helped us along the campaign to boost the sales and achieve our targets. For the past years we worked on different campaigns both shopper campaigns, but also social media campaigns and we collaborated very well each time.","color":"#f2f2f2"}
+    {"client":"Skil","title":"M.W - Group Trade Marketing Manager SKIL Europe","text":"Following the great success that we had in Romania, we asked for the support of D+I for other European countries such as France, Spain or even the Nordic countries. The team managed to gain height by offering us strategic marketing recommendations, support for digital or in-store promotional campaigns, and above all the development of a site dedicated to European promotions for our brand.","color":"#e5e3e1"},
+    {"client":"Mars","title":"A.T - Senior Activation Manager MARS","text":"My first experience with di agency was on a marketing project for one of our flagship brands for our organization. The agency brought good expertise that involeved targeting the right shoppers trough use of POSM materials and on line media. The feedback and results exceeded our previous campaign.","color":"#20c997"},
+    {"client":"Coty","title":"C.S - Coty Customer Marketing Leader","text":"di agency has a deep knowledge of the mechanics and shopper conversion and helped us along the campaign to boost the sales and achieve our targets. For the past years we worked on different campaigns both shopper campaigns, but also social media campaigns and we collaborated very well each time.","color":"#f2f2f2"}
 ];
 
-
+let quotes = document.querySelectorAll(".international-quote");
+let flags = document.querySelectorAll(".international-flag");
+let textes = document.querySelectorAll(".international-textes");
 
 let internationalProjects = [
     {"flag":"hu","content":"Utazz kedvenceddel!"},
     {"flag":"sk","content":"KÚP ORBIT ASPOŇ ZA 1,99 € A VYHRAJ 5 × CESTOVNÝ VOUCHER* NA LETNÚ DOVOLENKU!"},
     {"flag":"cz","content":"BER ŽIVOT S LEHKOSTÍ A VYHRAJ"},
-    {"flag":"ro","content":"Intră in tărâmul distracției cu SUGUS!"},
+    {"flag":"ro","content":"Intră în tărâmul distracției cu SUGUS!"},
     {"flag":"hu","content":"HŰTSD LE MAGAD EGY JÉGKRÉMMEL ÉS HŰSÖLJ HETI NYEREMÉNYEINKKEL VAGY FŐDÍJUNKKAL!"},
     {"flag":"sk","content":"Kúp Orbit v minimálnej hodnote 1,99 EUR a vyhraj 20x Edenred poukážku"},
     {"flag":"cz","content":"Získej M&M’s ponožky"},
-    {"flag":"ro","content":"Recompense pentru calatorii!"},
+    {"flag":"ro","content":"Recompense pentru călătorii!"},
     {"flag":"hu","content":"Finomat könnyedén. Ízletes grillköret pár perc alatt!"},
     {"flag":"sk","content":"JE ČAS ZAŽIARIŤ A VYHRAŤ!"},
     {"flag":"cz","content":"Dej si skvělou kávu v Paříži nebo Ochutnej pravou pizzu v Římě"},
     {"flag":"ro","content":"Savurați o cafea grozavă la Paris sau gustați o pizza adevărată la Roma!"},
     {"flag":"hu","content":"Próbáld ki a Malteserst és nyerd meg a 3db romantikus hőlégballonozás egyikét"},
-    {"flag":"ro","content":"Cu o imbrățișare câștigă fiecare!"}
+    {"flag":"ro","content":"Cu o îmbrățișare câștigă fiecare!"}
 ];
 
 let actualIntProject1, actualIntProject2, actualIntProject3, actualIntProject4, actualIntProject5;
@@ -33,7 +35,7 @@ console.log(actualClient);
 randomInternationalProjects();
 setInterval(() => {
     randomInternationalProjects();
-}, 2000);
+}, 3500);
 
 function randomInternationalProjects(){
     let tmp1, tmp2 ,tmp3, tmp4, tmp5;
@@ -56,6 +58,7 @@ function randomInternationalProjects(){
     setInternationalProjects(tmp1,tmp2,tmp3,tmp4,tmp5);
 }
 
+
 function setInternationalProjects(project1,project2,project3,project4,project5){
     console.log(project1);
     console.log(project2);
@@ -66,23 +69,33 @@ function setInternationalProjects(project1,project2,project3,project4,project5){
     projects = [project1,project2,project3,project4,project5];
 
 
-    let quotes = document.querySelectorAll(".international-quote");
-    let flags = document.querySelectorAll(".international-flag");
-    let textes = document.querySelectorAll(".international-textes");
-
     for(i=0;i<projects.length;i++){
-        
-
-        textes[i].innerHTML = "<p>"+projects[i].content+"</p>";
-        flags[i].innerHTML = "<img src='/diagency.eu/resources/assets/img/"+projects[i].flag+"-flag.png' class='international-flag-img'>";
-        console.log("1");
-        
-        
-        
-
+        setProjectContainer(i, projects[i].content, projects[i].flag);
     }
 }
 
+function setProjectContainer(index, content, flag){
+    setTimeout(() => {
+        $(quotes[index]).animate({
+            opacity:0,
+            transform: "translateY(-200px)"    
+        },200);
+        setTimeout(() => {
+            textes[index].innerHTML = "<p>"+content+"</p>";
+            flags[index].innerHTML = "<img src='/resources/assets/img/"+flag+"-flag.png' class='international-flag-img'>";
+            $(quotes[index]).animate({
+                opacity:0,
+                transform: "translateY(200px)"     
+            },0);
+            $(quotes[index]).animate({
+                opacity:1,
+                transform: "translateY(0px)"    
+            },200);
+        }, 500);
+    }, 200*index);
+    
+    
+}
 
 
 function changeServiceBlop(){
@@ -181,7 +194,7 @@ function setClientPage(id){
             document.getElementsByClassName("client-name")[0].innerHTML=actualClient.client;
             document.getElementsByClassName("client-header")[0].innerHTML=actualClient.title;
             document.getElementsByClassName("client-text")[0].innerHTML=actualClient.text;
-            document.getElementById("client-logo-img").src="/diagency.eu/resources/assets/img/clients/"+actualClient.client.toLowerCase()+"-logo.png";
+            document.getElementById("client-logo-img").src="/resources/assets/img/clients/"+actualClient.client.toLowerCase()+"-logo.png";
     
             anime.timeline({loop: false})
                 .add({

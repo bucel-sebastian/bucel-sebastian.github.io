@@ -1,0 +1,49 @@
+@media only screen and (max-width: 1200px){
+
+    .hero-img::before{
+        bottom: 0;
+    }
+
+    .service-container .service-container-box{
+        padding: 125px 50px 150px !important;
+    }
+    .service-text{
+        font-size: 22px;
+    }
+    .services-header h2 {
+        font-size: 28px;
+    }
+    .international-textes{
+        font-size: 22px;
+    }
+    .international-projects-container{
+        flex-direction: column !important;
+    }
+    .international-project-box{
+        width: 100% !important;
+    }
+
+    .heading-pixel-row{
+        display: none;
+    }
+
+    #services svg{
+        width: 100% !important;
+    }
+
+    .left-align{
+        margin: 10px auto 10px 0;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    
+}
+
+@media only screen and (max-width: 768px){
+
+}
+
+@media only screen and (max-width: 600px){
+
+}

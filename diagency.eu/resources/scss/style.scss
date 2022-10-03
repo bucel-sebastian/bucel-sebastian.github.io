@@ -12,11 +12,11 @@ $textBlue: #272265;
 
 @font-face {
     font-family: 'Magison';
-    src: url('/diagency.eu/resources/fonts/Magison.ttf');
+    src: url('/resources/fonts/Magison.ttf');
 }
 @font-face {
     font-family: 'Bolt Rounded';
-    src: url('/diagency.eu/resources/fonts/Bolt-Rounded.ttf');
+    src: url('/resources/fonts/Bolt-Rounded.ttf');
 }
 
 *{
@@ -43,6 +43,19 @@ $textBlue: #272265;
 }
 // html::-webkit-scrollbar-{}
 
+
+body{
+    background-color: #f1f1f1;
+}
+
+#page-wrap{
+    max-width: 1920px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0px 0px 55px 5px #1a1a1a55;
+    overflow: hidden;
+    background-color: #fff;;
+}
 
 
 
@@ -222,6 +235,13 @@ $textBlue: #272265;
     font-size: 54px;
     position: relative;
     z-index: 10;
+    color: $white !important;
+    font-family: 'Magison' !important;
+}
+
+.heading-text .letter{
+    color: $white !important;
+    font-family: 'Magison'  !important;
 }
 // .heading::before{
 //     content:"";
@@ -252,14 +272,21 @@ $textBlue: #272265;
     width: 100%;
     max-width: 1200px;
     margin: 10px auto;
+    font-family: 'Bolt Rounded';
+}
+
+.texting p{
+    font-family: 'Bolt Rounded';
 }
 
 .texting-red{
     color: $redPrimary;
+    font-family: 'Bolt Rounded';
     text-transform: uppercase;
 }
 
 .texting-center-align{
+    font-family: 'Bolt Rounded';
     text-align: center;
 }
 
@@ -295,7 +322,7 @@ $textBlue: #272265;
 }
 
 .hero-text{
-    margin: 0 0 0 180px;
+    margin: 0 0 0 160px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -322,8 +349,8 @@ $textBlue: #272265;
 
 .hero-img{
     position: relative;
-    width: 600px;
-    margin-top: 45px;
+    width: 500px;
+    margin-top: 75px;
     margin-left: 100px;
 }
 .hero-img img{
@@ -336,7 +363,7 @@ $textBlue: #272265;
     height: 3px;
     background-color: $redAccent;
     bottom: -5%;
-    left: -30%;
+    left: -35%;
 }
 
 #hero-text-we .letter{
@@ -465,6 +492,7 @@ $textBlue: #272265;
     display: inline-block;
     line-height: 1em;
     transform: translateY(-100px);
+    color: $white !important;
 }
 
 
@@ -734,7 +762,7 @@ $textBlue: #272265;
     display: inline-block;
     line-height: 1em;
     transform: translateY(-100px);
-    color:#FFF;
+    color:#FFF !important;
 }
 
 
@@ -989,8 +1017,8 @@ $textBlue: #272265;
     text-align: center;
 }
 .about-us-icon-text span{
-    font-size: 1.5em;
-
+    font-size: 28px;
+    font-family: 'Bolt Rounded';
 }
 
 
@@ -1025,6 +1053,11 @@ $textBlue: #272265;
 }
 .service-text{
     font-size: 28px;
+    font-family: 'Bolt Rounded';
+}
+
+.service-text p{
+    font-family: 'Bolt Rounded';
 }
 .services-header h2{
     font-size: 38px;
@@ -1036,7 +1069,7 @@ $textBlue: #272265;
 }
 
 #client-blob{
-    fill: $headingGray;
+    fill: #e5e3e1;
     transition: 1s ease;
 }
 
@@ -1075,10 +1108,10 @@ $textBlue: #272265;
     flex-wrap: nowrap;
 }
 
-#about-us-heading-text .letter:nth-last-child(1),
-#about-us-heading-text .letter:nth-last-child(2){
-    color: #e31e3a;
-}
+// #about-us-heading-text .letter:nth-last-child(1),
+// #about-us-heading-text .letter:nth-last-child(2){
+//     color: #e31e3a;
+// }
 
 $from-r:  236;
 $from-g: 29;
@@ -1275,6 +1308,7 @@ $numberCols: 95;
 }
 .international-textes p{
     font-family: "Arial";
+    font-weight: 700;
 }
 
 
