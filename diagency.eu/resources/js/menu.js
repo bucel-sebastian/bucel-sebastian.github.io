@@ -116,7 +116,7 @@ document.getElementById("scroll-down-btn").addEventListener("click",e=>{
     for(const p of new FormData(contactForm)){
         data.append(p[0],p[1]); 
     }
-    fetch("/resources/includes/contact-form.php",{method:"POST",body:data}).then(response=>response.text()).then(response=>{
+    fetch("/resources/includes/contact-mail.php",{method:"POST",body:data}).then(response=>response.text()).then(response=>{
         console.log(response);
         sendConfirmBtn();
         contactForm.reset();
