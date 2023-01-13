@@ -69,27 +69,29 @@ if(isset($_POST['contact-name']) && isset($_POST['contact-phone']) && isset($_PO
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <img src="cid:banner-bottom" width="100%" alt="">
+                                <td align="center" style="padding:30px 0">
+                                    <img src="cid:banner-bottom" width="50%" alt="" style="margin-top:30px;margin-bottom:30px;">
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin:0px 0px 20px 0px">
+                                    <tr><td><br></td></tr>
                                         <tr>
-                                            <td style="font-family:Arial, Helvetica, sans-serif;font-size: 130%;padding: 0 20px;">
+                                            <td style="font-family:Arial, Helvetica, sans-serif;font-size: 130%;padding: 30px 20px;">
                                                 <p style="padding:0 20px;text-align:center;">Let\'s connect!</p><br>
                                             </td>
                                         </tr>
+                                        <tr><td><br></td></tr>
                                         <tr>
-                                        <td style="display:block" align="center">
-                                        <a href="https://www.facebook.com/diclickmarketing" width="50px" style="display: inline-block;padding: 0px 10px 0px 10px;margin: 0 10px 0 10px;width:50px;" alt="">
+                                        <td style="display:block;padding:0 0 30px" align="center">
+                                        <a href="https://www.facebook.com/digitalplusinstore" width="50px" style="display: inline-block;padding: 0px 10px 0px 10px;margin: 0 10px 0 10px;width:50px;" alt="">
                                             <img src="cid:icon-fb" alt="" width="50" style="width:50px;">
                                         </a>
-                                        <a href="https://www.instagram.com/di_click_marketing/?utm_medium=copy_link" style="display: inline-block;padding: 0px 10px 0px 10px;margin: 0 10px 0 10px;width:50px;">
+                                        <a href="https://www.instagram.com/diactivationagency/" style="display: inline-block;padding: 0px 10px 0px 10px;margin: 0 10px 0 10px;width:50px;">
                                             <img src="cid:icon-insta" style="width:50px;" alt="" width="50">
                                         </a>
-                                        <a href="https://www.linkedin.com/company/di-click" style="display: inline-block;padding: 0px 10px 0px 10px;margin: 0 10px 0 10px;width:50px;">
+                                        <a href="https://www.linkedin.com/company/promo-app/" style="display: inline-block;padding: 0px 10px 0px 10px;margin: 0 10px 0 10px;width:50px;">
                                             <img src="cid:icon-linkd" alt="" width="50" style="width:50px;">
                                         </a>
                                     </td>
@@ -139,7 +141,7 @@ if(isset($_POST['contact-name']) && isset($_POST['contact-phone']) && isset($_PO
             <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#bd0023">
                 <tr>
                     <td align="center" style="padding: 15px 0px 15px;font-family:Arial, Helvetica, sans-serif;font-size: 90%;color:#ffffff">
-                        <h3>Obtine clickurile care conteaza!</h3>
+                        <h3></h3>
                     </td>
                 </tr>
                 
@@ -174,13 +176,13 @@ if(isset($_POST['contact-name']) && isset($_POST['contact-phone']) && isset($_PO
                                     <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin:0px 0px 20px 0px">
                                         <tr>
                                             <td style="display:block" align="center">
-                                                <a href="https://www.facebook.com/diclickmarketing" width="50px" style="display: inline-block;padding: 0px 10px 0px 10px;margin: 0 10px 0 10px;width:50px;" alt="">
+                                                <a href="https://www.facebook.com/digitalplusinstore" width="50px" style="display: inline-block;padding: 0px 10px 0px 10px;margin: 0 10px 0 10px;width:50px;" alt="">
                                                     <img src="cid:icon-fb" alt="" width="50" style="width:50px;">
                                                 </a>
-                                                <a href="https://www.instagram.com/di_click_marketing/?utm_medium=copy_link" style="display: inline-block;padding: 0px 10px 0px 10px;margin: 0 10px 0 10px;width:50px;">
+                                                <a href="https://www.instagram.com/diactivationagency/" style="display: inline-block;padding: 0px 10px 0px 10px;margin: 0 10px 0 10px;width:50px;">
                                                     <img src="cid:icon-insta" style="width:50px;" alt="" width="50">
                                                 </a>
-                                                <a href="https://www.linkedin.com/company/di-click" style="display: inline-block;padding: 0px 10px 0px 10px;margin: 0 10px 0 10px;width:50px;">
+                                                <a href="https://www.linkedin.com/company/promo-app/" style="display: inline-block;padding: 0px 10px 0px 10px;margin: 0 10px 0 10px;width:50px;">
                                                     <img src="cid:icon-linkd" alt="" width="50" style="width:50px;">
                                                 </a>
                                             </td>
@@ -220,7 +222,7 @@ if(isset($_POST['contact-name']) && isset($_POST['contact-phone']) && isset($_PO
             $mail -> Port = 587;
 
         $mail -> setFrom($email,$nume);
-        $mail -> addAddress("hello@diclick.eu");
+        $mail -> addAddress("hello@diagency.eu");
         $mail -> addCC('dan@diagency.eu');
 
 
@@ -256,7 +258,7 @@ if(isset($_POST['contact-name']) && isset($_POST['contact-phone']) && isset($_PO
         $mailClient -> Port = 587;
 
 
-        $mailClient -> setFrom("hello@diclick.eu","di_click");
+        $mailClient -> setFrom("hello@diagency.eu","di_agency");
         $mailClient -> addAddress($email);
 
         $mailClient -> AddEmbeddedImage('banner-top-01.png','banner-top');
