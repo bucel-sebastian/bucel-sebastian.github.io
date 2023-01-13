@@ -29,11 +29,41 @@
   .left-align {
     margin: 10px auto 10px 0;
   }
+  .service-container {
+    padding: 0 25px;
+  }
+  .services-header {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #promoapp-asset-svg-1 {
+    width: 75%;
+  }
+  #promoapp-pres-video {
+    width: 80%;
+  }
+  .hero-description {
+    margin: 0 25px;
+  }
+  #logo-Svg {
+    width: 75%;
+  }
+  .footer-social-link {
+    font-size: 24px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   #expertise-html, #about-us-html {
     display: none;
+  }
+  .footer-row div {
+    margin-bottom: 15px;
+  }
+  .services-header h1 {
+    font-size: 32px !important;
   }
   .hero-text {
     margin: 0 0 0 0px;
@@ -106,7 +136,7 @@
     transform: translateY(0) !important;
   }
   .texting {
-    padding: 0 5px;
+    padding: 0 5px !important;
     font-size: 22px;
   }
   .about-us-icon {
@@ -137,8 +167,5 @@
   }
   .case-study-chapter {
     margin-bottom: 25px;
-  }
-  .texting {
-    padding: 10 25px !important;
   }
 }

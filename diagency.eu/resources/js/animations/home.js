@@ -98,19 +98,6 @@ function setProjectContainer(index, content, flag){
 }
 
 
-function changeServiceBlop(){
-    let randomValue = Math.floor(Math.random() * 3);
-    
-    document.getElementById("morphtest").classList.remove("morphtest-1");
-    document.getElementById("morphtest").classList.remove("morphtest-2");
-    document.getElementById("morphtest").classList.remove("morphtest-3");
-
-    
-    document.getElementById("morphtest").classList.add("morphtest-"+randomValue);
-}
-
-let serviceBlobIndex=0;
-
 let serviceSliderBtns = document.querySelectorAll(".slider-service-btn");
 serviceSliderBtns.forEach(button => {
     button.addEventListener("click",e=>{
@@ -120,25 +107,6 @@ serviceSliderBtns.forEach(button => {
 
         setService(e.target.dataset.service);
         e.target.classList.add("active");
-
-        if(serviceBlobIndex+1>2){
-            serviceBlobIndex=0;
-        }
-        else{
-            serviceBlobIndex++;
-        }
-  
-        document.getElementById("service-blob-mask").removeAttribute("class");
-        document.getElementById("service-blob-mask").classList.add("service-blob-"+serviceBlobIndex);
-
-        document.getElementById("service-blob").removeAttribute("class");
-
-        document.getElementById("service-blob").classList.add("service-blob-"+serviceBlobIndex);
-
-
-        setService(e.target.dataset.service);
-
-
     })
 });
 
@@ -146,9 +114,21 @@ function setService(id){
     let servicesClass = document.querySelectorAll(".service-container");
     servicesClass.forEach(element => {
         element.classList.remove("service-active");
+        setTimeout(() => {
+            element.style.display="none";  
+        }, 300);
     });
 
-    document.getElementById("service-container-"+id).classList.add("service-active");
+setTimeout(()=>{
+    document.getElementById("service-container-"+id).style.display="flex";
+    setTimeout(() => {
+        document.getElementById("service-container-"+id).classList.add("service-active");
+        
+    }, 100);  
+},400)
+    
+    
+    
 }
 
 

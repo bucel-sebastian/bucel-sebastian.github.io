@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill:#EC1D3B;}
+	.st3{fill:#4E6B93;}
+	.st4{fill:#FED3A6;}
+	.st5{fill:#387984;}
+	.st6{fill:#B6DFBB;}
+	.st7{fill:#27235E;}
+	.st8{fill:#5F8CB2;}
+	.st9{fill:#A51E23;}
+	.st10{fill:#FDAC83;}
+</style>
+<g id="stroke" class="st0">
+	<g class="st1">
+		<path d="M240,464h96v16h-96V464z"/>
+		<path d="M336,448h32v16h-32V448z"/>
+		<path d="M208,448h32v16h-32V448z"/>
+		<path d="M368,432h32v16h-32V432z"/>
+		<path d="M176,432h32v16h-32V432z"/>
+		<path d="M400,416h16v16h-16V416z"/>
+		<path d="M160,416h16v16h-16V416z"/>
+		<path d="M416,400h16v16h-16V400z"/>
+		<path d="M144,400h16v16h-16V400z"/>
+		<path d="M256,384h64v16h-64V384z"/>
+		<path d="M432,368h16v32h-16V368z"/>
+		<path d="M320,368h32v16h-32V368z"/>
+		<path d="M224,368h32v16h-32V368z"/>
+		<path d="M128,368h16v32h-16V368z"/>
+		<path d="M352,352h16v16h-16V352z"/>
+		<path d="M208,352h16v16h-16V352z"/>
+		<path d="M448,336h16v32h-16V336z"/>
+		<path d="M112,336h16v32h-16V336z"/>
+		<path d="M368,320h16v32h-16V320z"/>
+		<path d="M272,320h32v16h-32V320z"/>
+		<path d="M192,320h16v32h-16V320z"/>
+		<path d="M304,304h16v16h-16V304z"/>
+		<path d="M256,304h16v16h-16V304z"/>
+		<path d="M96,240h16v96H96V240z"/>
+		<path d="M320,272h16v32h-16V272z"/>
+		<path d="M240,288h16v16h-16V288z"/>
+		<path d="M176,256h16v64h-16V256z"/>
+		<path d="M384,256h16v64h-16V256z"/>
+		<path d="M272,272h16v16h-16V272z"/>
+		<path d="M304,256h16v16h-16V256z"/>
+		<path d="M256,256h16v16h-16V256z"/>
+		<path d="M464,240h16v96h-16V240z"/>
+		<path d="M368,224h16v32h-16V224z"/>
+		<path d="M272,240h32v16h-32V240z"/>
+		<path d="M240,240h16v16h-16V240z"/>
+		<path d="M192,240h16v16h-16V240z"/>
+		<path d="M224,224h16v16h-16V224z"/>
+		<path d="M112,208h16v32h-16V208z"/>
+		<path d="M448,208h16v32h-16V208z"/>
+		<path d="M352,208h16v16h-16V208z"/>
+		<path d="M208,208h16v16h-16V208z"/>
+		<path d="M320,192h32v16h-32V192z"/>
+		<path d="M224,192h32v16h-32V192z"/>
+		<path d="M192,192h16v16h-16V192z"/>
+		<path d="M128,176h16v32h-16V176z"/>
+		<path d="M432,176h16v32h-16V176z"/>
+		<path d="M256,176h64v16h-64V176z"/>
+		<path d="M176,176h16v16h-16V176z"/>
+		<path d="M416,160h16v16h-16V160z"/>
+		<path d="M160,160h16v16h-16V160z"/>
+		<path d="M400,144h16v16h-16V144z"/>
+		<path d="M144,144h16v16h-16V144z"/>
+		<path d="M368,128h32v16h-32V128z"/>
+		<path d="M176,128h32v16h-32V128z"/>
+		<path d="M336,112h32v16h-32V112z"/>
+		<path d="M208,112h32v16h-32V112z"/>
+		<path d="M144,144V80h-16v48H80v16H144z"/>
+		<path d="M240,96h96v16h-96V96z"/>
+		<path d="M48,96h16v16H48V96z"/>
+		<path d="M32,80h16v16H32V80z"/>
+		<path d="M96,48h16v16H96V48z"/>
+		<path d="M64,112h16v16H64V112z"/>
+		<path d="M112,64h16v16h-16V64z"/>
+		<path d="M64,64h16v16H64V64z"/>
+		<path d="M80,80h16v16H80V80z"/>
+		<path d="M96,96h16v16H96V96z"/>
+		<path d="M64,48h16v16H64V48z"/>
+		<path d="M48,64h16v16H48V64z"/>
+		<path d="M80,32h16v16H80V32z"/>
+	</g>
+</g>
+<g id="outline" class="st0">
+	<path class="st1" d="M240,464h96v16h-96V464z M336,464h32v-16h-32V464z M208,448v16h32v-16H208z M368,448h32v-16h-32V448z M176,432
+		v16h32v-16H176z M400,432h16v-16h-16V432z M160,416v16h16v-16H160z M416,416h16v-16h-16V416z M144,400v16h16v-16H144z M256,400h64
+		v-16h-64V400z M432,400h16v-32h-16V400z M320,384h32v-16h-32V384z M224,368v16h32v-16H224z M128,368v32h16v-32H128z M352,368h16
+		v-16h-16V368z M208,352v16h16v-16H208z M448,368h16v-32h-16V368z M112,336v32h16v-32H112z M368,352h16v-32h-16V352z M272,336h32
+		v-16h-32V336z M192,320v32h16v-32H192z M304,320h16v-16h-16V320z M256,304v16h16v-16H256z M96,240v96h16v-96H96z M336,304v-32h-16
+		v32H336z M240,288v16h16v-16H240z M176,256v64h16v-64H176z M400,320v-64h-16v64H400z M288,288v-16h-16v16H288z M320,272v-16h-16v16
+		H320z M272,272v-16h-16v16H272z M480,336v-96h-16v96H480z M384,256v-32h-16v32H384z M304,240h-32v16h32V240z M256,256v-16h-16v16
+		H256z M208,240h-16v16h16V240z M240,240v-16h-16v16H240z M128,208h-16v32h16V208z M464,240v-32h-16v32H464z M368,224v-16h-16v16
+		H368z M224,224v-16h-16v16H224z M352,208v-16h-32v16H352z M256,192h-32v16h32V192z M208,208v-16h-16v16H208z M144,176h-16v32h16
+		V176z M448,208v-32h-16v32H448z M320,176h-64v16h64V176z M192,192v-16h-16v16H192z M432,176v-16h-16v16H432z M176,176v-16h-16v16
+		H176z M416,160v-16h-16v16H416z M160,160v-16h-16v16H160z M400,144v-16h-32v16H400z M208,128h-32v16h32V128z M368,128v-16h-32v16
+		H368z M240,112h-32v16h32V112z M80,128v16h64V80h-16v48H80z M336,96h-96v16h96V96z M48,96v16h16V96H48z M48,80H32v16h16V80z
+		 M112,64V48H96v16H112z M64,112v16h16v-16H64z M128,80V64h-16v16H128z M80,80V64V48H64v16H48v16h16H80z M96,96V80H80v16H96z
+		 M112,112V96H96v16H112z M96,32H80v16h16V32z"/>
+</g>
+<g id="colored_x5F_line">
+	<g id="XMLID_3_">
+		<g>
+			<path class="st2" d="M384,256v64h-16v32h-16v16h-32v16h-64v-16h-32v-16h-16v-32h-16v-64h16v-32h16v16h16v16h16v16h-16v32h16v16
+				h16v16h32v-16h16v-16h16v-32h-16v-16h-16v-16h-32v16h-16v-16h-16v-16h-16v-16h32v-16h64v16h32v16h16v32H384z"/>
+			<g>
+				<path class="st3" d="M464,240h16v96h-16V240z"/>
+				<path class="st3" d="M448,336h16v32h-16V336z"/>
+				<path class="st3" d="M448,208h16v32h-16V208z"/>
+				<path class="st3" d="M432,368h16v32h-16V368z"/>
+				<path class="st3" d="M432,176h16v32h-16V176z"/>
+				<path class="st3" d="M416,400h16v16h-16V400z"/>
+				<path class="st3" d="M416,160h16v16h-16V160z"/>
+				<path class="st3" d="M400,416h16v16h-16V416z"/>
+				<path class="st3" d="M400,144h16v16h-16V144z"/>
+				<path class="st3" d="M368,432h32v16h-32V432z"/>
+				<path class="st3" d="M384,256h16v64h-16V256z"/>
+				<path class="st3" d="M368,128h32v16h-32V128z"/>
+				<path class="st3" d="M368,320h16v32h-16V320z"/>
+				<path class="st3" d="M368,224h16v32h-16V224z"/>
+				<path class="st3" d="M336,448h32v16h-32V448z"/>
+				<path class="st3" d="M352,352h16v16h-16V352z"/>
+				<path class="st3" d="M352,208h16v16h-16V208z"/>
+				<path class="st3" d="M336,112h32v16h-32V112z"/>
+				<path class="st3" d="M320,368h32v16h-32V368z"/>
+				<path class="st3" d="M320,192h32v16h-32V192z"/>
+				<path class="st3" d="M240,464h96v16h-96V464z"/>
+				<path class="st3" d="M320,272h16v32h-16V272z"/>
+				<path class="st3" d="M240,96h96v16h-96V96z"/>
+				<path class="st3" d="M256,384h64v16h-64V384z"/>
+				<path class="st3" d="M304,304h16v16h-16V304z"/>
+			</g>
+			<path class="st4" d="M320,272v32h-16v16h-32v-16h-16v-32h16v16h16v-16h-16v-16h32v16H320z"/>
+			<path class="st3" d="M304,256h16v16h-16V256z"/>
+			<path class="st3" d="M256,176h64v16h-64V176z"/>
+			<path class="st3" d="M272,320h32v16h-32V320z"/>
+			<path class="st3" d="M272,240h32v16h-32V240z"/>
+			<path class="st3" d="M256,304h16v16h-16V304z"/>
+			<path class="st3" d="M224,368h32v16h-32V368z"/>
+			<path class="st3" d="M240,272h16v32h-16V272z"/>
+			<path class="st3" d="M224,192h32v16h-32V192z"/>
+			<path class="st3" d="M208,448h32v16h-32V448z"/>
+			<path class="st3" d="M208,112h32v16h-32V112z"/>
+			<path class="st3" d="M208,352h16v16h-16V352z"/>
+			<path class="st3" d="M176,432h32v16h-32V432z"/>
+			<path class="st3" d="M192,320h16v32h-16V320z"/>
+			<path class="st3" d="M192,224h16v32h-16V224z"/>
+			<path class="st3" d="M176,128h32v16h-32V128z"/>
+			<path class="st3" d="M176,256h16v64h-16V256z"/>
+			<path class="st3" d="M160,416h16v16h-16V416z"/>
+			<path class="st3" d="M144,400h16v16h-16V400z"/>
+			<g>
+				<path class="st3" d="M272,272h16v16h-16V272z"/>
+				<path class="st3" d="M256,256h16v16h-16V256z"/>
+				<path class="st3" d="M240,240h16v16h-16V240z"/>
+				<path class="st3" d="M224,224h16v16h-16V224z"/>
+				<path class="st3" d="M208,208h16v16h-16V208z"/>
+				<path class="st3" d="M192,192h16v16h-16V192z"/>
+				<path class="st3" d="M176,176h16v16h-16V176z"/>
+				<path class="st3" d="M160,160h16v16h-16V160z"/>
+				<path class="st3" d="M144,144h16v16h-16V144z"/>
+			</g>
+			<path class="st3" d="M128,368h16v32h-16V368z"/>
+			<path class="st3" d="M128,176h16v32h-16V176z"/>
+			<path class="st5" d="M144,80v64H80v-16h32h16v-16V80H144z"/>
+			<path class="st3" d="M112,336h16v32h-16V336z"/>
+			<path class="st3" d="M112,208h16v32h-16V208z"/>
+			<path class="st5" d="M112,64h16v16h-16V64z"/>
+			<path class="st3" d="M96,240h16v96H96V240z"/>
+			<path class="st2" d="M112,80V64H96V48H80v16v16h16v16h16v16H96V96H80V80H64H48v16h16v16h16v16h32h16v-16V80H112z"/>
+			<path class="st6" d="M96,96h16v16H96V96z"/>
+			<path class="st6" d="M112,112h16v16h-16V112z"/>
+			<path class="st5" d="M96,48h16v16H96V48z"/>
+			<path class="st6" d="M80,80h16v16H80V80z"/>
+			<path class="st5" d="M80,32h16v16H80V32z"/>
+			<path class="st5" d="M64,112h16v16H64V112z"/>
+			<path class="st6" d="M64,64h16v16H64V64z"/>
+			<path class="st5" d="M48,96h16v16H48V96z"/>
+			<path class="st5" d="M32,80h16v16H32V80z"/>
+			<path class="st5" d="M48,64h16v16H48V64z"/>
+			<path class="st5" d="M64,48h16v16H64V48z"/>
+		</g>
+	</g>
+	<path class="st7" d="M448,240v-32h-16v-32h-16v-16h-16v-16h-32v-16h-32v-16h-96v16h-32v16h-32h-16v16h16v16h16v16h16v16h16v-16h32
+		v-16h64v16h32v16h16v16h16v32h16v64h-16v32h-16v16h-16v16h-32v16h-64v-16h-32v-16h-16v-16h-16v-32h-16v-64h16v-32h16v-16h-16v-16
+		h-16v-16h-16v-16h-16v16v32h-16v32h-16v96h16v32h16v32h16v16h16v16h32v16h32v16h96v-16h32v-16h32v-16h16v-16h16v-32h16v-32h16v-96
+		H448z"/>
+	<g>
+		<path class="st8" d="M240,448h96v16h-96V448z"/>
+		<path class="st8" d="M336,432h32v16h-32V432z"/>
+		<path class="st8" d="M368,416h32v16h-32V416z"/>
+		<path class="st8" d="M400,400h16v16h-16V400z"/>
+		<path class="st8" d="M416,368h16v32h-16V368z"/>
+		<path class="st8" d="M432,336h16v32h-16V336z"/>
+		<path class="st8" d="M448,240h16v96h-16V240z"/>
+		<path class="st8" d="M432,208h16v32h-16V208z"/>
+		<path class="st8" d="M208,432h32v16h-32V432z"/>
+	</g>
+	<path class="st9" d="M224,352h32v16h-32V352z"/>
+	<path class="st9" d="M256,368h64v16h-64V368z"/>
+	<path class="st9" d="M320,352h32v16h-32V352z"/>
+	<path class="st9" d="M352,320h16v32h-16V320z"/>
+	<path class="st9" d="M368,256h16v64h-16V256z"/>
+	<path class="st9" d="M352,224h16v32h-16V224z"/>
+	<path class="st10" d="M272,304h32v16h-32V304z"/>
+	<path class="st10" d="M304,272h16v32h-16V272z"/>
+</g>
+<g id="glyph" class="st0">
+	<path class="st1" d="M144,144v16H96v-16H80v-16H64v-16H48V96h48v16h16v16h16v16H144z M112,112h16v16h16v16h16V96h-16V80h-16V64h-16
+		V48H96v48h16V112z M464,240v-32h-16v-32h-16v-16h-16v-16h-16v-16h-32v-16h-32V96h-96v16h-32v16h-32v16h-16v16h16v16h16v16h16v16h16
+		v-16h32v-16h64v16h32v16h16v16h16v32h16v64h-16v32h-16v16h-16v16h-32v16h-64v-16h-32v-16h-16v-16h-16v-32h-16v-64h16v-32h16v-16
+		h-16v-16h-16v-16h-16v-16h-16v16h-16v32h-16v32H96v96h16v32h16v32h16v16h16v16h16v16h32v16h32v16h96v-16h32v-16h32v-16h16v-16h16
+		v-16h16v-32h16v-32h16v-96H464z M240,224v16h16v16h16v-16h32v16h16v16h16v32h-16v16h-16v16h-32v-16h-16v-16h-16v-32h16v-16h-16v-16
+		h-16v-16h-16v32h-16v64h16v32h16v16h32v16h64v-16h32v-16h16v-32h16v-64h-16v-32h-16v-16h-32v-16h-64v16h-32v16H240z M288,272v16
+		h-16v-16h-16v32h16v16h32v-16h16v-32h-16v-16h-32v16H288z"/>
+</g>
+</svg>

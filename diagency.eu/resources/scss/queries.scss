@@ -34,6 +34,12 @@
     .left-align{
         margin: 10px auto 10px 0;
     }
+    .service-container{
+        padding:0 25px;
+    }
+    .services-header{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 992px){
@@ -41,13 +47,33 @@
 }
 
 @media only screen and (max-width: 768px){
-
+    #promoapp-asset-svg-1{
+        width: 75%;
+    }
+    #promoapp-pres-video{
+        width: 80%;
+    }
+    .hero-description{
+        margin:0 25px;
+    }
+    #logo-Svg{
+        width: 75%;
+    }
+    .footer-social-link{
+        font-size: 24px;
+    }
 }
 
 @media only screen and (max-width: 600px){
 
     #expertise-html,#about-us-html{
         display: none;
+    }
+    .footer-row div{
+        margin-bottom: 15px;
+    }
+    .services-header h1{
+        font-size: 32px !important;
     }
 
 
