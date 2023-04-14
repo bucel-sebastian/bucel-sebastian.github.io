@@ -81,7 +81,7 @@ function setProjectContainer(index, content, flag){
             transform: "translateY(-200px)"    
         },200);
         setTimeout(() => {
-            textes[index].innerHTML = "<p>"+content+"</p>";
+            textes[index].innerHTML = "<p>"+content+"</p>"
             flags[index].innerHTML = "<img src='/resources/assets/img/"+flag+"-flag.png' class='international-flag-img'>";
             $(quotes[index]).animate({
                 opacity:0,
@@ -93,8 +93,6 @@ function setProjectContainer(index, content, flag){
             },200);
         }, 500);
     }, 200*index);
-    
-    
 }
 
 
