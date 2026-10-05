@@ -7,8 +7,10 @@ import 'react-activity-calendar/tooltips.css';
 function GithubActivity() {
     const [data, setData] = useState<any[]>([]);
 
+    const currentYear = new Date().getFullYear();
+
     useEffect(() => {
-        fetch('https://github-contributions-api.jogruber.de/v4/bucel-sebastian?y=last')
+        fetch(`https://github-contributions-api.jogruber.de/v4/bucel-sebastian?y=${currentYear}`)
             .then(response => response.json())
             .then(response => setData(response.contributions));
     }, []);
