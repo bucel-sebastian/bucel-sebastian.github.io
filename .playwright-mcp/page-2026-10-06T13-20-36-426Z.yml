@@ -1,0 +1,22 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - link [ref=e6] [cursor=pointer]:
+      - /url: "#"
+      - img "PromoApp" [ref=e7]
+    - generic [ref=e8]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: Autentificare
+          - generic [ref=e13]: Te rugăm să te autentifici pentru a continua.
+        - generic [ref=e16]:
+          - group [ref=e17]:
+            - generic [ref=e18]: Adresa de email
+            - textbox "Adresa de email" [ref=e19]
+          - group [ref=e20]:
+            - generic [ref=e21]: Parola
+            - textbox "Parola" [ref=e22]
+          - group [ref=e23]:
+            - button "Autentificare" [ref=e24]
+      - paragraph [ref=e25]: © 2026 Promoapp. Toate drepturile rezervate.
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e31] [cursor=pointer]

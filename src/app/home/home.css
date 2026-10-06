@@ -1,0 +1,858 @@
+@import "tailwindcss";
+
+/* ============================================================================
+   /home — design foundation
+   ----------------------------------------------------------------------------
+   Everything in this file is scoped to `.home` (the route root wrapper) so the
+   existing `/` route is completely unaffected.
+
+   PALETTE CONTRACT (all defined on `.home`):
+     surfaces   --background --surface --surface-2 --card
+     text       --foreground --foreground-soft --muted
+     accent     --primary --primary-strong --primary-text --primary-foreground
+                --primary-glow --accent-gradient
+     status     --secondary --success --warning --danger
+     lines      --border --border-strong
+     shape      --radius --radius-sm --radius-lg --radius-pill
+     elevation  --shadow-1 --shadow-2 --shadow-nav
+     motion     --ease-out-expo --ease-in-out-quart
+                --dur-fast --dur-base --dur-slow --dur-cinematic
+     layout     --container --gutter
+
+   Dark counterparts live on `.home[data-theme="dark"]` (hue swapped) — wire the
+   nav theme toggle to that attribute when it becomes functional.
+   ========================================================================== */
+
+.home {
+  /* surfaces */
+  --background: #f4f3f8;
+  --surface: #ffffff;
+  --surface-2: #fbfaff;
+  --card: #ffffff;
+
+  /* text */
+  --foreground: #101116;
+  --foreground-soft: rgba(16, 17, 22, 0.64);
+  --muted: #67677d;
+
+  /* accent — indigo / violet */
+  --primary: #6d5efc;
+  --primary-strong: #8b7dff;
+  --primary-text: #5546d6;
+  --primary-foreground: #ffffff;
+  --primary-glow: rgba(109, 94, 252, 0.16);
+  --accent-gradient: linear-gradient(100deg, #4a86ff 0%, #8b5cf6 100%);
+
+  /* status */
+  --secondary: #34d399;
+  --success: #34d399;
+  --warning: #f5b52e;
+  --danger: #f4506b;
+
+  /* lines */
+  --border: rgba(16, 17, 22, 0.1);
+  --border-strong: rgba(16, 17, 22, 0.18);
+
+  /* shape */
+  --radius: 1rem;
+  --radius-sm: 0.625rem;
+  --radius-lg: 1.75rem;
+  --radius-pill: 9999px;
+
+  /* elevation */
+  --shadow-1: 0 1px 2px rgba(16, 17, 22, 0.04), 0 10px 30px rgba(16, 17, 22, 0.05);
+  --shadow-2: 0 2px 4px rgba(16, 17, 22, 0.05), 0 22px 50px rgba(16, 17, 22, 0.1);
+  --shadow-nav: 0 1px 2px rgba(16, 17, 22, 0.05), 0 14px 36px rgba(16, 17, 22, 0.08);
+
+  /* motion */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+  --dur-fast: 0.15s;
+  --dur-base: 0.3s;
+  --dur-slow: 0.6s;
+  --dur-cinematic: 1.2s;
+
+  /* layout */
+  --container: 76rem;
+  --gutter: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+.home[data-theme="dark"] {
+  --background: #0e0d14;
+  --surface: #171624;
+  --surface-2: #1d1c2c;
+  --card: #171624;
+
+  --foreground: #f1eefb;
+  --foreground-soft: rgba(241, 238, 251, 0.66);
+  --muted: #a3a1b8;
+
+  --primary-text: #a497ff;
+  --primary-glow: rgba(109, 94, 252, 0.3);
+
+  --border: rgba(241, 238, 251, 0.14);
+  --border-strong: rgba(241, 238, 251, 0.26);
+
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.45), 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-2: 0 2px 4px rgba(0, 0, 0, 0.5), 0 22px 50px rgba(0, 0, 0, 0.55);
+  --shadow-nav: 0 1px 2px rgba(0, 0, 0, 0.5), 0 14px 36px rgba(0, 0, 0, 0.45);
+}
+
+/* Keep the document canvas aligned with the route, even in OS dark mode. */
+html:has(.home) {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.5rem;
+}
+
+body:has(.home) {
+  background-color: #f4f3f8;
+}
+
+body:has(.home[data-theme="dark"]) {
+  background-color: #0e0d14;
+}
+
+/* ---------------------------------------------------------------- root ---- */
+
+.home {
+  position: relative;
+  isolation: isolate;
+  min-height: 100svh;
+  overflow-x: clip;
+  background-color: var(--background);
+  color: var(--foreground);
+  /* body face: Geist is loaded by the root layout */
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* atmosphere: soft indigo/violet mesh over the top of the page */
+.home::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 145vh;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(45rem 30rem at 88% 2%, rgba(109, 94, 252, 0.17), transparent 65%),
+    radial-gradient(38rem 26rem at 2% 20%, rgba(74, 134, 255, 0.15), transparent 70%),
+    radial-gradient(52rem 34rem at 58% 92%, rgba(139, 92, 246, 0.12), transparent 65%);
+}
+
+/* atmosphere: fine film grain over the whole route */
+.home::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 160px 160px;
+}
+
+.home *,
+.home *::before,
+.home *::after {
+  box-sizing: border-box;
+}
+
+.home :focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+/* ------------------------------------------------------------ typography -- */
+
+.h-display,
+.h-section,
+.h-card {
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+
+.h-display {
+  font-size: clamp(2.6rem, 7vw, 4.5rem);
+  line-height: 1.03;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+
+.h-section {
+  font-size: clamp(1.9rem, 4.2vw, 3rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+.h-card {
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--primary-text);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 1.75rem;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.7;
+}
+
+.eyebrow--plain::before {
+  display: none;
+}
+
+.text-soft {
+  color: var(--foreground-soft);
+}
+
+.text-muted {
+  color: var(--muted);
+}
+
+.gradient-text {
+  background-image: var(--accent-gradient);
+  background-size: 220% 100%;
+  background-position: 0% 50%;
+  animation: home-gradient-pan 16s linear infinite;
+}
+
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .gradient-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@keyframes home-gradient-pan {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 220% 50%;
+  }
+}
+
+@keyframes home-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.18);
+    opacity: 0.7;
+  }
+}
+
+/* --------------------------------------------------------------- layout --- */
+
+.hs-container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.hs-section {
+  position: relative;
+  padding-block: clamp(3.5rem, 8vw, 6.5rem);
+}
+
+.hs-section--tight {
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+}
+
+.hs-section--lines {
+  border-block: 1px solid var(--border);
+}
+
+.hs-main {
+  display: block;
+}
+
+.hs-main:focus {
+  outline: none;
+}
+
+.hs-skip-link {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  z-index: 100;
+  /* Anchor is `.home`, which now starts below the root header's flow — lift
+     extra clear so the resting state stays fully above the viewport while
+     :focus-visible (translateY(1rem)) still lands just under the header. */
+  transform: translateY(calc(-150% - 6rem));
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-pill);
+  background: var(--foreground);
+  color: var(--background);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: transform var(--dur-base) var(--ease-out-expo);
+}
+
+.hs-skip-link:focus-visible {
+  transform: translateY(1rem);
+}
+
+.hs-placeholder {
+  display: grid;
+  place-items: center;
+  min-height: 9rem;
+  padding: clamp(2rem, 6vw, 3.5rem);
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  color: var(--muted);
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+/* ---------------------------------------------------- nav & button kit ----
+
+   The floating nav (hs-nav-wrap / hs-nav / hs-logo / hs-nav__menu*) and the
+   shared button kit (hs-btn* / hs-icon-btn*) live in components/Header.css,
+   imported by Header.tsx in the root layout — one source that both routes
+   load. Home sections keep reusing them through PillButton and the
+   carousel/footer icon buttons. */
+
+/* ----------------------------------------------------------------- chips -- */
+
+.hs-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--foreground-soft);
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  transition:
+    border-color var(--dur-base) var(--ease-out-expo),
+    color var(--dur-base) var(--ease-out-expo),
+    background-color var(--dur-base) var(--ease-out-expo);
+}
+
+.hs-chip--sm {
+  padding: 0.3rem 0.65rem;
+  font-size: 0.6875rem;
+}
+
+.hs-chip--solid {
+  background: var(--surface-2);
+  border-color: transparent;
+  color: var(--foreground);
+}
+
+.hs-chip--accent {
+  background: var(--primary-glow);
+  border-color: rgba(109, 94, 252, 0.32);
+  color: var(--primary-text);
+}
+
+.hs-chip:hover {
+  border-color: var(--border-strong);
+  color: var(--foreground);
+}
+
+/* ----------------------------------------------------------------- cards -- */
+
+.hs-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition:
+    transform var(--dur-base) var(--ease-out-expo),
+    box-shadow var(--dur-base) var(--ease-out-expo),
+    border-color var(--dur-base) var(--ease-out-expo);
+}
+
+.hs-card--pad-sm {
+  padding: 1rem;
+}
+
+.hs-card--pad-md {
+  padding: clamp(1.25rem, 2.5vw, 1.75rem);
+}
+
+.hs-card--pad-lg {
+  padding: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+.hs-card--lift:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-2);
+}
+
+/* -------------------------------------------------------- section header -- */
+
+.hs-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  margin-bottom: clamp(2rem, 4vw, 3.25rem);
+}
+
+.hs-head__text {
+  display: grid;
+  gap: 1rem;
+  max-width: 46rem;
+}
+
+.hs-head__desc {
+  margin: 0;
+  max-width: 46ch;
+  color: var(--foreground-soft);
+  font-size: clamp(1rem, 1.4vw, 1.0625rem);
+}
+
+.hs-head__action {
+  flex: none;
+  padding-bottom: 0.25rem;
+}
+
+/* ------------------------------------------------------------------ hero -- */
+
+.hs-hero {
+  position: relative;
+  display: flex;
+  min-height: 85vh;
+  min-height: 85svh;
+  padding-block: clamp(3rem, 9vh, 6.5rem) clamp(2rem, 6vh, 4rem);
+}
+
+.hs-hero__inner {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hs-hero__eyebrow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 0 clamp(1.5rem, 3vw, 2.25rem);
+  font-size: 0.9375rem;
+  color: var(--foreground-soft);
+}
+
+.hs-hero__dash {
+  color: var(--muted);
+}
+
+.hs-hero__mono {
+  font-family: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.hs-hero__title {
+  max-width: 18ch;
+}
+
+.hs-line-mask {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.1em;
+  margin-bottom: -0.1em;
+}
+
+.hs-line {
+  display: block;
+  will-change: transform;
+}
+
+.hs-hero__sub {
+  margin: clamp(1.5rem, 3vw, 2.25rem) 0 0;
+  font-size: clamp(1.0625rem, 1.8vw, 1.3125rem);
+  color: var(--foreground-soft);
+}
+
+.hs-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.875rem;
+  margin-top: clamp(2rem, 4vw, 2.75rem);
+}
+
+.hs-hero__cue {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: clamp(3rem, 9vh, 5.5rem);
+  font-family: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color var(--dur-base) var(--ease-out-expo);
+}
+
+.hs-hero__cue::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, var(--border-strong), transparent);
+}
+
+.hs-hero__cue:hover {
+  color: var(--primary-text);
+}
+
+.hs-dot {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  flex: none;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 0 0 4px var(--primary-glow);
+  animation: home-pulse 2.6s ease-in-out infinite;
+}
+
+/* ----------------------------------------------------------- highlights --- */
+
+.hs-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+}
+
+.hs-stats > li {
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  border-bottom: 1px solid var(--border);
+}
+
+.hs-stats > li:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 640px) {
+  .hs-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hs-stats > li {
+    border-right: 1px solid var(--border);
+  }
+
+  .hs-stats > li:nth-child(2n) {
+    border-right: none;
+  }
+
+  .hs-stats > li:nth-last-child(-n + 2) {
+    border-bottom: none;
+  }
+}
+
+.hs-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hs-stat__icon {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin-bottom: 1.25rem;
+  border-radius: var(--radius-sm);
+  background: var(--primary-glow);
+  color: var(--primary-text);
+}
+
+.hs-stat__value {
+  margin: 0;
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(2.5rem, 5vw, 3.25rem);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+}
+
+.hs-stat__plus {
+  color: var(--primary-text);
+}
+
+.hs-stat__label {
+  margin: 0.75rem 0 0;
+  font-size: 1.0625rem;
+  font-weight: 500;
+}
+
+.hs-stat__sub {
+  margin: 0.35rem 0 0;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+/* ----------------------------------------------------------------- about -- */
+
+.hs-about {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(2.5rem, 6vw, 5rem);
+}
+
+@media (min-width: 900px) {
+  .hs-about {
+    grid-template-columns: 0.85fr 1.15fr;
+  }
+}
+
+.hs-about__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.hs-index {
+  font-family: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  color: var(--muted);
+}
+
+.hs-about__role {
+  margin: -0.35rem 0 0;
+  font-size: 1.0625rem;
+  color: var(--foreground-soft);
+}
+
+.hs-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0 0;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  font-size: 0.8125rem;
+  color: var(--foreground-soft);
+}
+
+.hs-about__right {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 4vw, 3rem);
+}
+
+.hs-about__lead {
+  margin: 0;
+  max-width: 54ch;
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  line-height: 1.65;
+  color: var(--foreground-soft);
+}
+
+.hs-channels {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.hs-channels__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+/* ---------------------------------------------------------------- footer -- */
+
+.hs-footer {
+  border-top: 1px solid var(--border);
+  padding-block: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.hs-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.75rem;
+}
+
+.hs-footer__note {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.hs-footer .hs-placeholder {
+  min-height: auto;
+  width: 100%;
+}
+
+/* --------------------------------------------------- github activity ----- */
+
+/* Root layout the section hands to <GithubActivity className> — selector
+   above, calendar below. */
+.home .hs-gh {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+/* Year tabs — same pill/tablist language as the Certifications filters. */
+.home .hs-gh-years {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.home .hs-gh-year {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: none;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--foreground-soft);
+  cursor: pointer;
+  transition:
+    color var(--dur-fast) ease,
+    opacity var(--dur-fast) ease;
+}
+
+.home .hs-gh-year:hover {
+  opacity: 0.8;
+}
+
+.home .hs-gh-year:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.home .hs-gh-year[aria-pressed="true"] {
+  color: var(--primary-text);
+}
+
+.home .hs-gh-year__indicator {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-pill);
+  background: var(--primary-glow);
+  border: 1px solid rgba(109, 94, 252, 0.35);
+  pointer-events: none;
+}
+
+.home .hs-gh-year__label {
+  position: relative;
+  z-index: 1;
+}
+
+/* Calendar chrome in the site's meta voice: mono footer (total + legend),
+   muted month labels, subtle scrollbar for the year's inner scroll. */
+.home .react-activity-calendar__footer {
+  color: var(--muted);
+  font-family: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+.home .react-activity-calendar__legend-month,
+.home .react-activity-calendar__legend-weekday {
+  color: var(--muted);
+}
+
+.home .react-activity-calendar__scroll-container {
+  padding-bottom: 0.35rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
+}
+
+/* ------------------------------------------------------- no-script path --- */
+
+/* Motion writes its resting styles inline; if scripting is unavailable those
+   values never get animated away, so pin the visible state explicitly.
+   Browsers without this media feature fall back to the <noscript> block in
+   page.tsx — keep both selector lists in sync. (The nav's own entry lives in
+   components/Header.css, alongside the rest of the nav rules.) */
+@media (scripting: none) {
+  .hs-reveal,
+  .hs-hero__eyebrow,
+  .hs-line,
+  .hs-hero__sub,
+  .hs-hero__actions,
+  .hs-hero__cue {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ------------------------------------------------------- reduced motion --- */
+
+@media (prefers-reduced-motion: reduce) {
+  html:has(.home) {
+    scroll-behavior: auto;
+  }
+
+  .home *,
+  .home *::before,
+  .home *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  /* .hs-btn / .hs-icon-btn / .hs-logo hover rules live in Header.css */
+  .hs-card--lift:hover {
+    transform: none;
+  }
+}

@@ -1,0 +1,740 @@
+- generic [active] [ref=f1e1]:
+  - main [ref=f1e2]:
+    - generic [ref=f1e3]:
+      - link "Skip to content" [ref=f1e4] [cursor=pointer]:
+        - /url: "#home-main"
+      - navigation "Primary navigation" [ref=f1e5]:
+        - link "[Your Name] — home" [ref=f1e6] [cursor=pointer]:
+          - /url: "#home-hero"
+          - generic [aria-hidden] [ref=f1e7]: "[X]"
+        - generic [ref=f1e8]:
+          - generic [ref=f1e9]:
+            - button "Toggle color theme" [ref=f1e10] [cursor=pointer]
+            - button "Choose language" [ref=f1e13] [cursor=pointer]:
+              - generic [aria-hidden] [ref=f1e17]: EN
+            - link "Book a call" [ref=f1e18] [cursor=pointer]:
+              - /url: "#"
+            - link "Contact by phone" [ref=f1e23] [cursor=pointer]:
+              - /url: "#"
+          - button "Open menu" [ref=f1e26] [cursor=pointer]
+      - generic [ref=f1e29]:
+        - region [ref=f1e30]:
+          - generic [ref=f1e31]:
+            - paragraph [ref=f1e32]:
+              - generic [ref=f1e34]: Available for selected work
+              - generic [aria-hidden] [ref=f1e35]: —
+              - generic [ref=f1e36]: Independent developer / [City]
+            - heading "Your headline goes here." [level=1] [ref=f1e37]:
+              - generic [ref=f1e38]: Your headline
+              - generic [ref=f1e40]: goes here.
+            - paragraph [ref=f1e42]: Web · Mobile · AI · Product thinking
+            - generic [ref=f1e43]:
+              - link "View Projects" [ref=f1e44] [cursor=pointer]:
+                - /url: "#projects"
+              - link "Book a call" [ref=f1e49] [cursor=pointer]:
+                - /url: "#"
+              - link "Download CV" [ref=f1e54] [cursor=pointer]:
+                - /url: "#"
+            - link "Explore the work" [ref=f1e55] [cursor=pointer]:
+              - /url: "#projects"
+        - region "Highlights" [ref=f1e57]:
+          - list [ref=f1e59]:
+            - listitem [ref=f1e60]:
+              - generic [ref=f1e61]:
+                - paragraph [ref=f1e67]: 120+
+                - paragraph [ref=f1e68]: Projects
+                - paragraph [ref=f1e69]: Most built with [Your Stack]
+            - listitem [ref=f1e70]:
+              - generic [ref=f1e71]:
+                - paragraph [ref=f1e76]: 15+
+                - paragraph [ref=f1e77]: Certificates
+                - paragraph [ref=f1e78]: "Top issuer: [Issuer Name]"
+            - listitem [ref=f1e79]:
+              - generic [ref=f1e80]:
+                - paragraph [ref=f1e85]: 8+
+                - paragraph [ref=f1e86]: Badges
+                - paragraph [ref=f1e87]: Including [Provider]
+            - listitem [ref=f1e88]:
+              - generic [ref=f1e89]:
+                - paragraph [ref=f1e94]: 6+
+                - paragraph [ref=f1e95]: Years Experience
+                - paragraph [ref=f1e96]: Shipping since [Year]
+        - region [ref=f1e97]:
+          - generic [ref=f1e99]:
+            - generic [ref=f1e100]:
+              - generic [aria-hidden] [ref=f1e101]: 01 / 04
+              - generic [ref=f1e102]: About
+              - heading "[Your Name]" [level=2] [ref=f1e103]
+              - paragraph [ref=f1e104]: Placeholder role title
+              - paragraph [ref=f1e105]: Available for selected work
+            - generic [ref=f1e107]:
+              - paragraph [ref=f1e108]: A short description of this section goes here. Replace this paragraph with two or three lines about what you build, how you like to work, and the kind of problems you enjoy solving.
+              - generic [ref=f1e109]:
+                - generic [ref=f1e110]: Direct channels
+                - generic [ref=f1e111]:
+                  - link "GitHub" [ref=f1e112] [cursor=pointer]:
+                    - /url: "#"
+                  - link "LinkedIn" [ref=f1e117] [cursor=pointer]:
+                    - /url: "#"
+                  - link "WhatsApp" [ref=f1e123] [cursor=pointer]:
+                    - /url: "#"
+                  - link "Email" [ref=f1e127] [cursor=pointer]:
+                    - /url: "#"
+        - region "Projects" [ref=f1e132]:
+          - generic [ref=f1e133]:
+            - generic [ref=f1e134]:
+              - generic [ref=f1e135]:
+                - generic [ref=f1e136]: Latest Projects
+                - heading "Your project headline goes here" [level=2] [ref=f1e137]
+                - paragraph [ref=f1e138]: A short description of this section goes here — one or two lines about the kind of work you chose to show.
+              - link "View GitHub" [ref=f1e140] [cursor=pointer]:
+                - /url: "#"
+            - tablist "Filter projects" [ref=f1e145]:
+              - tab "All work" [selected] [ref=f1e146] [cursor=pointer]
+              - tab "Category One" [ref=f1e148] [cursor=pointer]
+              - tab "Category Two" [ref=f1e149] [cursor=pointer]
+              - tab "Category Three" [ref=f1e150] [cursor=pointer]
+              - tab "Category Four" [ref=f1e151] [cursor=pointer]
+              - tab "Category Five" [ref=f1e152] [cursor=pointer]
+              - tab "Category Six" [ref=f1e153] [cursor=pointer]
+              - tab "Category Seven" [ref=f1e154] [cursor=pointer]
+            - tabpanel "All work" [ref=f1e155]:
+              - link "Category One 2026 Placeholder Project 01 A short placeholder description of this project — two lines keeps every card the same height. Interface State Styling" [ref=f1e157] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=f1e158]:
+                  - generic [ref=f1e161]: "01"
+                  - generic [ref=f1e162]:
+                    - generic [ref=f1e163]:
+                      - generic [ref=f1e164]: Category One
+                      - generic [ref=f1e165]: "2026"
+                    - heading "Placeholder Project 01" [level=3] [ref=f1e166]
+                    - paragraph [ref=f1e167]: A short placeholder description of this project — two lines keeps every card the same height.
+                    - generic [ref=f1e169]:
+                      - generic [ref=f1e170]: Interface
+                      - generic [ref=f1e171]: State
+                      - generic [ref=f1e172]: Styling
+              - link "Category Two 2026 Placeholder Project 02 Another placeholder paragraph describing the problem, your role, and the outcome in plain words. Frontend API Docs" [ref=f1e178] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=f1e179]:
+                  - generic [ref=f1e182]: "02"
+                  - generic [ref=f1e183]:
+                    - generic [ref=f1e184]:
+                      - generic [ref=f1e185]: Category Two
+                      - generic [ref=f1e186]: "2026"
+                    - heading "Placeholder Project 02" [level=3] [ref=f1e187]
+                    - paragraph [ref=f1e188]: Another placeholder paragraph describing the problem, your role, and the outcome in plain words.
+                    - generic [ref=f1e190]:
+                      - generic [ref=f1e191]: Frontend
+                      - generic [ref=f1e192]: API
+                      - generic [ref=f1e193]: Docs
+              - link "Category Three 2026 Placeholder Project 03 Lorem-style filler copy for the card body. Replace it with one or two sentences about the work. Design Prototype Testing" [ref=f1e199] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=f1e200]:
+                  - generic [ref=f1e203]: "03"
+                  - generic [ref=f1e204]:
+                    - generic [ref=f1e205]:
+                      - generic [ref=f1e206]: Category Three
+                      - generic [ref=f1e207]: "2026"
+                    - heading "Placeholder Project 03" [level=3] [ref=f1e208]
+                    - paragraph [ref=f1e209]: Lorem-style filler copy for the card body. Replace it with one or two sentences about the work.
+                    - generic [ref=f1e211]:
+                      - generic [ref=f1e212]: Design
+                      - generic [ref=f1e213]: Prototype
+                      - generic [ref=f1e214]: Testing
+              - link "Category Four 2026 Placeholder Project 04 A placeholder description that explains what was built and why it matters, without real data. Mobile Sync Storage" [ref=f1e220] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=f1e221]:
+                  - generic [ref=f1e224]: "04"
+                  - generic [ref=f1e225]:
+                    - generic [ref=f1e226]:
+                      - generic [ref=f1e227]: Category Four
+                      - generic [ref=f1e228]: "2026"
+                    - heading "Placeholder Project 04" [level=3] [ref=f1e229]
+                    - paragraph [ref=f1e230]: A placeholder description that explains what was built and why it matters, without real data.
+                    - generic [ref=f1e232]:
+                      - generic [ref=f1e233]: Mobile
+                      - generic [ref=f1e234]: Sync
+                      - generic [ref=f1e235]: Storage
+              - link "Category Five 2026 Placeholder Project 05 More stand-in copy for the grid. Keep it short so the tags row and arrow stay aligned. Automation Scheduling Tooling" [ref=f1e241] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=f1e242]:
+                  - generic [ref=f1e245]: "05"
+                  - generic [ref=f1e246]:
+                    - generic [ref=f1e247]:
+                      - generic [ref=f1e248]: Category Five
+                      - generic [ref=f1e249]: "2026"
+                    - heading "Placeholder Project 05" [level=3] [ref=f1e250]
+                    - paragraph [ref=f1e251]: More stand-in copy for the grid. Keep it short so the tags row and arrow stay aligned.
+                    - generic [ref=f1e253]:
+                      - generic [ref=f1e254]: Automation
+                      - generic [ref=f1e255]: Scheduling
+                      - generic [ref=f1e256]: Tooling
+              - link "Category Six 2026 Placeholder Project 06 Two lines of placeholder text describing this piece of work and the stack it was built with. Search Indexing CLI" [ref=f1e262] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=f1e263]:
+                  - generic [ref=f1e266]: "06"
+                  - generic [ref=f1e267]:
+                    - generic [ref=f1e268]:
+                      - generic [ref=f1e269]: Category Six
+                      - generic [ref=f1e270]: "2026"
+                    - heading "Placeholder Project 06" [level=3] [ref=f1e271]
+                    - paragraph [ref=f1e272]: Two lines of placeholder text describing this piece of work and the stack it was built with.
+                    - generic [ref=f1e274]:
+                      - generic [ref=f1e275]: Search
+                      - generic [ref=f1e276]: Indexing
+                      - generic [ref=f1e277]: CLI
+              - link "Category Seven 2026 Placeholder Project 07 Replace this filler with a sentence about the feature, the audience, and the result you shipped. Dashboard Charts Export" [ref=f1e283] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=f1e284]:
+                  - generic [ref=f1e287]: "07"
+                  - generic [ref=f1e288]:
+                    - generic [ref=f1e289]:
+                      - generic [ref=f1e290]: Category Seven
+                      - generic [ref=f1e291]: "2026"
+                    - heading "Placeholder Project 07" [level=3] [ref=f1e292]
+                    - paragraph [ref=f1e293]: Replace this filler with a sentence about the feature, the audience, and the result you shipped.
+                    - generic [ref=f1e295]:
+                      - generic [ref=f1e296]: Dashboard
+                      - generic [ref=f1e297]: Charts
+                      - generic [ref=f1e298]: Export
+              - link "Category One 2026 Placeholder Project 08 A final placeholder card — note that it shares a category with the first one, so filters can show two. Auth Payments Webhooks" [ref=f1e304] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=f1e305]:
+                  - generic [ref=f1e308]: "08"
+                  - generic [ref=f1e309]:
+                    - generic [ref=f1e310]:
+                      - generic [ref=f1e311]: Category One
+                      - generic [ref=f1e312]: "2026"
+                    - heading "Placeholder Project 08" [level=3] [ref=f1e313]
+                    - paragraph [ref=f1e314]: A final placeholder card — note that it shares a category with the first one, so filters can show two.
+                    - generic [ref=f1e316]:
+                      - generic [ref=f1e317]: Auth
+                      - generic [ref=f1e318]: Payments
+                      - generic [ref=f1e319]: Webhooks
+        - region "Services" [ref=f1e324]:
+          - generic [ref=f1e325]:
+            - generic [ref=f1e327]:
+              - generic [ref=f1e328]: What I Do
+              - heading "Your services headline goes here" [level=2] [ref=f1e329]
+              - paragraph [ref=f1e330]: A short description of this section goes here.
+            - list [ref=f1e331]:
+              - listitem [ref=f1e332]:
+                - generic [ref=f1e333]:
+                  - generic [aria-hidden] [ref=f1e334]: "01"
+                  - generic [ref=f1e335]:
+                    - heading "Placeholder Service One" [level=3] [ref=f1e336]
+                    - paragraph [ref=f1e337]: A short placeholder paragraph describing this service — one or two sentences is plenty for the row layout.
+              - listitem [ref=f1e338]:
+                - generic [ref=f1e339]:
+                  - generic [aria-hidden] [ref=f1e340]: "02"
+                  - generic [ref=f1e341]:
+                    - heading "Placeholder Service Two" [level=3] [ref=f1e342]
+                    - paragraph [ref=f1e343]: Another stand-in sentence explaining what you deliver, who it is for, and what outcome it produces.
+              - listitem [ref=f1e344]:
+                - generic [ref=f1e345]:
+                  - generic [aria-hidden] [ref=f1e346]: "03"
+                  - generic [ref=f1e347]:
+                    - heading "Placeholder Service Three" [level=3] [ref=f1e348]
+                    - paragraph [ref=f1e349]: Lorem-style filler copy for the third row. Keep it under two lines so every row keeps the same rhythm.
+              - listitem [ref=f1e350]:
+                - generic [ref=f1e351]:
+                  - generic [aria-hidden] [ref=f1e352]: "04"
+                  - generic [ref=f1e353]:
+                    - heading "Placeholder Service Four" [level=3] [ref=f1e354]
+                    - paragraph [ref=f1e355]: A final placeholder description — replace it with the details of your fourth offering.
+        - region "Companies" [ref=f1e356]:
+          - generic [ref=f1e357]:
+            - generic [ref=f1e359]:
+              - generic [ref=f1e360]: My Companies
+              - heading "Your companies headline goes here" [level=2] [ref=f1e361]
+              - paragraph [ref=f1e362]: A short description of this section goes here — replace it with a sentence or two about the ventures you run.
+            - generic [ref=f1e363]:
+              - article [ref=f1e366]:
+                - generic [aria-hidden] [ref=f1e367]: "01"
+                - generic [ref=f1e368]:
+                  - generic [ref=f1e369]:
+                    - generic [ref=f1e370]:
+                      - generic [aria-hidden] [ref=f1e371]: P
+                      - generic [ref=f1e372]:
+                        - heading "Placeholder Company Name" [level=3] [ref=f1e373]
+                        - generic [ref=f1e374]:
+                          - generic [ref=f1e375]: Role One
+                          - generic [ref=f1e376]: Role Two
+                    - generic [ref=f1e377]: Active
+                  - paragraph [ref=f1e379]: Your tagline goes here — one short line under the company name.
+                  - paragraph [ref=f1e380]: A longer placeholder paragraph describing what this company does, who it serves, and why it exists. Replace it with two or three sentences of real copy.
+                  - generic [ref=f1e381]:
+                    - generic [ref=f1e382]:
+                      - paragraph [ref=f1e383]:
+                        - generic [ref=f1e384]: 120+
+                      - paragraph [ref=f1e385]: Completed Projects
+                    - generic [ref=f1e386]:
+                      - paragraph [ref=f1e387]: 99.9%
+                      - paragraph [ref=f1e388]: Uptime SLA
+                    - generic [ref=f1e389]:
+                      - paragraph [ref=f1e390]: Est. 2026
+                      - paragraph [ref=f1e391]: Established
+                  - generic [ref=f1e392]:
+                    - generic [ref=f1e393]: What We Offer
+                    - generic [ref=f1e394]:
+                      - generic [ref=f1e395]: Offer One
+                      - generic [ref=f1e396]: Offer Two
+                      - generic [ref=f1e397]: Offer Three
+                      - generic [ref=f1e398]: Offer Four
+                      - generic [ref=f1e399]: Offer Five
+                      - generic [ref=f1e400]: Offer Six
+                  - generic [ref=f1e401]:
+                    - link "your-domain.com" [ref=f1e402] [cursor=pointer]:
+                      - /url: "#"
+                    - link "Visit" [ref=f1e403] [cursor=pointer]:
+                      - /url: "#"
+              - generic [ref=f1e406]:
+                - generic [aria-hidden] [ref=f1e407]: "02"
+                - generic [ref=f1e408]:
+                  - paragraph [ref=f1e409]: Next venture — in orbit
+                  - paragraph [ref=f1e410]: A new placeholder paragraph for this reserved slot. Add the next company here and the registry grows on its own.
+                  - generic [ref=f1e411]: Slot 02 reserved
+        - region "GitHub Activity" [ref=f1e413]:
+          - generic [ref=f1e414]:
+            - heading "GitHub Activity" [level=2] [ref=f1e417]
+            - generic [ref=f1e420]:
+              - paragraph [ref=f1e421]: Placeholder activity — replace this grid with your real contribution data.
+              - generic [ref=f1e703]:
+                - generic [ref=f1e704]: Less
+                - generic [ref=f1e710]: More
+        - region "Skills" [ref=f1e711]:
+          - generic [ref=f1e712]:
+            - generic [ref=f1e714]:
+              - generic [ref=f1e715]: Tech Arsenal
+              - heading "Skills" [level=2] [ref=f1e716]
+              - paragraph [ref=f1e717]: A short description of this section goes here.
+            - generic [ref=f1e718]:
+              - generic [ref=f1e719]:
+                - heading "Placeholder Group One" [level=3] [ref=f1e720]
+                - generic [ref=f1e721]:
+                  - generic [ref=f1e723]:
+                    - generic [aria-hidden] [ref=f1e724]: S
+                    - text: Skill One
+                  - generic [ref=f1e726]:
+                    - generic [aria-hidden] [ref=f1e727]: S
+                    - text: Skill Two
+                  - generic [ref=f1e729]:
+                    - generic [aria-hidden] [ref=f1e730]: S
+                    - text: Skill Three
+                  - generic [ref=f1e732]:
+                    - generic [aria-hidden] [ref=f1e733]: S
+                    - text: Skill Four
+                  - generic [ref=f1e735]:
+                    - generic [aria-hidden] [ref=f1e736]: S
+                    - text: Skill Five
+                  - generic [ref=f1e738]:
+                    - generic [aria-hidden] [ref=f1e739]: S
+                    - text: Skill Six
+                  - generic [ref=f1e741]:
+                    - generic [aria-hidden] [ref=f1e742]: S
+                    - text: Skill Seven
+                  - generic [ref=f1e744]:
+                    - generic [aria-hidden] [ref=f1e745]: S
+                    - text: Skill Eight
+              - generic [ref=f1e746]:
+                - heading "Placeholder Group Two" [level=3] [ref=f1e747]
+                - generic [ref=f1e748]:
+                  - generic [ref=f1e750]:
+                    - generic [aria-hidden] [ref=f1e751]: T
+                    - text: Tool One
+                  - generic [ref=f1e753]:
+                    - generic [aria-hidden] [ref=f1e754]: T
+                    - text: Tool Two
+                  - generic [ref=f1e756]:
+                    - generic [aria-hidden] [ref=f1e757]: T
+                    - text: Tool Three
+                  - generic [ref=f1e759]:
+                    - generic [aria-hidden] [ref=f1e760]: T
+                    - text: Tool Four
+                  - generic [ref=f1e762]:
+                    - generic [aria-hidden] [ref=f1e763]: T
+                    - text: Tool Five
+                  - generic [ref=f1e765]:
+                    - generic [aria-hidden] [ref=f1e766]: T
+                    - text: Tool Six
+                  - generic [ref=f1e768]:
+                    - generic [aria-hidden] [ref=f1e769]: T
+                    - text: Tool Seven
+                  - generic [ref=f1e771]:
+                    - generic [aria-hidden] [ref=f1e772]: T
+                    - text: Tool Eight
+              - generic [ref=f1e773]:
+                - heading "Placeholder Group Three" [level=3] [ref=f1e774]
+                - generic [ref=f1e775]:
+                  - generic [ref=f1e777]:
+                    - generic [aria-hidden] [ref=f1e778]: S
+                    - text: Service One
+                  - generic [ref=f1e780]:
+                    - generic [aria-hidden] [ref=f1e781]: S
+                    - text: Service Two
+                  - generic [ref=f1e783]:
+                    - generic [aria-hidden] [ref=f1e784]: S
+                    - text: Service Three
+                  - generic [ref=f1e786]:
+                    - generic [aria-hidden] [ref=f1e787]: S
+                    - text: Service Four
+                  - generic [ref=f1e789]:
+                    - generic [aria-hidden] [ref=f1e790]: S
+                    - text: Service Five
+                  - generic [ref=f1e792]:
+                    - generic [aria-hidden] [ref=f1e793]: S
+                    - text: Service Six
+                  - generic [ref=f1e795]:
+                    - generic [aria-hidden] [ref=f1e796]: S
+                    - text: Service Seven
+                  - generic [ref=f1e798]:
+                    - generic [aria-hidden] [ref=f1e799]: S
+                    - text: Service Eight
+        - region "NPM Packages" [ref=f1e800]:
+          - generic [ref=f1e801]:
+            - generic [ref=f1e802]:
+              - generic [ref=f1e803]:
+                - generic [ref=f1e804]: Open Source
+                - heading "NPM Packages" [level=2] [ref=f1e805]
+                - paragraph [ref=f1e806]: A short description of this section goes here — a line about what you publish and how often.
+              - link "View NPM Profile" [ref=f1e808] [cursor=pointer]:
+                - /url: "#"
+            - generic [ref=f1e813]:
+              - article [ref=f1e815]:
+                - generic [ref=f1e816]:
+                  - generic [ref=f1e817]: v1.0.0
+                  - link [ref=f1e818] [cursor=pointer]:
+                    - /url: "#"
+                - heading "placeholder-package-one" [level=3] [ref=f1e823]
+                - paragraph [ref=f1e824]: Placeholder description for this package. A few lines explaining what it does, who it is for, and why someone would install it. Replace this copy with your own summary.
+                - generic [ref=f1e825]:
+                  - generic [ref=f1e826]: tag one
+                  - generic [ref=f1e827]: tag two
+                  - generic [ref=f1e828]: tag three
+                - generic [ref=f1e829]:
+                  - paragraph [ref=f1e830]: 142 monthly downloads
+                  - generic [ref=f1e831]: Jan 14, 2026
+              - article [ref=f1e833]:
+                - generic [ref=f1e834]:
+                  - generic [ref=f1e835]: v0.4.2
+                  - link [ref=f1e836] [cursor=pointer]:
+                    - /url: "#"
+                - heading "placeholder-package-two" [level=3] [ref=f1e841]
+                - paragraph [ref=f1e842]: Another placeholder description. Describe the main API, the problem it solves, and any noteworthy trade-offs in three or four sentences so the card feels complete.
+                - generic [ref=f1e843]:
+                  - generic [ref=f1e844]: tag one
+                  - generic [ref=f1e845]: tag two
+                  - generic [ref=f1e846]: tag three
+                  - generic [ref=f1e847]: tag four
+                - generic [ref=f1e848]:
+                  - paragraph [ref=f1e849]: 86 monthly downloads
+                  - generic [ref=f1e850]: Nov 03, 2025
+              - article [ref=f1e852]:
+                - generic [ref=f1e853]:
+                  - generic [ref=f1e854]: v2.1.0
+                  - link [ref=f1e855] [cursor=pointer]:
+                    - /url: "#"
+                - heading "placeholder-package-three" [level=3] [ref=f1e860]
+                - paragraph [ref=f1e861]: A third placeholder description. Keep it short and scannable — one sentence for the purpose, one for the audience, and an optional line about the install size or status.
+                - generic [ref=f1e862]:
+                  - generic [ref=f1e863]: tag one
+                  - generic [ref=f1e864]: tag two
+                  - generic [ref=f1e865]: tag three
+                - generic [ref=f1e866]:
+                  - paragraph [ref=f1e867]: 57 monthly downloads
+                  - generic [ref=f1e868]: Aug 27, 2025
+        - region "Games" [ref=f1e869]:
+          - generic [ref=f1e870]:
+            - generic [ref=f1e872]:
+              - generic [ref=f1e873]: Games & Fun Projects
+              - heading "Games and experiments I built just for fun" [level=2] [ref=f1e874]
+              - paragraph [ref=f1e875]: A short description of this section goes here — a line about what you play with outside of client work.
+            - link "Category label 2026 Placeholder game title Placeholder description for this game — one or two sentences about the idea, the mechanics, and why you built it. Keep it light and human, this section is all about having fun. Engine Language Tool" [ref=f1e878] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=f1e880]: Placeholder cover image
+              - generic [ref=f1e881]:
+                - generic [ref=f1e882]:
+                  - generic [ref=f1e883]: Category label
+                  - generic [ref=f1e884]: "2026"
+                - heading "Placeholder game title" [level=3] [ref=f1e885]
+                - paragraph [ref=f1e886]: Placeholder description for this game — one or two sentences about the idea, the mechanics, and why you built it. Keep it light and human, this section is all about having fun.
+                - generic [ref=f1e888]:
+                  - generic [ref=f1e889]: Engine
+                  - generic [ref=f1e890]: Language
+                  - generic [ref=f1e891]: Tool
+        - region "Proof of Concepts" [ref=f1e896]:
+          - generic [ref=f1e897]:
+            - generic [ref=f1e899]:
+              - generic [ref=f1e900]: Proof of Concepts
+              - heading "Quick builds and experiments to test ideas" [level=2] [ref=f1e901]
+              - paragraph [ref=f1e902]: A short description of this section goes here — a line about how you use small experiments to validate ideas.
+            - generic [ref=f1e903]:
+              - article [ref=f1e905]:
+                - generic [ref=f1e906]:
+                  - generic [ref=f1e907]: Category label
+                  - generic [ref=f1e908]: "2026"
+                - heading "Placeholder concept title" [level=3] [ref=f1e909]
+                - paragraph [ref=f1e910]: Placeholder description of this proof of concept. One or two sentences on the idea being tested, what you were trying to learn, and how the experiment turned out.
+                - generic [ref=f1e911]:
+                  - generic [ref=f1e912]:
+                    - generic [ref=f1e913]: Tech one
+                    - generic [ref=f1e914]: Tech two
+                    - generic [ref=f1e915]: Tech three
+                  - link "Visit" [ref=f1e916] [cursor=pointer]:
+                    - /url: "#"
+              - article [ref=f1e922]:
+                - generic [ref=f1e923]:
+                  - generic [ref=f1e924]: Category label
+                  - generic [ref=f1e925]: "2025"
+                - heading "Another placeholder title" [level=3] [ref=f1e926]
+                - paragraph [ref=f1e927]: "A second placeholder description. Keep it short: what the prototype demonstrates, which constraint it explores, and whether it turned into something larger."
+                - generic [ref=f1e928]:
+                  - generic [ref=f1e929]:
+                    - generic [ref=f1e930]: Tech one
+                    - generic [ref=f1e931]: Tech two
+                  - link "Visit" [ref=f1e932] [cursor=pointer]:
+                    - /url: "#"
+        - region "Legacy Projects" [ref=f1e937]:
+          - generic [ref=f1e938]:
+            - generic [ref=f1e940]:
+              - generic [ref=f1e941]: Legacy Projects
+              - heading "Older experiments and personal builds" [level=2] [ref=f1e942]
+              - paragraph [ref=f1e943]: A short description of this section goes here — a line about the work that came before the current one.
+            - generic [ref=f1e944]:
+              - link "Category label 2023 Placeholder project title Placeholder description for this older project — a couple of sentences covering what it was, which stack it used, and what you took away from building it. Tech one Tech two Tech three" [ref=f1e946] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=f1e948]: Placeholder project image
+                - generic [ref=f1e949]:
+                  - generic [ref=f1e950]:
+                    - generic [ref=f1e951]: Category label
+                    - generic [ref=f1e952]: "2023"
+                  - heading "Placeholder project title" [level=3] [ref=f1e953]
+                  - paragraph [ref=f1e954]: Placeholder description for this older project — a couple of sentences covering what it was, which stack it used, and what you took away from building it.
+                  - generic [ref=f1e956]:
+                    - generic [ref=f1e957]: Tech one
+                    - generic [ref=f1e958]: Tech two
+                    - generic [ref=f1e959]: Tech three
+              - link "Category label 2023 Another placeholder title A second placeholder description. Explain the goal in one sentence and the outcome in another, keeping the tone factual and easy to scan. Tech one Tech two" [ref=f1e965] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=f1e967]: Placeholder project image
+                - generic [ref=f1e968]:
+                  - generic [ref=f1e969]:
+                    - generic [ref=f1e970]: Category label
+                    - generic [ref=f1e971]: "2023"
+                  - heading "Another placeholder title" [level=3] [ref=f1e972]
+                  - paragraph [ref=f1e973]: A second placeholder description. Explain the goal in one sentence and the outcome in another, keeping the tone factual and easy to scan.
+                  - generic [ref=f1e975]:
+                    - generic [ref=f1e976]: Tech one
+                    - generic [ref=f1e977]: Tech two
+              - link "Category label 2022 Third placeholder title A third placeholder description. Mention the audience, the main feature, and anything you would do differently if you rebuilt it today. Tech one Tech two Tech three" [ref=f1e983] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=f1e985]: Placeholder project image
+                - generic [ref=f1e986]:
+                  - generic [ref=f1e987]:
+                    - generic [ref=f1e988]: Category label
+                    - generic [ref=f1e989]: "2022"
+                  - heading "Third placeholder title" [level=3] [ref=f1e990]
+                  - paragraph [ref=f1e991]: A third placeholder description. Mention the audience, the main feature, and anything you would do differently if you rebuilt it today.
+                  - generic [ref=f1e993]:
+                    - generic [ref=f1e994]: Tech one
+                    - generic [ref=f1e995]: Tech two
+                    - generic [ref=f1e996]: Tech three
+        - region "Certifications" [ref=f1e1001]:
+          - generic [ref=f1e1002]:
+            - generic [ref=f1e1004]:
+              - generic [ref=f1e1005]: Certifications
+              - heading "Professional Credentials" [level=2] [ref=f1e1006]
+              - paragraph [ref=f1e1007]: A short description of this section goes here — a line about how you keep learning and verifying new skills.
+            - tablist "Certifications" [ref=f1e1008]:
+              - tab "Provider One 2" [selected] [ref=f1e1009]:
+                - generic [ref=f1e1011]: Provider One
+                - generic [ref=f1e1012]: "2"
+              - tab "Provider Two 3" [ref=f1e1013]:
+                - generic [ref=f1e1014]: Provider Two
+                - generic [ref=f1e1015]: "3"
+              - tab "Provider Three 1" [ref=f1e1016]:
+                - generic [ref=f1e1017]: Provider Three
+                - generic [ref=f1e1018]: "1"
+            - tabpanel "Provider One 2" [ref=f1e1019]:
+              - generic [ref=f1e1020]:
+                - article [ref=f1e1022]:
+                  - button "Placeholder certificate title one — full view" [ref=f1e1023]:
+                    - generic [ref=f1e1024]: Certificate image
+                  - generic [ref=f1e1026]:
+                    - generic [ref=f1e1027]:
+                      - heading "Placeholder certificate title one" [level=3] [ref=f1e1028]
+                      - generic [ref=f1e1029]: "2025"
+                    - link "Verify Certificate" [ref=f1e1030] [cursor=pointer]:
+                      - /url: "#"
+                - article [ref=f1e1032]:
+                  - button "Placeholder certificate title two — full view" [ref=f1e1033]:
+                    - generic [ref=f1e1034]: Certificate image
+                  - generic [ref=f1e1036]:
+                    - generic [ref=f1e1037]:
+                      - heading "Placeholder certificate title two" [level=3] [ref=f1e1038]
+                      - generic [ref=f1e1039]: "2024"
+                    - link "Verify Certificate" [ref=f1e1040] [cursor=pointer]:
+                      - /url: "#"
+        - region "Skill Badges" [ref=f1e1041]:
+          - generic [ref=f1e1042]:
+            - generic [ref=f1e1044]:
+              - generic [ref=f1e1045]: Skill Badges
+              - heading "Verified micro-credentials and achievements" [level=2] [ref=f1e1046]
+              - paragraph [ref=f1e1047]: A short description of this section goes here.
+            - tablist "Skill Badges" [ref=f1e1049]:
+              - tab "Provider One 2" [selected] [ref=f1e1050] [cursor=pointer]:
+                - generic [ref=f1e1051]: Provider One
+                - generic [ref=f1e1052]: "2"
+              - tab "Provider Two 1" [ref=f1e1053] [cursor=pointer]:
+                - generic [ref=f1e1054]: Provider Two
+                - generic [ref=f1e1055]: "1"
+              - tab "Provider Three 1" [ref=f1e1056] [cursor=pointer]:
+                - generic [ref=f1e1057]: Provider Three
+                - generic [ref=f1e1058]: "1"
+            - tabpanel "Provider One 2" [ref=f1e1059]:
+              - generic [ref=f1e1060]:
+                - generic [ref=f1e1069]:
+                  - heading "Placeholder Badge Title One" [level=3] [ref=f1e1070]
+                  - generic [ref=f1e1071]:
+                    - generic [ref=f1e1072]: Provider One
+                    - generic [ref=f1e1073]: Jan 2026
+                  - link "Verify Badge" [ref=f1e1075] [cursor=pointer]:
+                    - /url: "#"
+                - generic [ref=f1e1084]:
+                  - heading "Placeholder Badge Title Two" [level=3] [ref=f1e1085]
+                  - generic [ref=f1e1086]:
+                    - generic [ref=f1e1087]: Provider One
+                    - generic [ref=f1e1088]: Feb 2026
+                  - link "Verify Badge" [ref=f1e1090] [cursor=pointer]:
+                    - /url: "#"
+        - region "Volunteering" [ref=f1e1091]:
+          - generic [ref=f1e1092]:
+            - generic [ref=f1e1094]:
+              - generic [ref=f1e1095]: Volunteer Work
+              - heading "Volunteering" [level=2] [ref=f1e1096]
+              - paragraph [ref=f1e1097]: A short description of this section goes here.
+            - list [ref=f1e1098]:
+              - listitem [ref=f1e1099]:
+                - generic [ref=f1e1100]:
+                  - generic [ref=f1e1101]:
+                    - heading "Placeholder Volunteer Role" [level=3] [ref=f1e1102]
+                    - generic [aria-hidden] [ref=f1e1103]: "01"
+                  - paragraph [ref=f1e1104]: Jan 2026 – Present
+                  - paragraph [ref=f1e1105]: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Replace this paragraph with two or three sentences about what you contributed, who you worked with, and what shipped while you were there.
+                  - generic [ref=f1e1106]: 500+ Placeholder Metric
+              - listitem [ref=f1e1108]:
+                - generic [ref=f1e1109]:
+                  - generic [ref=f1e1110]:
+                    - heading "Second Placeholder Role" [level=3] [ref=f1e1111]
+                    - generic [aria-hidden] [ref=f1e1112]: "02"
+                  - paragraph [ref=f1e1113]: Sep 2025 – Dec 2025
+                  - paragraph [ref=f1e1114]: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A short description of the work, the team, and the outcome you are proudest of goes here.
+                  - generic [ref=f1e1115]: 250+ Placeholder Metric
+              - listitem [ref=f1e1117]:
+                - generic [ref=f1e1118]:
+                  - generic [ref=f1e1119]:
+                    - heading "Third Placeholder Role" [level=3] [ref=f1e1120]
+                    - generic [aria-hidden] [ref=f1e1121]: "03"
+                  - paragraph [ref=f1e1122]: Mar 2025 – Aug 2025
+                  - paragraph [ref=f1e1123]: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Keep this to a couple of lines so the list stays easy to scan.
+                  - generic [ref=f1e1124]: 50+ Placeholder Metric
+        - region "Testimonials" [ref=f1e1126]:
+          - generic [ref=f1e1127]:
+            - generic [ref=f1e1128]:
+              - generic [ref=f1e1129]:
+                - generic [ref=f1e1130]: Testimonials
+                - heading "What clients say about working with me" [level=2] [ref=f1e1131]
+                - paragraph [ref=f1e1132]: A short description of this section goes here.
+              - generic [ref=f1e1134]:
+                - generic [ref=f1e1135]: "5.0"
+                - generic [ref=f1e1136]:
+                  - generic [ref=f1e1137]: Rated 5.0 out of 5
+                  - generic [ref=f1e1149]: 5 reviews · 4 clients
+            - generic [ref=f1e1150]:
+              - region "Testimonials carousel" [ref=f1e1151]:
+                - generic [ref=f1e1152]:
+                  - generic [ref=f1e1153]:
+                    - generic [ref=f1e1154]:
+                      - generic [aria-hidden] [ref=f1e1155]: PC
+                      - generic [ref=f1e1156]:
+                        - heading "Placeholder Client" [level=3] [ref=f1e1157]
+                        - paragraph [ref=f1e1158]: Client
+                      - generic [ref=f1e1159]: Verified client
+                    - blockquote [ref=f1e1161]:
+                      - paragraph [ref=f1e1162]: “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Replace this quote with a few sentences from a happy client — two to four lines reads best in this card.”
+                    - link "View Project" [ref=f1e1163] [cursor=pointer]:
+                      - /url: "#"
+                  - generic [ref=f1e1167]:
+                    - generic [ref=f1e1168]:
+                      - generic [aria-hidden] [ref=f1e1169]: SC
+                      - generic [ref=f1e1170]:
+                        - heading "Sample Client" [level=3] [ref=f1e1171]
+                        - paragraph [ref=f1e1172]: Client
+                      - generic [ref=f1e1173]: Verified client
+                    - blockquote [ref=f1e1175]:
+                      - paragraph [ref=f1e1176]: “Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. A slightly longer placeholder quote shows how the card handles several lines of text.”
+                    - link "View Project" [ref=f1e1177] [cursor=pointer]:
+                      - /url: "#"
+              - generic [ref=f1e1181]:
+                - generic [ref=f1e1182]:
+                  - button "Show testimonial 1" [ref=f1e1183] [cursor=pointer]
+                  - button "Show testimonial 2" [ref=f1e1184] [cursor=pointer]
+                  - button "Show testimonial 3" [ref=f1e1185] [cursor=pointer]
+                  - button "Show testimonial 4" [ref=f1e1186] [cursor=pointer]
+                  - button "Show testimonial 5" [ref=f1e1187] [cursor=pointer]
+                - generic [ref=f1e1188]:
+                  - button "Previous testimonials" [disabled] [ref=f1e1189]
+                  - button "Next testimonials" [ref=f1e1192] [cursor=pointer]
+        - region [ref=f1e1195]:
+          - generic [ref=f1e1197]:
+            - generic [ref=f1e1198]:
+              - generic [ref=f1e1200]:
+                - generic [ref=f1e1201]: Chat With Me
+                - heading "Let's build something useful" [level=2] [ref=f1e1202]
+                - paragraph [ref=f1e1203]: A short description of this section goes here — how quickly you reply and what you love to hear about.
+              - generic [ref=f1e1204]:
+                - generic [ref=f1e1205]: Direct channels
+                - list [ref=f1e1206]:
+                  - listitem [ref=f1e1207]:
+                    - link "Email" [ref=f1e1208] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=f1e1216]:
+                    - link "WhatsApp" [ref=f1e1217] [cursor=pointer]:
+                      - /url: "#"
+                  - listitem [ref=f1e1224]:
+                    - link "Book a call" [ref=f1e1225] [cursor=pointer]:
+                      - /url: "#"
+            - generic [ref=f1e1234]:
+              - generic [ref=f1e1235]:
+                - generic [ref=f1e1236]:
+                  - generic [ref=f1e1237]: Your Name
+                  - textbox "Your Name" [ref=f1e1238]:
+                    - /placeholder: John Doe
+                - generic [ref=f1e1239]:
+                  - generic [ref=f1e1240]: Email or Discord Tag
+                  - textbox "Email or Discord Tag" [ref=f1e1241]:
+                    - /placeholder: john@example.com
+              - generic [ref=f1e1242]:
+                - generic [ref=f1e1243]: Your Message
+                - textbox "Your Message" [ref=f1e1244]:
+                  - /placeholder: Hey! I have a project idea...
+              - generic [ref=f1e1245]:
+                - button "Send Message" [ref=f1e1246] [cursor=pointer]
+                - status [ref=f1e1251]
+        - generic "Site footer" [ref=f1e1252]:
+          - generic [ref=f1e1253]:
+            - navigation "Social links" [ref=f1e1254]:
+              - link "GitHub" [ref=f1e1255] [cursor=pointer]:
+                - /url: "#"
+              - link "LinkedIn" [ref=f1e1258] [cursor=pointer]:
+                - /url: "#"
+              - link "WhatsApp" [ref=f1e1263] [cursor=pointer]:
+                - /url: "#"
+              - link "Email" [ref=f1e1266] [cursor=pointer]:
+                - /url: "#"
+            - paragraph [ref=f1e1270]:
+              - generic [ref=f1e1271]: © 2026 [Your Name]. All rights reserved.
+              - generic [aria-hidden] [ref=f1e1272]: •
+              - link "Privacy Policy" [ref=f1e1273] [cursor=pointer]:
+                - /url: "#"
+  - button "Open Next.js Dev Tools" [ref=f1e1279] [cursor=pointer]

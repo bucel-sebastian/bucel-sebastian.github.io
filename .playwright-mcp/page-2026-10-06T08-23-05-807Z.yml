@@ -1,0 +1,974 @@
+- generic [ref=e2]:
+  - link "Skip to content" [ref=e3] [cursor=pointer]:
+    - /url: "#main"
+  - banner:
+    - navigation "Primary navigation" [ref=e4]:
+      - link "Abdalla Ahmed" [ref=e5] [cursor=pointer]:
+        - /url: /en
+      - generic "Site preferences" [ref=e10]:
+        - button "Toggle color theme" [ref=e11]
+        - button "Choose language" [ref=e20]:
+          - generic [ref=e24]: en
+        - link "Book a call with Abdalla" [ref=e26] [cursor=pointer]:
+          - /url: https://cal.com/abdullah-ahmed-ssjoni
+          - generic [ref=e31]: Book a call
+        - link "Contact Abdalla on WhatsApp" [ref=e33] [cursor=pointer]:
+          - /url: https://api.whatsapp.com/send?phone=2001024131345
+      - button "Open menu" [ref=e39]
+  - main [ref=e41]:
+    - generic [ref=e43]:
+      - generic [ref=e45]:
+        - paragraph [ref=e46]:
+          - text: Available for selected work
+          - generic [ref=e50]: —
+          - generic [ref=e51]: Independent developer / Cairo
+        - heading "I build systems people remember." [level=1] [ref=e52]:
+          - generic [ref=e53]: I build systems
+          - generic [ref=e55]: people remember.
+        - paragraph [ref=e57]: Web · Mobile · AI · Product thinking
+        - generic [ref=e58]:
+          - link "View Projects" [ref=e60] [cursor=pointer]:
+            - /url: "#projects"
+          - link "Book a call" [ref=e65] [cursor=pointer]:
+            - /url: https://cal.com/abdullah-ahmed-ssjoni
+          - link "Download CV" [ref=e71] [cursor=pointer]:
+            - /url: /en/cv
+      - link "Explore the work" [ref=e72] [cursor=pointer]:
+        - /url: "#projects"
+    - region "Highlights" [ref=e75]:
+      - list [ref=e77]:
+        - listitem [ref=e78]:
+          - generic [ref=e84]: 0+
+          - generic [ref=e85]: Projects
+          - generic [ref=e86]: Most built with TypeScript
+        - listitem [ref=e87]:
+          - generic [ref=e92]: 0+
+          - generic [ref=e93]: Certificates
+          - generic [ref=e94]: "Top issuer: Anthropic Academy"
+        - listitem [ref=e95]:
+          - generic [ref=e99]: 0+
+          - generic [ref=e100]: Badges
+          - generic [ref=e101]: Including Google
+        - listitem [ref=e102]:
+          - generic [ref=e106]: 0+
+          - generic [ref=e107]: Years Experience
+          - generic [ref=e108]: Shipping since 2020
+    - generic [ref=e110]:
+      - generic [ref=e111]:
+        - generic [aria-hidden] [ref=e112]: 01 / 04
+        - generic [ref=e113]: About
+        - heading "Abdalla Ahmed" [level=2] [ref=e114]
+        - paragraph [ref=e115]: Full Stack Developer
+        - generic [ref=e116]: Available for selected work
+      - generic [ref=e119]:
+        - paragraph [ref=e120]: Building scalable web & mobile applications with a focus on polished UI/UX.
+        - generic [ref=e122]:
+          - generic [ref=e123]: Direct channels
+          - generic [ref=e124]:
+            - link "GitHub" [ref=e125] [cursor=pointer]:
+              - /url: https://github.com/abdalla-3077
+            - link "LinkedIn" [ref=e133] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/abdalla-ahmed-int/
+            - link "WhatsApp" [ref=e142] [cursor=pointer]:
+              - /url: https://api.whatsapp.com/send?phone=2001024131345
+            - link "Email" [ref=e149] [cursor=pointer]:
+              - /url: mailto:info@abdallaahmed.icu
+    - generic [ref=e158]:
+      - generic [ref=e159]:
+        - generic [ref=e160]:
+          - generic [ref=e161]: Latest Projects
+          - heading "A selection of my software work that I am proud of" [level=2] [ref=e162]
+          - paragraph [ref=e163]: A few systems built with equal attention to utility, scale, and feel.
+        - link "View GitHub" [ref=e165] [cursor=pointer]:
+          - /url: https://github.com/abdalla-3077
+      - generic "Project index" [ref=e169]:
+        - group "Filter projects" [ref=e170]:
+          - tablist "Filter projects" [ref=e172]:
+            - tab "All work" [selected] [ref=e173]
+            - tab "AI Chat App" [ref=e174]
+            - tab "AI Productivity" [ref=e183]
+            - tab "AI Prompt Engineering" [ref=e192]
+            - tab "AI Vision" [ref=e201]
+            - tab "AI Writing Tool" [ref=e210]
+            - tab "Chrome Extension & AI" [ref=e219]
+            - tab "Desktop App" [ref=e228]
+            - tab "Desktop Application" [ref=e231]
+            - tab "EdTech" [ref=e234]
+            - tab "EdTech & AI" [ref=e238]
+            - tab "EdTech & Bots" [ref=e242]
+            - tab "EdTech & Gamification" [ref=e246]
+            - tab "Education" [ref=e250]
+            - tab "Enterprise CRM / SaaS" [ref=e254]
+            - tab "GNOME Desktop App" [ref=e258]
+            - tab "Management System" [ref=e261]
+            - tab "Mobile App" [ref=e265]
+            - tab "Mobile Application" [ref=e268]
+            - tab "Search Engine" [ref=e271]
+            - tab "Sports" [ref=e275]
+            - tab "Tourism" [ref=e279]
+            - tab "Web Application" [ref=e283]
+      - generic [ref=e286]:
+        - link "Study System" [ref=e289] [cursor=pointer]:
+          - /url: /en/projects/study-system
+          - img "Study System" [ref=e291]
+          - generic [ref=e293]:
+            - generic [ref=e294]:
+              - generic [ref=e295]: EdTech & Bots
+              - generic [ref=e299]: "2026"
+            - heading "Study System" [level=3] [ref=e300]
+            - paragraph [ref=e301]: A massive all-in-one Discord bot featuring Pomodoro, challenges, Forest, AI tasks, and animated welcome systems.
+            - generic [ref=e303]:
+              - generic [ref=e304]: Discord.js
+              - generic [ref=e305]: Canvas Node
+              - generic [ref=e306]: Groq AI
+        - link "Study Timer Bot" [ref=e312] [cursor=pointer]:
+          - /url: /en/projects/timer-bot
+          - img "Study Timer Bot" [ref=e314]
+          - generic [ref=e316]:
+            - generic [ref=e317]:
+              - generic [ref=e318]: EdTech & Gamification
+              - generic [ref=e322]: "2026"
+            - heading "Study Timer Bot" [level=3] [ref=e323]
+            - paragraph [ref=e324]: A gamified productivity bot serving 12,000+ users with virtual pet mechanics.
+            - generic [ref=e326]:
+              - generic [ref=e327]: Discord.js
+              - generic [ref=e328]: Bun
+              - generic [ref=e329]: Canvas
+        - link "Learnify Platform" [ref=e335] [cursor=pointer]:
+          - /url: /en/projects/learnify
+          - img "Learnify Platform" [ref=e337]
+          - generic [ref=e339]:
+            - generic [ref=e340]:
+              - generic [ref=e341]: EdTech
+              - generic [ref=e345]: "2024"
+            - heading "Learnify Platform" [level=3] [ref=e346]
+            - paragraph [ref=e347]: A comprehensive LMS platform focused on interactive learning experiences.
+            - generic [ref=e349]:
+              - generic [ref=e350]: Expo JS
+              - generic [ref=e351]: TypeScript
+              - generic [ref=e352]: MongoDB
+        - link "Hi Egypt" [ref=e358] [cursor=pointer]:
+          - /url: /en/projects/hiEgypt
+          - img "Hi Egypt" [ref=e360]
+          - generic [ref=e362]:
+            - generic [ref=e363]:
+              - generic [ref=e364]: Tourism
+              - generic [ref=e368]: "2025"
+            - heading "Hi Egypt" [level=3] [ref=e369]
+            - paragraph [ref=e370]: A tourism platform showcasing the beauty of Egypt.
+            - generic [ref=e372]:
+              - generic [ref=e373]: React
+              - generic [ref=e374]: Zustand
+              - generic [ref=e375]: MongoDB
+        - link "Edufy Desktop" [ref=e381] [cursor=pointer]:
+          - /url: /en/projects/edufy
+          - img "Edufy Desktop" [ref=e383]
+          - generic [ref=e385]:
+            - generic [ref=e386]:
+              - generic [ref=e387]: Education
+              - generic [ref=e391]: "2025"
+            - heading "Edufy Desktop" [level=3] [ref=e392]
+            - paragraph [ref=e393]: Desktop application for offline learning management.
+            - generic [ref=e395]:
+              - generic [ref=e396]: Electron Forge
+              - generic [ref=e397]: NeDB
+              - generic [ref=e398]: React
+        - link "Cairo Search" [ref=e404] [cursor=pointer]:
+          - /url: /en/projects/cairoSearch
+          - img "Cairo Search" [ref=e406]
+          - generic [ref=e408]:
+            - generic [ref=e409]:
+              - generic [ref=e410]: Search Engine
+              - generic [ref=e414]: "2025"
+            - heading "Cairo Search" [level=3] [ref=e415]
+            - paragraph [ref=e416]: Local search engine optimized for Cairo businesses and services.
+            - generic [ref=e418]:
+              - generic [ref=e419]: Next.js
+              - generic [ref=e420]: Node.js
+              - generic [ref=e421]: MongoDB
+        - link "NextStep AI" [ref=e427] [cursor=pointer]:
+          - /url: /en/projects/nextStepAi
+          - img "NextStep AI" [ref=e429]
+          - generic [ref=e431]:
+            - generic [ref=e432]:
+              - generic [ref=e433]: AI Productivity
+              - generic [ref=e442]: "2026"
+            - heading "NextStep AI" [level=3] [ref=e443]
+            - paragraph [ref=e444]: An AI-powered todo list that helps you organize tasks smarter and faster.
+            - generic [ref=e446]:
+              - generic [ref=e447]: Next.js
+              - generic [ref=e448]: Fastify
+              - generic [ref=e449]: Groq AI
+        - link "OG - Opportunity Guidance" [ref=e455] [cursor=pointer]:
+          - /url: /en/projects/og-platform
+          - img "OG - Opportunity Guidance" [ref=e457]
+          - generic [ref=e459]:
+            - generic [ref=e460]:
+              - generic [ref=e461]: Mobile App
+              - generic [ref=e464]: "2026"
+            - heading "OG - Opportunity Guidance" [level=3] [ref=e465]
+            - paragraph [ref=e466]: An Android app that helps men discover and explore career opportunities. One app. All opportunities. No chaos.
+            - generic [ref=e468]:
+              - generic [ref=e469]: React Native
+              - generic [ref=e470]: Expo
+              - generic [ref=e471]: React Native Paper
+        - link "Cairo IDE" [ref=e477] [cursor=pointer]:
+          - /url: /en/projects/cairo-ide
+          - img "Cairo IDE" [ref=e479]
+          - generic [ref=e481]:
+            - generic [ref=e482]:
+              - generic [ref=e483]: Desktop Application
+              - generic [ref=e486]: "2026"
+            - heading "Cairo IDE" [level=3] [ref=e487]
+            - paragraph [ref=e488]: A personal mini IDE built in 3 days, experimenting with Vipe coding tools and my own coding experience.
+            - generic [ref=e490]:
+              - generic [ref=e491]: Electron Forge
+              - generic [ref=e492]: React
+              - generic [ref=e493]: Vite
+        - link "QuizMaster Bot" [ref=e499] [cursor=pointer]:
+          - /url: /en/projects/quizmaster-bot
+          - img "QuizMaster Bot" [ref=e501]
+          - generic [ref=e503]:
+            - generic [ref=e504]:
+              - generic [ref=e505]: EdTech & AI
+              - generic [ref=e509]: "2026"
+            - heading "QuizMaster Bot" [level=3] [ref=e510]
+            - paragraph [ref=e511]: An AI-powered Discord bot that transforms PDFs into smart exams instantly.
+            - generic [ref=e513]:
+              - generic [ref=e514]: Discord.js
+              - generic [ref=e515]: Groq AI
+              - generic [ref=e516]: OCR
+        - link "Fix My Paragraph" [ref=e522] [cursor=pointer]:
+          - /url: /en/projects/fix-my-paragraph
+          - img "Fix My Paragraph" [ref=e524]
+          - generic [ref=e526]:
+            - generic [ref=e527]:
+              - generic [ref=e528]: AI Writing Tool
+              - generic [ref=e537]: "2026"
+            - heading "Fix My Paragraph" [level=3] [ref=e538]
+            - paragraph [ref=e539]: AI-powered paragraph correction tool — snap a photo and get instant professional feedback.
+            - generic [ref=e541]:
+              - generic [ref=e542]: Next.js
+              - generic [ref=e543]: Express
+              - generic [ref=e544]: Kimi API
+        - link "HIFX Bot" [ref=e550] [cursor=pointer]:
+          - /url: /en/projects/hifx-bot
+          - img "HIFX Bot" [ref=e552]
+          - generic [ref=e554]:
+            - generic [ref=e555]:
+              - generic [ref=e556]: Management System
+              - generic [ref=e560]: "2026"
+            - heading "HIFX Bot" [level=3] [ref=e561]
+            - paragraph [ref=e562]: A smart Discord bot for workshop expense management and operations at HIFX.
+            - generic [ref=e564]:
+              - generic [ref=e565]: Discord.js
+              - generic [ref=e566]: Node.js
+              - generic [ref=e567]: Groq AI
+        - link "NexaVision" [ref=e573] [cursor=pointer]:
+          - /url: /en/projects/nexa-vision
+          - img "NexaVision" [ref=e575]
+          - generic [ref=e577]:
+            - generic [ref=e578]:
+              - generic [ref=e579]: AI Vision
+              - generic [ref=e588]: "2026"
+            - heading "NexaVision" [level=3] [ref=e589]
+            - paragraph [ref=e590]: Drop any photo and our AI instantly identifies your device — no setup, no wait, just results.
+            - generic [ref=e592]:
+              - generic [ref=e593]: Next.js
+              - generic [ref=e594]: AI Vision
+              - generic [ref=e595]: Ultralytics
+        - link "Atom" [ref=e601] [cursor=pointer]:
+          - /url: /en/projects/atom
+          - img "Atom" [ref=e603]
+          - generic [ref=e605]:
+            - generic [ref=e606]:
+              - generic [ref=e607]: AI Chat App
+              - generic [ref=e616]: "2026"
+            - heading "Atom" [level=3] [ref=e617]
+            - paragraph [ref=e618]: A fully local AI chat app for Android, similar to Character.AI, supporting 8 AI providers with a polished mobile experience.
+            - generic [ref=e620]:
+              - generic [ref=e621]: Expo
+              - generic [ref=e622]: React Native
+              - generic [ref=e623]: Groq
+        - link "Photon" [ref=e629] [cursor=pointer]:
+          - /url: /en/projects/photon
+          - img "Photon" [ref=e631]
+          - generic [ref=e633]:
+            - generic [ref=e634]:
+              - generic [ref=e635]: AI Prompt Engineering
+              - generic [ref=e644]: "2026"
+            - heading "Photon" [level=3] [ref=e645]
+            - paragraph [ref=e646]: Turn rough ideas into polished AI prompts, ready to paste anywhere.
+            - generic [ref=e648]:
+              - generic [ref=e649]: Next.js 16
+              - generic [ref=e650]: React 19
+              - generic [ref=e651]: TypeScript
+        - link "Boson" [ref=e657] [cursor=pointer]:
+          - /url: /en/projects/boson
+          - img "Boson" [ref=e659]
+          - generic [ref=e661]:
+            - generic [ref=e662]:
+              - generic [ref=e663]: GNOME Desktop App
+              - generic [ref=e666]: "2026"
+            - heading "Boson" [level=3] [ref=e667]
+            - paragraph [ref=e668]: An AI-powered scientific study companion for GNOME — smart focus timers fused with an always-on AI chat, built around the 'Atomic Progress' philosophy.
+            - generic [ref=e670]:
+              - generic [ref=e671]: GJS
+              - generic [ref=e672]: GTK 4
+              - generic [ref=e673]: libadwaita 1
+        - link "Helix" [ref=e679] [cursor=pointer]:
+          - /url: /en/projects/helix
+          - img "Helix" [ref=e681]
+          - generic [ref=e683]:
+            - generic [ref=e684]:
+              - generic [ref=e685]: Desktop App
+              - generic [ref=e688]: "2026"
+            - heading "Helix" [level=3] [ref=e689]
+            - paragraph [ref=e690]: Local-first, offline-capable Wikipedia reader and knowledge management desktop app with AI chat companion, knowledge graph, and full 5-language support including Arabic RTL.
+            - generic [ref=e692]:
+              - generic [ref=e693]: Electron
+              - generic [ref=e694]: React
+              - generic [ref=e695]: TypeScript
+        - link "Everyday" [ref=e701] [cursor=pointer]:
+          - /url: /en/projects/everyday
+          - img "Everyday" [ref=e703]
+          - generic [ref=e705]:
+            - generic [ref=e706]:
+              - generic [ref=e707]: Mobile Application
+              - generic [ref=e710]: "2026"
+            - heading "Everyday" [level=3] [ref=e711]
+            - paragraph [ref=e712]: A personal daily journal where each day gets its own capsule collecting photos, voice recordings, locations, tasks, and today's song.
+            - generic [ref=e714]:
+              - generic [ref=e715]: Expo
+              - generic [ref=e716]: React Native
+              - generic [ref=e717]: TypeScript
+        - link "Khamsat Sniper" [ref=e723] [cursor=pointer]:
+          - /url: /en/projects/khamsat-sniper
+          - img "Khamsat Sniper" [ref=e725]
+          - generic [ref=e727]:
+            - generic [ref=e728]:
+              - generic [ref=e729]: Chrome Extension & AI
+              - generic [ref=e738]: "2026"
+            - heading "Khamsat Sniper" [level=3] [ref=e739]
+            - paragraph [ref=e740]: AI-powered Chrome extension that scans Khamsat.com requests, matches them to your skills, and generates professional Arabic proposals.
+            - generic [ref=e742]:
+              - generic [ref=e743]: Chrome Extension
+              - generic [ref=e744]: Manifest V3
+              - generic [ref=e745]: Groq AI
+        - link "InRight CRM — Travel Agency Lead Management" [ref=e751] [cursor=pointer]:
+          - /url: /en/projects/inright-crm
+          - img "InRight CRM — Travel Agency Lead Management" [ref=e753]
+          - generic [ref=e755]:
+            - generic [ref=e756]:
+              - generic [ref=e757]: Enterprise CRM / SaaS
+              - generic [ref=e761]: "2026"
+            - heading "InRight CRM — Travel Agency Lead Management" [level=3] [ref=e762]
+            - paragraph [ref=e763]: A production-grade, Arabic-first CRM built for travel agencies. Features lead management, AI-powered assistants, employee attendance tracking, encrypted backups, and granular role-based permissions — all in a mobile-first RTL interface.
+            - generic [ref=e765]:
+              - generic [ref=e766]: Next.js 16
+              - generic [ref=e767]: React 19
+              - generic [ref=e768]: TypeScript
+        - link "Elementa — Periodic Table Explorer" [ref=e774] [cursor=pointer]:
+          - /url: /en/projects/elementa
+          - img "Elementa — Periodic Table Explorer" [ref=e776]
+          - generic [ref=e778]:
+            - generic [ref=e779]:
+              - generic [ref=e780]: Web Application
+              - generic [ref=e783]: "2026"
+            - heading "Elementa — Periodic Table Explorer" [level=3] [ref=e784]
+            - paragraph [ref=e785]: An interactive periodic table explorer that lets you browse all 119 elements, search and filter by property, compare elements side by side, and explore 3D atom models.
+            - generic [ref=e787]:
+              - generic [ref=e788]: SolidJS
+              - generic [ref=e789]: SolidStart
+              - generic [ref=e790]: TypeScript
+        - link "Musicify — Visual Music Universe" [ref=e796] [cursor=pointer]:
+          - /url: /en/projects/musicify
+          - img "Musicify — Visual Music Universe" [ref=e798]
+          - generic [ref=e800]:
+            - generic [ref=e801]:
+              - generic [ref=e802]: Web Application
+              - generic [ref=e805]: "2026"
+            - heading "Musicify — Visual Music Universe" [level=3] [ref=e806]
+            - paragraph [ref=e807]: A music discovery experience where every search restyles the entire interface to match the song's genre, era, and mood.
+            - generic [ref=e809]:
+              - generic [ref=e810]: Next.js
+              - generic [ref=e811]: React
+              - generic [ref=e812]: TypeScript
+        - link "KORA" [ref=e818] [cursor=pointer]:
+          - /url: /en/projects/kora
+          - img "KORA" [ref=e820]
+          - generic [ref=e822]:
+            - generic [ref=e823]:
+              - generic [ref=e824]: Sports
+              - generic [ref=e828]: "2026"
+            - heading "KORA" [level=3] [ref=e829]
+            - paragraph [ref=e830]: Bilingual live-football platform aggregating scores, fixtures, standings and curated news for fans in English and Arabic.
+            - generic [ref=e832]:
+              - generic [ref=e833]: Astro
+              - generic [ref=e834]: TypeScript
+              - generic [ref=e835]: Vercel
+    - generic [ref=e840]:
+      - generic [ref=e841]:
+        - generic [ref=e842]: What I Do
+        - heading "Comprehensive digital solutions tailored for your business" [level=2] [ref=e843]
+      - generic [ref=e844]:
+        - generic [ref=e845]:
+          - generic [ref=e846]: "01"
+          - generic [ref=e847]:
+            - heading "Full-Stack Web Development" [level=3] [ref=e848]
+            - paragraph [ref=e852]: Building fast, SEO-friendly, and highly interactive web applications using Next.js and modern frameworks.
+        - generic [ref=e853]:
+          - generic [ref=e854]: "02"
+          - generic [ref=e855]:
+            - heading "Mobile App Development" [level=3] [ref=e856]
+            - paragraph [ref=e859]: Building cross-platform mobile applications using React Native and Expo for iOS and Android.
+        - generic [ref=e860]:
+          - generic [ref=e861]: "03"
+          - generic [ref=e862]:
+            - heading "Bot Automation & AI" [level=3] [ref=e863]
+            - paragraph [ref=e867]: Developing intelligent Discord bots, workflows, and automated systems to scale communities and save time.
+        - generic [ref=e868]:
+          - generic [ref=e869]: "04"
+          - generic [ref=e870]:
+            - heading "SaaS & Desktop Apps" [level=3] [ref=e871]
+            - paragraph [ref=e875]: Architecting scalable backend systems and cross-platform desktop applications for robust enterprise needs.
+    - generic [ref=e876]:
+      - generic [ref=e878]:
+        - generic [ref=e879]: My Companies
+        - heading "Companies I Founded" [level=2] [ref=e880]
+        - paragraph [ref=e881]: More than just a freelancer — I establish and lead technology companies dedicated to delivering comprehensive digital products at scale.
+      - generic [ref=e882]:
+        - article [ref=e884]:
+          - generic [aria-hidden] [ref=e886]: "01"
+          - generic [ref=e887]:
+            - generic [ref=e888]:
+              - img "Galaxy logo" [ref=e890]
+              - generic [ref=e891]:
+                - heading "Galaxy" [level=3] [ref=e892]
+                - generic [ref=e893]:
+                  - generic [ref=e894]: CEO
+                  - generic [ref=e895]: Founder
+              - generic [ref=e896]: Active
+            - paragraph [ref=e900]: Building Your Digital Future With Cutting-Edge Tech
+            - paragraph [ref=e901]: Galaxy is a premier software agency specializing in integrated digital solutions — ranging from custom web applications and intelligent bots to enterprise mobile apps and complex cloud systems.
+            - generic [ref=e902]:
+              - generic [ref=e903]:
+                - paragraph [ref=e904]: 0+
+                - paragraph [ref=e905]: Completed Projects
+              - generic [ref=e907]:
+                - paragraph [ref=e908]: 99.9%
+                - paragraph [ref=e909]: Uptime SLA
+              - generic [ref=e910]: Est. 2026
+            - generic [ref=e915]:
+              - generic [ref=e916]: What We Offer
+              - generic [ref=e921]:
+                - generic [ref=e922]: Web Development
+                - generic [ref=e927]: Bots & Automation
+                - generic [ref=e932]: Mobile Apps
+                - generic [ref=e936]: Software Integrations
+                - generic [ref=e940]: 24/7 Uptime
+                - generic [ref=e945]: Premium Support
+            - generic [ref=e949]:
+              - link "galaxy-code.store" [ref=e950] [cursor=pointer]:
+                - /url: https://www.galaxy-code.store/en
+              - link "Visit Galaxy" [ref=e957] [cursor=pointer]:
+                - /url: https://www.galaxy-code.store/en
+        - generic [aria-hidden] [ref=e962]:
+          - generic [aria-hidden] [ref=e963]: "02"
+          - paragraph [ref=e971]: Next venture — in orbit
+          - paragraph [ref=e972]: A new company docks here. Add it to the registry and the grid expands on its own.
+          - generic [ref=e973]: Slot 02 reserved
+    - heading "GitHub Activity" [level=2] [ref=e979]
+    - generic [ref=e986]:
+      - generic [ref=e988]:
+        - generic [ref=e989]: Tech Arsenal
+        - heading "Skills" [level=2] [ref=e990]
+      - generic [ref=e991]:
+        - generic [ref=e994]:
+          - heading [level=3] [ref=e995]
+          - generic [ref=e999]:
+            - generic [ref=e1000]:
+              - img "React Native" [ref=e1002]
+              - generic [ref=e1003]: React Native
+            - generic [ref=e1004]:
+              - img "Expo JS" [ref=e1006]
+              - generic [ref=e1007]: Expo JS
+            - generic [ref=e1008]:
+              - img "Bootstrap" [ref=e1010]
+              - generic [ref=e1011]: Bootstrap
+            - generic [ref=e1012]:
+              - img "HTML" [ref=e1014]
+              - generic [ref=e1015]: HTML
+            - generic [ref=e1016]:
+              - img "CSS" [ref=e1018]
+              - generic [ref=e1019]: CSS
+            - generic [ref=e1020]:
+              - img "EJS" [ref=e1022]
+              - generic [ref=e1023]: EJS
+            - generic [ref=e1024]:
+              - img "Zustand" [ref=e1026]
+              - generic [ref=e1027]: Zustand
+            - generic [ref=e1028]:
+              - img "Electron Forge" [ref=e1030]
+              - generic [ref=e1031]: Electron Forge
+            - generic [ref=e1032]:
+              - img "Figma" [ref=e1034]
+              - generic [ref=e1035]: Figma
+        - generic [ref=e1038]:
+          - heading [level=3] [ref=e1039]
+          - generic [ref=e1044]:
+            - generic [ref=e1045]:
+              - img "Node.js" [ref=e1047]
+              - generic [ref=e1048]: Node.js
+            - generic [ref=e1049]:
+              - img "Bun" [ref=e1051]
+              - generic [ref=e1052]: Bun
+            - generic [ref=e1053]:
+              - img "Express" [ref=e1055]
+              - generic [ref=e1056]: Express
+            - generic [ref=e1057]:
+              - img "MongoDB" [ref=e1059]
+              - generic [ref=e1060]: MongoDB
+            - generic [ref=e1061]:
+              - img "NeDB" [ref=e1063]
+              - generic [ref=e1064]: NeDB
+            - generic [ref=e1065]:
+              - img "JavaScript" [ref=e1067]
+              - generic [ref=e1068]: JavaScript
+            - generic [ref=e1069]:
+              - img "TypeScript" [ref=e1071]
+              - generic [ref=e1072]: TypeScript
+            - generic [ref=e1073]:
+              - img "Discord.js" [ref=e1075]
+              - generic [ref=e1076]: Discord.js
+            - generic [ref=e1077]:
+              - img "Python" [ref=e1079]
+              - generic [ref=e1080]: Python
+        - generic [ref=e1083]:
+          - heading [level=3] [ref=e1084]
+          - generic [ref=e1088]:
+            - generic [ref=e1089]:
+              - img "Git" [ref=e1091]
+              - generic [ref=e1092]: Git
+            - generic [ref=e1093]:
+              - img "Railway" [ref=e1095]
+              - generic [ref=e1096]: Railway
+            - generic [ref=e1097]:
+              - img "Vercel" [ref=e1099]
+              - generic [ref=e1100]: Vercel
+            - generic [ref=e1101]:
+              - img "Linux" [ref=e1103]
+              - generic [ref=e1104]: Linux
+            - generic [ref=e1105]:
+              - img "Windows" [ref=e1107]
+              - generic [ref=e1108]: Windows
+            - generic [ref=e1109]:
+              - img "Visual Studio Code" [ref=e1111]
+              - generic [ref=e1112]: Visual Studio Code
+            - generic [ref=e1113]:
+              - img "Postman" [ref=e1115]
+              - generic [ref=e1116]: Postman
+            - generic [ref=e1117]:
+              - img "Java" [ref=e1119]
+              - generic [ref=e1120]: Java
+    - generic [ref=e1121]:
+      - generic [ref=e1122]:
+        - generic [ref=e1123]: Open Source
+        - heading "NPM Packages" [level=2] [ref=e1124]
+        - link "View NPM Profile" [ref=e1125] [cursor=pointer]:
+          - /url: https://www.npmjs.com/~abdalla_ahmed_52929
+      - generic [ref=e1133]:
+        - generic [ref=e1136]:
+          - generic [ref=e1143]:
+            - generic [ref=e1144]: v1.0.3
+            - link "View encrypt-it-mega on npm" [ref=e1145] [cursor=pointer]:
+              - /url: https://www.npmjs.com/package/encrypt-it-mega
+          - heading "encrypt-it-mega" [level=3] [ref=e1150]
+          - paragraph [ref=e1151]: encrypt-it is a powerful and easy-to-use Node.js package that provides tools for securely encrypting and decrypting data. This package aims to simplify the process of securing sensitive information using modern encryption algorithms.
+          - generic [ref=e1152]:
+            - generic [ref=e1153]:
+              - generic [ref=e1154]: encrypt
+              - generic [ref=e1158]: decrypt
+            - generic [ref=e1162]:
+              - generic [ref=e1163]:
+                - generic [ref=e1167]: "36"
+                - text: monthly
+              - generic [ref=e1168]: May 20, 2024
+        - generic [ref=e1173]:
+          - generic [ref=e1180]:
+            - generic [ref=e1181]: v0.0.3
+            - link "View random-things-mega on npm" [ref=e1182] [cursor=pointer]:
+              - /url: https://www.npmjs.com/package/random-things-mega
+          - heading "random-things-mega" [level=3] [ref=e1187]
+          - paragraph [ref=e1188]: In the world of JavaScript and Node.js development, 'Random Things Mega' is an npm package that offers a wide range of functions for generating random elements, including numbers, letters, words, and even random colors.
+          - generic [ref=e1189]:
+            - generic [ref=e1190]:
+              - generic [ref=e1191]: random
+              - generic [ref=e1195]: generator
+              - generic [ref=e1199]: utils
+            - generic [ref=e1203]:
+              - generic [ref=e1204]:
+                - generic [ref=e1208]: "22"
+                - text: monthly
+              - generic [ref=e1209]: Sep 17, 2023
+        - generic [ref=e1214]:
+          - generic [ref=e1221]:
+            - generic [ref=e1222]: v1.0.2
+            - link "View pro.db-mega on npm" [ref=e1223] [cursor=pointer]:
+              - /url: https://www.npmjs.com/package/pro.db-mega
+          - heading "pro.db-mega" [level=3] [ref=e1228]
+          - paragraph [ref=e1229]: A simple and easy database package make your life easy. It is a quick storage unit that relies on objects to store data in JSON format, with encryption support.
+          - generic [ref=e1230]:
+            - generic [ref=e1231]:
+              - generic [ref=e1232]: db
+              - generic [ref=e1236]: database
+              - generic [ref=e1240]: json
+              - generic [ref=e1244]: sql
+              - generic [ref=e1248]: sqlite
+            - generic [ref=e1252]:
+              - generic [ref=e1253]:
+                - generic [ref=e1257]: "12"
+                - text: monthly
+              - generic [ref=e1258]: Sep 12, 2023
+    - generic [ref=e1261]:
+      - generic [ref=e1262]:
+        - generic [ref=e1263]: Games & Fun Projects
+        - heading "Games and experiments I built just for fun" [level=2] [ref=e1266]
+      - link "RSPG (Rock, Paper, Scissors, Gun)" [ref=e1270] [cursor=pointer]:
+        - /url: /en/projects/rspg-game
+        - img "RSPG (Rock, Paper, Scissors, Gun)" [ref=e1272]
+        - generic [ref=e1274]:
+          - generic [ref=e1275]:
+            - generic [ref=e1276]: Fun Game
+            - generic [ref=e1279]: "2026"
+          - heading "RSPG (Rock, Paper, Scissors, Gun)" [level=3] [ref=e1280]
+          - paragraph [ref=e1281]: A lighthearted and enjoyable Rock, Paper, Scissors, and Gun game. My very first game developed purely for fun!
+          - generic [ref=e1283]:
+            - generic [ref=e1284]: Unity
+            - generic [ref=e1285]: C#
+    - generic [ref=e1289]:
+      - generic [ref=e1290]:
+        - generic [ref=e1291]: Proof of Concepts
+        - heading "Quick builds and experiments to test ideas" [level=2] [ref=e1294]
+      - generic [ref=e1295]:
+        - link "Restaurant & Food Ordering 2026 Qatma Restaurant A modern restaurant ordering website for Qatma, featuring pizza, pastries, and crepes in Belbeis, Egypt. Next.js Tailwind CSS Vercel Visit" [ref=e1296] [cursor=pointer]:
+          - /url: https://qatma.vercel.app/
+          - generic [ref=e1298]:
+            - generic [ref=e1299]:
+              - generic [ref=e1300]: Restaurant & Food Ordering
+              - generic [ref=e1301]: "2026"
+            - heading "Qatma Restaurant" [level=3] [ref=e1302]
+            - paragraph [ref=e1303]: A modern restaurant ordering website for Qatma, featuring pizza, pastries, and crepes in Belbeis, Egypt.
+            - generic [ref=e1304]:
+              - generic [ref=e1305]:
+                - generic [ref=e1306]: Next.js
+                - generic [ref=e1307]: Tailwind CSS
+                - generic [ref=e1308]: Vercel
+              - generic [ref=e1309]: Visit
+        - link "Restaurant & Cafe 2026 Khamseena Cafe A stylish coffee shop website for Khamseena, featuring menu, locations, and table booking in Cairo, Egypt. Next.js Tailwind CSS Vercel Visit" [ref=e1315] [cursor=pointer]:
+          - /url: https://5amsina.vercel.app/
+          - generic [ref=e1317]:
+            - generic [ref=e1318]:
+              - generic [ref=e1319]: Restaurant & Cafe
+              - generic [ref=e1320]: "2026"
+            - heading "Khamseena Cafe" [level=3] [ref=e1321]
+            - paragraph [ref=e1322]: A stylish coffee shop website for Khamseena, featuring menu, locations, and table booking in Cairo, Egypt.
+            - generic [ref=e1323]:
+              - generic [ref=e1324]:
+                - generic [ref=e1325]: Next.js
+                - generic [ref=e1326]: Tailwind CSS
+                - generic [ref=e1327]: Vercel
+              - generic [ref=e1328]: Visit
+    - generic [ref=e1334]:
+      - generic [ref=e1335]:
+        - generic [ref=e1336]: Legacy Projects
+        - heading "Older experiments and personal builds" [level=2] [ref=e1340]
+      - generic [ref=e1341]:
+        - link "Nova Dashboard" [ref=e1344] [cursor=pointer]:
+          - /url: /en/projects/nova-dashboard
+          - img "Nova Dashboard" [ref=e1346]
+          - generic [ref=e1348]:
+            - generic [ref=e1349]:
+              - generic [ref=e1350]: Bot & Dashboard
+              - generic [ref=e1354]: "2023"
+            - heading "Nova Dashboard" [level=3] [ref=e1355]
+            - paragraph [ref=e1356]: A full Discord bot paired with a complete web dashboard for seamless server management.
+            - generic [ref=e1358]:
+              - generic [ref=e1359]: Discord.js
+              - generic [ref=e1360]: Discord OAuth
+              - generic [ref=e1361]: EJS
+        - link "SpiceScholar" [ref=e1367] [cursor=pointer]:
+          - /url: /en/projects/spicescholar
+          - img "SpiceScholar" [ref=e1369]
+          - generic [ref=e1371]:
+            - generic [ref=e1372]:
+              - generic [ref=e1373]: EdTech
+              - generic [ref=e1377]: "2023"
+            - heading "SpiceScholar" [level=3] [ref=e1378]
+            - paragraph [ref=e1379]: A full-featured educational platform with exams, used by 900+ students.
+            - generic [ref=e1381]:
+              - generic [ref=e1382]: Expo
+              - generic [ref=e1383]: TypeScript
+              - generic [ref=e1384]: Express
+        - link "Nova Social" [ref=e1390] [cursor=pointer]:
+          - /url: /en/projects/nova-social
+          - img "Nova Social" [ref=e1392]
+          - generic [ref=e1394]:
+            - generic [ref=e1395]:
+              - generic [ref=e1396]: Social Media
+              - generic [ref=e1400]: "2023"
+            - heading "Nova Social" [level=3] [ref=e1401]
+            - paragraph [ref=e1402]: A simple social media app built for fun and learning, with 50+ active users.
+            - generic [ref=e1404]:
+              - generic [ref=e1405]: Expo
+              - generic [ref=e1406]: TypeScript
+              - generic [ref=e1407]: Express
+    - generic [ref=e1412]:
+      - generic [ref=e1414]:
+        - generic [ref=e1415]: Certifications
+        - heading "Professional Credentials" [level=2] [ref=e1416]
+      - tablist "Certifications" [ref=e1417]:
+        - tab "MongoDB 2" [selected] [ref=e1418]:
+          - generic [ref=e1420]:
+            - text: MongoDB
+            - generic [ref=e1422]: "2"
+        - tab "Edraak 3" [ref=e1423]:
+          - generic [ref=e1424]:
+            - text: Edraak
+            - generic [ref=e1426]: "3"
+        - tab "IBM-SkillsBuild 1" [ref=e1427]:
+          - generic [ref=e1428]:
+            - text: IBM-SkillsBuild
+            - generic [ref=e1430]: "1"
+        - tab "Udemy 3" [ref=e1431]:
+          - generic [ref=e1432]:
+            - text: Udemy
+            - generic [ref=e1434]: "3"
+        - tab "Linked in learning 2" [ref=e1435]:
+          - generic [ref=e1436]:
+            - text: Linked in learning
+            - generic [ref=e1438]: "2"
+        - tab "Mahara-Tech 2" [ref=e1439]:
+          - generic [ref=e1440]:
+            - text: Mahara-Tech
+            - generic [ref=e1442]: "2"
+        - tab "Cisco 1" [ref=e1443]:
+          - generic [ref=e1444]:
+            - text: Cisco
+            - generic [ref=e1446]: "1"
+        - tab "Anthropic Academy 5" [ref=e1447]:
+          - generic [ref=e1448]:
+            - text: Anthropic Academy
+            - generic [ref=e1450]: "5"
+        - tab "Injaz Egypt 1" [ref=e1451]:
+          - generic [ref=e1452]:
+            - text: Injaz Egypt
+            - generic [ref=e1454]: "1"
+      - generic [ref=e1455]:
+        - generic [ref=e1456]:
+          - button "Securing MongoDB Self-Managed — full view" [ref=e1457]:
+            - img "Securing MongoDB Self-Managed" [ref=e1458]
+          - generic [ref=e1464]:
+            - generic [ref=e1465]:
+              - heading "Securing MongoDB Self-Managed" [level=3] [ref=e1466]
+              - paragraph [ref=e1467]: "2025"
+            - link "Verify Certificate" [ref=e1468] [cursor=pointer]:
+              - /url: https://www.credly.com/badges/9e1bbeee-f658-4f16-ace7-96667fb4c9b9/public_url
+        - generic [ref=e1473]:
+          - button "MongoDB Encryption at Rest — full view" [ref=e1474]:
+            - img "MongoDB Encryption at Rest" [ref=e1475]
+          - generic [ref=e1481]:
+            - generic [ref=e1482]:
+              - heading "MongoDB Encryption at Rest" [level=3] [ref=e1483]
+              - paragraph [ref=e1484]: "2025"
+            - link "Verify Certificate" [ref=e1485] [cursor=pointer]:
+              - /url: https://www.credly.com/badges/edf8128b-0e4a-4809-ad97-64936cea662d/public_url
+    - generic [ref=e1491]:
+      - generic [ref=e1493]:
+        - generic [ref=e1494]: Skill Badges
+        - heading "Verified micro-credentials and achievements" [level=2] [ref=e1495]
+      - tablist "Skill Badges" [ref=e1496]:
+        - tab "Google 4" [selected] [ref=e1497]:
+          - generic [ref=e1499]:
+            - text: Google
+            - generic [ref=e1500]: "4"
+        - tab "Cisco 1" [ref=e1501]:
+          - generic [ref=e1502]:
+            - text: Cisco
+            - generic [ref=e1503]: "1"
+      - generic [ref=e1504]:
+        - generic [ref=e1505]:
+          - button "Introduction to Responsible AI — full view" [ref=e1506]:
+            - img "Introduction to Responsible AI" [ref=e1507]
+          - generic [ref=e1512]:
+            - generic [ref=e1513]:
+              - heading "Introduction to Responsible AI" [level=3] [ref=e1514]
+              - generic [ref=e1515]:
+                - generic [ref=e1516]: Google
+                - generic [ref=e1517]: May 31, 2026
+            - link "Verify Badge" [ref=e1518] [cursor=pointer]:
+              - /url: https://www.skills.google/public_profiles/692695b1-ce17-42a0-af49-97f29ed297a5/badges/24587164
+        - generic [ref=e1523]:
+          - button "Introduction to Image Generation — full view" [ref=e1524]:
+            - img "Introduction to Image Generation" [ref=e1525]
+          - generic [ref=e1530]:
+            - generic [ref=e1531]:
+              - heading "Introduction to Image Generation" [level=3] [ref=e1532]
+              - generic [ref=e1533]:
+                - generic [ref=e1534]: Google
+                - generic [ref=e1535]: May 31, 2026
+            - link "Verify Badge" [ref=e1536] [cursor=pointer]:
+              - /url: https://www.skills.google/public_profiles/692695b1-ce17-42a0-af49-97f29ed297a5/badges/24587779
+        - generic [ref=e1541]:
+          - button "Introduction to reCAPTCHA — full view" [ref=e1542]:
+            - img "Introduction to reCAPTCHA" [ref=e1543]
+          - generic [ref=e1548]:
+            - generic [ref=e1549]:
+              - heading "Introduction to reCAPTCHA" [level=3] [ref=e1550]
+              - generic [ref=e1551]:
+                - generic [ref=e1552]: Google
+                - generic [ref=e1553]: Mar 6, 2026
+            - link "Verify Badge" [ref=e1554] [cursor=pointer]:
+              - /url: https://www.skills.google/public_profiles/692695b1-ce17-42a0-af49-97f29ed297a5/badges/22822270
+        - generic [ref=e1559]:
+          - button "Machine Learning Operations (MLOps) for Generative AI — full view" [ref=e1560]:
+            - img "Machine Learning Operations (MLOps) for Generative AI" [ref=e1561]
+          - generic [ref=e1566]:
+            - generic [ref=e1567]:
+              - heading "Machine Learning Operations (MLOps) for Generative AI" [level=3] [ref=e1568]
+              - generic [ref=e1569]:
+                - generic [ref=e1570]: Google
+                - generic [ref=e1571]: Feb 16, 2026
+            - link "Verify Badge" [ref=e1572] [cursor=pointer]:
+              - /url: https://www.skills.google/public_profiles/692695b1-ce17-42a0-af49-97f29ed297a5/badges/22317385
+    - generic [ref=e1577]:
+      - generic [ref=e1579]:
+        - generic [ref=e1580]: Volunteer Work
+        - heading "Volunteering" [level=2] [ref=e1581]
+      - generic [ref=e1582]:
+        - generic [ref=e1587]:
+          - generic [ref=e1588]:
+            - heading "Volunteer Developer & Moderator" [level=3] [ref=e1589]
+            - generic [aria-hidden] [ref=e1590]: "01"
+          - paragraph [ref=e1591]: Jan 2025 - Sep 2025
+          - paragraph [ref=e1594]: Contributed as a volunteer for one year, managing server channels and developing a custom Discord Timer Bot used by over 1500 daily users.
+          - generic [ref=e1595]: 1500+ Daily Users Bot
+        - generic [ref=e1604]:
+          - generic [ref=e1605]:
+            - heading "Volunteer Developer" [level=3] [ref=e1606]
+            - generic [aria-hidden] [ref=e1607]: "02"
+          - paragraph [ref=e1608]: Sep 2025 - Present
+          - paragraph [ref=e1611]: Developed an updated version of the Timer Bot and contributed to server management.
+          - generic [ref=e1612]: 500+ Daily Users Bot
+        - generic [ref=e1621]:
+          - generic [ref=e1622]:
+            - heading "Founder & Community Manager" [level=3] [ref=e1623]
+            - generic [aria-hidden] [ref=e1624]: "03"
+          - paragraph [ref=e1625]: Sep 2025 - Present
+          - paragraph [ref=e1628]: Founded and built the INSIGHT community from scratch alongside friends, successfully growing the server to over 500 members.
+          - generic [ref=e1629]: 500+ Members Server
+    - generic [ref=e1634]:
+      - generic [ref=e1637]:
+        - generic [ref=e1638]: Testimonials
+        - heading "What clients say about working with me" [level=2] [ref=e1639]
+      - generic [ref=e1649]:
+        - generic [ref=e1650]: "5.0"
+        - paragraph [ref=e1663]: 5 reviews · 4 clients
+      - generic [ref=e1666]:
+        - generic [ref=e1669]:
+          - generic [ref=e1670]:
+            - img "Ghaida" [ref=e1674]
+            - generic [ref=e1675]:
+              - heading "Ghaida" [level=3] [ref=e1676]
+              - paragraph [ref=e1677]: Client
+              - generic [ref=e1678]: Verified client
+          - generic [ref=e1683]:
+            - generic [ref=e1684]:
+              - paragraph [ref=e1696]: “Frankly, I want to thank you for your hard work on the bot. Your work is clearly organized and professional. Dealing with the bot is very comfortable and enjoyable. It responds quickly without confusion, showing how well you understand your work. I haven't seen such organized work in a long time. You deserve every word of thanks and trust because what you did is not simple. God strengthen you and give you wellness, and we await even stronger things from you. May God always grant you success.”
+              - link "View Project" [ref=e1698] [cursor=pointer]:
+                - /url: /en/projects/timer-bot
+            - generic [ref=e1704]:
+              - paragraph [ref=e1716]: “Thank you for your work on the quiz bot. In just five days, you delivered organized work and it's clear you put real effort into it. The bot runs efficiently with no issues, and the formatting is clean and professional. Your commitment, response speed, and execution were excellent. My experience with you was very positive and I recommend working with you with full confidence. Thank you for the effort and high level of delivery.”
+              - link "View Project" [ref=e1718] [cursor=pointer]:
+                - /url: /en/projects/quizmaster-bot
+        - generic [ref=e1725]:
+          - generic [ref=e1726]:
+            - img "Mohamed" [ref=e1730]
+            - generic [ref=e1731]:
+              - heading "Mohamed" [level=3] [ref=e1732]
+              - paragraph [ref=e1733]: Client
+              - generic [ref=e1734]: Verified client
+          - paragraph [ref=e1752]: “Speedy in execution, without any thoughts, I recommend dealing with him”
+        - generic [ref=e1755]:
+          - generic [ref=e1756]:
+            - img "F1 (Yasser)" [ref=e1760]
+            - generic [ref=e1761]:
+              - heading "F1 (Yasser)" [level=3] [ref=e1762]
+              - paragraph [ref=e1763]: Client
+              - generic [ref=e1764]: Verified client
+          - generic [ref=e1770]:
+            - paragraph [ref=e1782]: “Honestly, words fail to describe you, my dear Abdou. Thank you so much for this masterpiece you delivered. I genuinely didn't find a single mistake — you excelled in programming the bot from every angle. Whether it was the work itself, your professional and kind communication style, or your cooperation with us on every detail. Every request we threw at you, even if it seemed difficult or near impossible, you didn't hesitate for a moment — you'd implement it effortlessly as if it were nothing. I honestly don't know how you managed all of this… maybe it really is magic like you said 😄 All the thanks and appreciation for this amazing effort, we are truly proud to have worked with you. May God always grant you success in every step.”
+            - link "View Project" [ref=e1784] [cursor=pointer]:
+              - /url: /en/projects/study-system
+        - generic [ref=e1791]:
+          - generic [ref=e1792]:
+            - img "Hadi" [ref=e1796]
+            - generic [ref=e1797]:
+              - heading "Hadi" [level=3] [ref=e1798]
+              - paragraph [ref=e1799]: Client
+              - generic [ref=e1800]: Verified client
+          - generic [ref=e1806]:
+            - paragraph [ref=e1818]: “Frankly, brother Abdalla, you are very creative, and I did not expect the speed of execution and accuracy of work to be this strong. You deserve more than this rating.”
+            - link "View Project" [ref=e1820] [cursor=pointer]:
+              - /url: /en/projects/hifx-bot
+      - generic [ref=e1826]:
+        - button "Previous testimonials" [ref=e1827]
+        - button "Next testimonials" [ref=e1830]
+    - generic [ref=e1835]:
+      - generic [ref=e1836]:
+        - generic [ref=e1838]:
+          - generic [ref=e1839]: Chat With Me
+          - heading "Let's build something useful" [level=2] [ref=e1840]
+        - paragraph [ref=e1842]: Share what you're working on and I'll get back to you within a day. Prefer chat? Reach me directly.
+        - generic [ref=e1844]:
+          - paragraph [ref=e1845]: Direct channels
+          - generic [ref=e1846]:
+            - link "Email" [ref=e1848] [cursor=pointer]:
+              - /url: mailto:info@abdallaahmed.icu
+            - link "WhatsApp" [ref=e1854] [cursor=pointer]:
+              - /url: https://api.whatsapp.com/send?phone=2001024131345
+            - link "Book a call" [ref=e1859] [cursor=pointer]:
+              - /url: https://cal.com/abdullah-ahmed-ssjoni
+      - generic [ref=e1867]:
+        - generic [ref=e1868]:
+          - generic [ref=e1869]:
+            - generic [ref=e1870]: Your Name
+            - textbox "Your Name" [ref=e1874]:
+              - /placeholder: John Doe
+          - generic [ref=e1875]:
+            - generic [ref=e1876]: Email or Discord Tag
+            - textbox "Email or Discord Tag" [ref=e1880]:
+              - /placeholder: john@example.com or user#0000
+        - generic [ref=e1881]:
+          - generic [ref=e1882]: Your Message
+          - textbox "Your Message" [ref=e1885]:
+            - /placeholder: Hey! I have a project idea...
+        - generic [ref=e1886]:
+          - button "Send Message" [ref=e1887]
+          - status
+  - contentinfo [ref=e1892]:
+    - generic [ref=e1893]:
+      - generic [ref=e1894]:
+        - link "GitHub" [ref=e1895] [cursor=pointer]:
+          - /url: https://github.com/abdalla-3077
+        - link "LinkedIn" [ref=e1899] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/abdalla-ahmed-int/
+        - link "WhatsApp" [ref=e1904] [cursor=pointer]:
+          - /url: https://api.whatsapp.com/send?phone=2001024131345
+        - link "Email" [ref=e1907] [cursor=pointer]:
+          - /url: mailto:info@abdallaahmed.icu
+      - generic [ref=e1911]:
+        - paragraph [ref=e1912]: © 2026 Abdalla Ahmed. All rights reserved.
+        - generic [ref=e1913]: •
+        - link "Privacy Policy" [ref=e1914] [cursor=pointer]:
+          - /url: /en/privacy
