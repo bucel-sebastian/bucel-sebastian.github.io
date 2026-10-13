@@ -1,7 +1,11 @@
 import Image from "next/image";
 import GithubActivity from "./components/GithubActivity";
+import type { Metadata } from "next";
 
-const base = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+export const metadata: Metadata = {
+  title: "Ion-Sebastian Bucel — Portfolio",
+  description: "",
+};
 
 export default function Home() {
   return (

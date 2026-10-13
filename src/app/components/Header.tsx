@@ -294,9 +294,9 @@ function Header() {
           <a
             className="hs-logo"
             href="#home-hero"
-            aria-label="[Your Name] — home"
+            aria-label="Bucel Sebastian — home"
           >
-            <span aria-hidden="true">[X]</span>
+            <span aria-hidden="true">[BS]</span>
           </a>
 
           <div className="hs-nav__right">
