@@ -9,3 +9,4 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 <!-- END:nextjs-agent-rules -->
 
 DO NOT RUN TESTS, the testing is made by the developer!
+DO NOT RUN BUILDS!

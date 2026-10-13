@@ -112,6 +112,15 @@ body:has(.home[data-theme="dark"]) {
   background-color: #0e0d14;
 }
 
+/* Let the browser paint native UI (scrollbars, form controls) to match. */
+html:has(.home) {
+  color-scheme: light;
+}
+
+html:has(.home[data-theme="dark"]) {
+  color-scheme: dark;
+}
+
 /* ---------------------------------------------------------------- root ---- */
 
 .home {
@@ -795,6 +804,20 @@ body:has(.home[data-theme="dark"]) {
 .home .hs-gh-year__label {
   position: relative;
   z-index: 1;
+}
+
+/* The library inline-styles the root to `width: max-content`, so the calendar
+   hugs its intrinsic width and leaves dead space inside the card. Stretch it
+   to the card: the SVG carries a viewBox, so `height: auto` keeps the cells
+   square while the grid scales with the container. `!important` is required
+   to beat the inline width. */
+.home .react-activity-calendar {
+  width: 100% !important;
+}
+
+.home .react-activity-calendar__calendar {
+  width: 100%;
+  height: auto;
 }
 
 /* Calendar chrome in the site's meta voice: mono footer (total + legend),

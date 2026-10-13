@@ -13,7 +13,10 @@
    Tokens are scoped to the `header` element, never `:root`: globals.css owns
    the document canvas on `/` (--background: #ffffff etc.) and must keep doing
    so. The values mirror the light palette declared on `.home` in home.css, so
-   the nav reads as part of the same system as the sections below it.
+   the nav reads as part of the same system as the sections below it. Dark
+   values are restated on the same element via `body:has(.home[data-theme=…])`
+   (see the dark mode block below), so `/home` dark mode repaints the chrome
+   from the same tokens without touching any rule.
 
    The display face (Space Grotesk) is declared only on `.home` via fonts.ts;
    header text falls back to Geist (loaded by the root layout) unless that
@@ -78,6 +81,44 @@ header {
   color: var(--foreground);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* -------------------------------------------------------------- dark mode --
+
+   The theme attribute lives on `.home`, which sits BELOW this header in the
+   DOM, so inheritance can't deliver it. `:has()` reaches back up from `body`
+   instead — the same pattern home.css uses to align the canvas — and since
+   every rule in this sheet reads the tokens declared on `header`, restating
+   just the token values repaints the whole chrome (nav pill, logo, icon
+   buttons + accent variant, menu, lang label) with the exact
+   `.home[data-theme="dark"]` palette from home.css. One source of truth:
+   the attribute flip (inline script, toggle, OS-follow) re-skins instantly
+   with zero JS here. Unscoped light rules above stay untouched, so light
+   mode and `/` (no `.home` → selector never matches) are pixel-identical. */
+body:has(.home[data-theme="dark"]) header {
+  /* surfaces */
+  --background: #0e0d14;
+  --surface: #171624;
+  --surface-2: #1d1c2c;
+  --card: #171624;
+
+  /* text */
+  --foreground: #f1eefb;
+  --foreground-soft: rgba(241, 238, 251, 0.66);
+  --muted: #a3a1b8;
+
+  /* accent — text/glow variants only; the violet base is shared with light */
+  --primary-text: #a497ff;
+  --primary-glow: rgba(109, 94, 252, 0.3);
+
+  /* lines */
+  --border: rgba(241, 238, 251, 0.14);
+  --border-strong: rgba(241, 238, 251, 0.26);
+
+  /* elevation */
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.45), 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-2: 0 2px 4px rgba(0, 0, 0, 0.5), 0 22px 50px rgba(0, 0, 0, 0.55);
+  --shadow-nav: 0 1px 2px rgba(0, 0, 0, 0.5), 0 14px 36px rgba(0, 0, 0, 0.45);
 }
 
 /* ------------------------------------------------------------------- nav -- */

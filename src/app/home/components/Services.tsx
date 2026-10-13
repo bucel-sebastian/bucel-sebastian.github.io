@@ -10,31 +10,37 @@ type Service = {
   description: string;
 };
 
-/** Placeholder rows — replace the strings with your real service offerings. */
+/** Four numbered service rows — copy drawn from real experience (CV). */
 const SERVICES: Service[] = [
   {
     number: "01",
-    title: "Placeholder Service One",
+    title: "Full-stack web applications",
     description:
-      "A short placeholder paragraph describing this service — one or two sentences is plenty for the row layout.",
+      "End-to-end product development with TypeScript, React, Next.js, and Laravel — from data model to production deploy, across SaaS platforms serving 600+ active clients.",
   },
   {
     number: "02",
-    title: "Placeholder Service Two",
+    title: "APIs & third-party integrations",
     description:
-      "Another stand-in sentence explaining what you deliver, who it is for, and what outcome it produces.",
+      "RESTful APIs and integrations with platforms like Shopify, WooCommerce, and courier providers — connecting real services to production systems that process ~100K shipments a month.",
   },
   {
     number: "03",
-    title: "Placeholder Service Three",
+    title: "Performance & scalability",
     description:
-      "Lorem-style filler copy for the third row. Keep it under two lines so every row keeps the same rhythm.",
+      "Caching, queues, and async processing to keep apps fast under load. A recent platform rebuild cut page load times from 10+ seconds to under 0.6.",
   },
   {
     number: "04",
-    title: "Placeholder Service Four",
+    title: "Infrastructure & DevOps",
     description:
-      "A final placeholder description — replace it with the details of your fourth offering.",
+      "Docker, Kubernetes, and CI/CD for reliable deploys — including a fault-tolerant, Kafka-based notification system built for high-throughput message delivery.",
+  },
+  {
+    number: "05",
+    title: "Security & machine learning",
+    description:
+      "Security-minded engineering and data-driven features, backed by a Master's in Cyber Security and Machine Learning — from secure application design to practical ML integration.",
   },
 ];
 
@@ -48,8 +54,8 @@ export function Services() {
     <SectionShell id="services" ariaLabel="Services">
       <SectionHeader
         eyebrow="What I Do"
-        heading="Your services headline goes here"
-        description="A short description of this section goes here."
+        heading="Full-stack development, end to end"
+        description="Five years of building SaaS platforms, REST APIs, and web applications — from the database schema to the production deploy."
       />
 
       <ol className="mt-2">

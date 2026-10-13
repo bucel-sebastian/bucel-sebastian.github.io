@@ -2,9 +2,20 @@
 
 import "./Header.css";
 
-import { motion } from "motion/react";
-import { useEffect, useRef, useState, type ReactNode } from "react";
-import { PillButton, usePrefersReducedMotion } from "./ui/primitives";
+import { AnimatePresence, motion } from "motion/react";
+import {
+  useEffect,
+  useRef,
+  useState,
+  useSyncExternalStore,
+  type CSSProperties,
+  type ReactNode,
+} from "react";
+import {
+  EASE_OUT_EXPO,
+  PillButton,
+  usePrefersReducedMotion,
+} from "./ui/primitives";
 
 /* --------------------------------------------------------------- icons ---- */
 
@@ -38,6 +49,62 @@ function MoonIcon() {
       <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" />
     </Glyph>
   );
+}
+
+function SunIcon() {
+  return (
+    <Glyph>
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+    </Glyph>
+  );
+}
+
+/** Both glyphs share one grid cell so the swap can crossfade in place. */
+const GLYPH_SLOT: CSSProperties = {
+  display: "grid",
+  placeItems: "center",
+  width: 18,
+  height: 18,
+};
+
+/**
+ * The visitor's explicit choice, or `null` when they never made one (or
+ * storage is unavailable) — in which case the OS preference is allowed to win.
+ */
+function readStoredTheme(): "light" | "dark" | null {
+  try {
+    const value = localStorage.getItem("hs-theme");
+    return value === "light" || value === "dark" ? value : null;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * `.home` is the single source of truth for the theme: the layout's inline
+ * script writes `data-theme` before first paint, the toggle writes it on
+ * click, and the OS-follow path writes it on preference changes. The header
+ * just mirrors it back — same subscription GithubSection uses for the
+ * calendar, so state can never drift from the DOM.
+ */
+function subscribeTheme(onStoreChange: () => void): () => void {
+  const root = document.querySelector(".home");
+  if (!root) return () => {};
+  const observer = new MutationObserver(onStoreChange);
+  observer.observe(root, { attributes: true, attributeFilter: ["data-theme"] });
+  return () => observer.disconnect();
+}
+
+function readTheme(): "light" | "dark" {
+  return document.querySelector(".home")?.getAttribute("data-theme") === "dark"
+    ? "dark"
+    : "light";
+}
+
+/** Server/static snapshot: the baked markup ships with no attribute → light. */
+function readServerTheme(): "light" | "dark" {
+  return "light";
 }
 
 function GlobeIcon() {
@@ -126,6 +193,14 @@ function Header() {
   const prefersReduced = usePrefersReducedMotion();
   const [open, setOpen] = useState(false);
   const [scrolledOut, setScrolledOut] = useState(false);
+  /* Mirrors `.home[data-theme]`: the server snapshot is `light`, so the static
+     HTML (no attribute → light tokens) hydrates without a mismatch, then the
+     value the inline script already applied shows up one frame later. */
+  const theme = useSyncExternalStore(
+    subscribeTheme,
+    readTheme,
+    readServerTheme,
+  );
   const wrapRef = useRef<HTMLDivElement>(null);
   const toggleRef = useRef<HTMLButtonElement>(null);
   const openRef = useRef(open);
@@ -133,6 +208,23 @@ function Header() {
   useEffect(() => {
     openRef.current = open;
   }, [open]);
+
+  /* Follow the OS live — but only while the visitor never made an explicit
+     choice: once `hs-theme` holds a value, the stored theme wins and OS
+     changes are ignored. Writing the attribute is enough; the store above
+     picks the flip up and moves the icon. */
+  useEffect(() => {
+    const scheme = window.matchMedia("(prefers-color-scheme: dark)");
+    const onSchemeChange = (event: MediaQueryListEvent) => {
+      if (readStoredTheme() !== null) return;
+      document
+        .querySelector(".home")
+        ?.setAttribute("data-theme", event.matches ? "dark" : "light");
+    };
+
+    scheme.addEventListener("change", onSchemeChange);
+    return () => scheme.removeEventListener("change", onSchemeChange);
+  }, []);
 
   /* Hide-on-scroll-down / reveal-on-scroll-up. The sticky WRAP moves — a
      transform keeps it in flow, so layout, hero offsets and the skip link all
@@ -278,6 +370,22 @@ function Header() {
       document.removeEventListener("keydown", onKeyDown);
     };
   }, [open]);
+
+  /* Flip the route root's `data-theme` (what the CSS contract keys off), then
+     remember the explicit choice so OS changes stop overriding it. No setState
+     here: the MutationObserver store above repaints the icon from the attribute
+     itself. `.home` may be absent if this header ever renders without the route
+     wrapper — the optional chaining keeps the button harmless there. */
+  const toggleTheme = () => {
+    const next = theme === "light" ? "dark" : "light";
+    document.querySelector(".home")?.setAttribute("data-theme", next);
+    try {
+      localStorage.setItem("hs-theme", next);
+    } catch {
+      /* storage unavailable (private mode) — the in-page theme still applies */
+    }
+  };
+
   return (
     <header>
       <div
@@ -294,15 +402,47 @@ function Header() {
           <a
             className="hs-logo"
             href="#home-hero"
-            aria-label="Bucel Sebastian — home"
+            aria-label="Ion-Sebastian Bucel — Homepage"
           >
-            <span aria-hidden="true">[BS]</span>
+            <span aria-hidden="true">[BIS]</span>
           </a>
 
           <div className="hs-nav__right">
             <div className="hs-nav__cluster">
-         
-            
+              <button
+                type="button"
+                className="hs-icon-btn"
+                aria-label={
+                  theme === "light"
+                    ? "Switch to dark theme"
+                    : "Switch to light theme"
+                }
+                onClick={toggleTheme}
+              >
+                <span style={GLYPH_SLOT} aria-hidden="true">
+                  {prefersReduced ? (
+                    theme === "light" ? <MoonIcon /> : <SunIcon />
+                  ) : (
+                    <AnimatePresence initial={false}>
+                      <motion.span
+                        key={theme}
+                        style={{ gridArea: "1 / 1" }}
+                        initial={{ opacity: 0, rotate: -75, scale: 0.6 }}
+                        animate={{ opacity: 1, rotate: 0, scale: 1 }}
+                        exit={{
+                          opacity: 0,
+                          rotate: 75,
+                          scale: 0.6,
+                          transition: { duration: 0.18, ease: EASE_OUT_EXPO },
+                        }}
+                        transition={{ duration: 0.3, ease: EASE_OUT_EXPO }}
+                      >
+                        {theme === "light" ? <MoonIcon /> : <SunIcon />}
+                      </motion.span>
+                    </AnimatePresence>
+                  )}
+                </span>
+              </button>
 
               <a
                 className="hs-icon-btn hs-icon-btn--accent"
